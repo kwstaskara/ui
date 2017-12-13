@@ -1,2 +1,2 @@
 # css-framework
-its a new innovative css framework 
+it's a new innovative css framework 
