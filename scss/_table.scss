@@ -1,0 +1,22 @@
+
+.table-responsive
+	{
+		width: 100%;
+		overflow-y: auto;
+		_overflow: auto;
+		margin: 0 0 1em;
+	}
+
+	.table-container::-webkit-scrollbar
+	{
+		-webkit-appearance: none;
+		width: 14px;
+		height: 14px;
+	}
+
+	.table-container::-webkit-scrollbar-thumb
+	{
+
+		border: 3px solid #fff;
+		background-color: grey;
+	}
