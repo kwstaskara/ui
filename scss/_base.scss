@@ -12,8 +12,7 @@ line-height: 1.5;
 body {
   margin: 0;
   font-family: $core-font;
-  font-size: 16px; //fallback
-  font-size: $core-font-size;
+  font-size: $rem-baseline;
   color: $dark-color;
   background-color: #fff;
   line-height: 1.5;
@@ -51,9 +50,8 @@ a {
     box-shadow: none !important;
   }
 
+}
   a,
   a:visited {
     text-decoration: underline;
   }
-}
-

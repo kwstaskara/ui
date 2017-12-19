@@ -1,22 +1,24 @@
 .btn {
+  @include btn-appearence();
   display: inline-block;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  user-select: none;
   cursor: pointer;
   text-decoration: none;
-  appearance: none;
+  @include rem(padding, 5px 10px);
+  @include no-select();
   font-size: $core-font-size;
+  @include rem(border-radius,1.5px);
   line-height: 1.5;
   border: 1px solid transparent;
   &:focus,
   &:hover {
- -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  filter: alpha(opacity=80);
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  opacity: 0.80;
     text-decoration: none;
+    @include opacity();
+  }
+  &:active{
+    @include btn-active();
+
   }
 }
