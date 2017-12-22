@@ -5,7 +5,7 @@
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none!important;
   @include rem(padding, 5px 10px);
   @include no-select();
   font-size: $core-font-size;
@@ -19,6 +19,5 @@
   }
   &:active{
     @include btn-active();
-
   }
 }

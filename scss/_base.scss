@@ -24,11 +24,14 @@ embed,
 iframe,
 object,
 audio,
-video{
-  height:auto;
-  max-width:100%;
+video {
+  height: auto;
+  max-width: 100%;
 }
-
+a > img {
+    float: left;
+    border: none;
+}
 a {
   outline: none;
   text-decoration: none;
@@ -40,7 +43,9 @@ a {
     color: $dark-color;
     text-decoration: underline;
   }
+
 }
+
 
 @media print {
   *,
@@ -51,7 +56,3 @@ a {
   }
 
 }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
