@@ -1,7 +1,6 @@
-@mixin opacity(){
-   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=88)";
-  filter: alpha(opacity=88);
-  -moz-opacity: 0.88;
-  -khtml-opacity: 0.88;
-  opacity: 0.88;
+@mixin Opacity($value){
+  $IEValue: $value*100;
+  opacity: $value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+  filter: alpha(opacity=$IEValue);
 }

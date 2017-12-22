@@ -1,13 +1,8 @@
 @mixin btn-active() {
-  @include rem(-webkit-box-shadow,inset 0 1px 3px rgba(0,0,0,.125));
-  @include rem(box-shadow,inset 0 1px 3px rgba(0,0,0,.125));
+  @include rem(-webkit-box-shadow,inset 0 1px 3px rgba(0,0,0,.20));
+  @include rem(box-shadow,inset 0 1px 3px rgba(0,0,0,.20));
 }
-@mixin antiflicker(){
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateZ(0) scale(1.0, 1.0);
-    -moz-transform: translateZ(0);
-         transform: translateZ(0);
-}
+
 @mixin btn-appearence(){
   -webkit-appearance: none;
   -moz-appearance: none;
