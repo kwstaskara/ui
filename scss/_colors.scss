@@ -29,8 +29,8 @@
   color: white;
 }
 
-.is-flat{
-  background-color: $flat-color;
+.is-grey{
+  background-color: $grey-color;
   color: white;
 }
 
@@ -42,6 +42,15 @@
 .text-white{
   color: white!important;
 }
+
+.is-link{
+background-color: transparent;
+  color: $link-color;
+  &:active{
+    @include btn-active(0)
+  }
+}
+
 
 .text-black{
   color: black!important;

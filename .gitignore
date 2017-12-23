@@ -3,7 +3,8 @@
 .sass-cache
 .idea
 scss/.idea
-
+*.css
+*.map
 
 # Created by https://www.gitignore.io/api/jetbrains
 
