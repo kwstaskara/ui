@@ -10,8 +10,9 @@
   font-size: $core-font-size;
   @include rem(border-radius,1.5px);
   line-height: 1.5;
-  border: 1px solid transparent;
+  @include rem(border, 1px solid transparent);
   -webkit-backface-visibility: hidden;
+  outline: none;
   &:focus,
   &:hover {
     text-decoration: none;
@@ -19,6 +20,13 @@
   }
   &:active{
     @include btn-active(0.20);
+  }
+   &[disabled],
+  &:disabled,
+  &.disabled {
+    cursor: default;
+    opacity: .2;
+    pointer-events: none;
   }
 }
 

@@ -21,7 +21,7 @@
 
 .is-warning{
   background-color: $warning-color;
-  color:white;
+  color:black;
 }
 
 .is-material{
@@ -34,25 +34,40 @@
   color: white;
 }
 
+
 .is-fancy{
   background-color: $fancy-color;
   color: white;
 }
 
-.text-white{
-  color: white!important;
-}
-
 .is-link{
 background-color: transparent;
   color: $link-color;
-  &:active{
-    @include btn-active(0)
+ &:focus, &:active{
+    box-shadow: none!important;
   }
 }
 
+
+.text-white{
+  color: white!important;
+}
 
 .text-black{
   color: black!important;
 }
 
+.text-primary{
+  color:$primary-color;
+}
+
+.text-success{
+  color: $success-color;
+}
+
+.text-error {
+  color: $error-color;
+}
+.text-grey{
+  color: $grey-color;
+}

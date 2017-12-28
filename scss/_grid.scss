@@ -4,7 +4,7 @@
     .row { width: 100%; display: table; table-layout: fixed; *zoom:1 }
     .col { display: table-cell; }
      .flex-row { display: -webkit-box;  display: -webkit-flex;  display: -ms-flexbox;  display: flex;}
-    .flex-col { flex: 1; }
+    .flex-col { flex: auto; }
 }
 
 
