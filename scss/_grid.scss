@@ -3,8 +3,8 @@
 @media (min-width: 30em) {
     .row { width: 100%; display: table; table-layout: fixed; *zoom:1 }
     .col { display: table-cell; }
-     .flex-row { display: -webkit-box;  display: -webkit-flex;  display: -ms-flexbox;  display: flex;}
-    .flex-col { flex: auto; }
+     .flex-row { display: -webkit-box;  display: -webkit-flex;  display: -ms-flexbox;  display: flex; }
+    .flex-col { flex: 1; }
 }
 
 

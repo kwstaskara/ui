@@ -14,6 +14,15 @@
   color:white;
 }
 
+.is-dark{
+  background-color: $dark-color;
+  color:white;
+}
+
+.is-flat{
+  background-color: $flat-color;
+  color:white;
+}
 .is-error{
   background-color: $error-color;
   color:white;
@@ -48,6 +57,9 @@ background-color: transparent;
   }
 }
 
+.is-transparent{
+  background-color: transparent;
+}
 
 .text-white{
   color: white!important;
@@ -70,4 +82,8 @@ background-color: transparent;
 }
 .text-grey{
   color: $grey-color;
+}
+
+.text-dark{
+  color: $dark-color;
 }
