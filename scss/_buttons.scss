@@ -16,7 +16,7 @@
   &:focus,
   &:hover {
     text-decoration: none;
-    @include Opacity(0.88);
+    @include Opacity(0.90);
   }
   &:active{
     @include btn-active(0.20);
@@ -27,6 +27,17 @@
     cursor: default;
     opacity: .2;
     pointer-events: none;
+  }
+  &.btn-sm{
+    @include rem(padding, 4px 8px);
+    line-height: 1.5;
+    @include rem(font-size, 13px);
+  }
+
+  &.btn-lg{
+    @include rem(padding, 8px 16px);
+    line-height: 1.5;
+    @include  rem(font-size, 20px);
   }
 }
 

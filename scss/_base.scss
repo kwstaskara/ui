@@ -4,12 +4,14 @@
   box-sizing: border-box;
 }
 html {
+  height: 100%;
   font-family: sans-serif;
 box-sizing: border-box;
 line-height: 1.5;
 -webkit-tap-highlight-color: transparent;
 }
 body {
+  height: 100%;
   margin: 0;
   font-family: $core-font;
   font-size: $rem-baseline;
@@ -28,10 +30,7 @@ video {
   height: auto;
   max-width: 100%;
 }
-a > img {
-    float: left;
-    border: none;
-}
+
 a {
   outline: none;
   text-decoration: none;

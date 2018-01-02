@@ -1,10 +1,17 @@
 
 //Ungrid css
 @media (min-width: 30em) {
-    .row { width: 100%; display: table; table-layout: fixed; *zoom:1 }
+    .row { width: 100%;
+      display: table;
+      table-layout: fixed;
+      *zoom:1;
+      &.has-gutters{
+       @include rem(border-spacing, 10px 0);
+    }
+    }
     .col { display: table-cell; }
-     .flex-row { display: -webkit-box;  display: -webkit-flex;  display: -ms-flexbox;  display: flex; }
-    .flex-col { flex: 1; }
+     .flex-row { display: -webkit-box;  display: -webkit-flex;  display: -ms-flexbox;  display: flex; /*align-items: flex-start*/;}
+    .flex-col { flex: auto; }
 }
 
 

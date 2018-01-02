@@ -11,6 +11,7 @@
    & input:not([type]),
    & textarea,
     select {
+
        -webkit-appearance: none;
        -moz-appearance: none;
        appearance: none;
@@ -21,7 +22,7 @@
        box-sizing: inherit;
        padding: .6rem 1.0rem;
        &:focus {
-            border-color: $grey-color;
+            border-color: $primary-color;
             outline: 0;
         }
    }
@@ -67,4 +68,14 @@
    & label{
        margin-right:160px;
    }
+  .form-error{
+    border-color: $error-color;
+  }
+
+  .form-success{
+    border-color: $success-color;
+  }
+  .form-warning {
+    border-color: $warning-color;
+  }
 }

@@ -48,6 +48,11 @@
   background-color: $fancy-color;
   color: white;
 }
+.is-light{
+  background-color: $light-color;
+  color: $dark-color;
+}
+
 
 .is-link{
 background-color: transparent;
