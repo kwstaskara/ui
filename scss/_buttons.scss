@@ -28,16 +28,17 @@
     opacity: .2;
     pointer-events: none;
   }
-  &.btn-sm{
+  &.is-small{
     @include rem(padding, 4px 8px);
     line-height: 1.5;
     @include rem(font-size, 13px);
   }
 
-  &.btn-lg{
+  &.is-large{
     @include rem(padding, 8px 16px);
     line-height: 1.5;
     @include  rem(font-size, 20px);
   }
 }
+
 

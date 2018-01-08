@@ -1,0 +1,93 @@
+/* The necessities */
+.dropdown {
+	position: relative;
+	display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-toggle:focus {
+	pointer-events: none;
+}
+
+.dropdown-toggle:focus + .menu {
+	opacity: 1;
+	visibility: visible;
+}
+
+.menu {
+	pointer-events: auto;
+	position: absolute;
+	z-index: 1;
+    cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	transition: visibility 0.5s;
+}
+
+.menu.menu-right{
+		right:0;
+}
+
+.dropdown.no-pointer-events {
+	pointer-events: auto !important;
+}
+
+.dropdown.no-visibility .menu {
+	visibility: visible !important;
+	display: none;
+}
+
+.dropdown.no-visibility:focus .menu {
+	display: block;
+}
+
+.dropdown.no-opacity .menu {
+	opacity: 1 !important;
+}
+
+.dropdown {
+	padding: 0;
+	margin: 0 0 1em 0;
+	outline: 0;
+}
+.dropdown:before {
+	padding: 5px 10px;
+
+}
+.menu {
+	background-color: $light-color;
+	width: 130px;
+	margin-top: 1px;
+	margin-left: 0;
+	padding: 10px;
+	padding-left: 20px;
+}
+
+.menu.is-vertical li{
+display: list-item;
+}
+
+.menu li {
+	list-style-type: none;
+	white-space: nowrap;
+
+	&:hover{
+		@include Opacity(0.85)
+	}
+}
+
+
+.menu a {
+	cursor: inherit;
+	cursor: pointer;
+}
+.menu a:hover {
+	text-decoration: none;
+}
+
+
+
+.dropdown {
+
+  text-align: left;
+}

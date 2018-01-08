@@ -4,7 +4,7 @@
 
   }
 
-    .container-mb{
+    .container-sm{
     width: 100%;
     @include rem(padding-right, 20px);
     @include rem(padding-left, 20px);
@@ -228,12 +228,20 @@
 .pt-20{
   @include rem(padding-top, 20px);
 }
+
+.pt-30{
+  @include rem(padding-top, 30px);
+}
 .pb-10{
   @include rem(padding-bottom, 10px);
 }
 
 .pb-20{
   @include rem(padding-bottom, 20px);
+}
+
+.pb-30{
+  @include rem(padding-bottom, 30px);
 }
 
 
@@ -253,6 +261,64 @@
   @include rem(padding-bottom, -20px);
 }
 
+.ml-10{
+  @include rem(margin-left, 10px);
+}
+
+.ml-20{
+  @include rem(margin-left, 20px);
+}
+
+.ml-30{
+  @include rem(margin-left, 30px);
+}
+
+
+.mr-10{
+  @include rem(margin-right, 10px);
+}
+
+.mr-20{
+  @include rem(margin-right, 20px);
+}
+
+.mr-30{
+  @include rem(margin-right, 30px);
+}
+
+
+
+
+.pl-10{
+  @include rem(padding-left, 10px);
+}
+
+.pl-20{
+  @include rem(padding-left, 20px);
+}
+
+.pl-30{
+  @include rem(padding-left, 30px);
+}
+
+
+.pr-10{
+  @include rem(padding-right, 10px);
+}
+
+.pr-20{
+  @include rem(padding-right, 20px);
+}
+
+.pr-30{
+  @include rem(padding-right, 30px);
+}
+
+
+
+
+
+
 
 
 .mt-10{
@@ -263,6 +329,10 @@
   @include rem(margin-top, 20px);
 }
 
+.mt-30{
+  @include rem(margin-top, 30px);
+}
+
 .mb-10{
   @include rem(margin-bottom, 10px);
 }
@@ -270,6 +340,10 @@
 
 .mb-20{
   @include rem(margin-bottom, 20px);
+}
+
+.mb-30{
+  @include rem(margin-bottom, 30px);
 }
 
 
@@ -310,70 +384,120 @@
   left: 0;
 }
 
-.float-left{
-  float:left!important;
+.absol-center{
+  position: absolute;
+  top:50%;
+  left:50%;
+
 }
 
-.float-right{
-  float:right!important;
+.flex-start{
+  justify-content: flex-start;
 }
 
-.is-fixed{
-  position: fixed;
+
+.flex-end{
+  justify-content: flex-end;
 }
 
-.no-dragging{
-  @include no-select();
+.flex-center{
+  justify-content: center;
+
 }
 
-.container {
-  @include rem(padding-right, 7px);
-  @include rem(padding-left, 7px);
-  margin-right: auto;
-  margin-left: auto;
+.is-vertical {
+  &.flex-center {
+    align-items: center;
+  }
+
+  &.flex-start {
+    align-items: flex-start;
+  }
+  &.flex-end {
+    align-items: flex-end;
+  }
+}
+
+  .fixed-left{
+    position: fixed;
+    left:0;
+  }
+
+  .fixed-right{
+    position: fixed;
+    right: 0;
+  }
+
+  .float-left{
+    float:left!important;
+  }
+
+  .float-right{
+    float:right!important;
+  }
+
+  .is-fixed{
+    position: fixed;
+  }
+
+  .no-dragging{
+    @include no-select();
+  }
+
+  .container {
+    @include rem(padding-right, 12px);
+    @include rem(padding-left, 12px);
+    margin-right: auto;
+    margin-left: auto;
     width: 100%;
-}
+  }
 
+  .text-center{
+    text-align: center;
+  }
 
+  .text-left{
+    text-align: left;
+  }
 
-.text-center{
-  text-align: center;
-}
+  .text-right{
+    text-align: right;
+  }
 
-.text-left{
-  text-align: left;
-}
-
-.text-right{
-  text-align: right;
-}
-
-.img-centered{
+  .img-centered{
     display:block;
-  margin:0 auto;
-  text-align: center;
-  width:300px;
+    margin:0 auto;
+    text-align: center;
+    width:300px;
 
-}
-.text-upper{
-  text-transform: uppercase;
-}
+  }
+  .is-active{
+    display: block;
+  }
 
-.text-lower{
-  text-transform: lowercase;
-}
+  .text-upper{
+    text-transform: uppercase;
+  }
 
-.text-justified{
+  .text-lower{
+    text-transform: lowercase;
+  }
+
+  .text-justified{
   text-align: justify;
-}
+  }
 
-.is-centered{
-  margin: 0 auto;
-  text-align: center;
-}
+  .is-centered{
+    margin: 0 auto;
+    text-align: center;
+  }
 
-.fixed-centered{
-  position: fixed;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
+  .fixed-centered{
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    text-align: center;
+  }

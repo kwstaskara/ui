@@ -1,0 +1,53 @@
+.nav {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+
+
+}
+
+.nav li {
+  display:inline;
+}
+
+.nav.is-vertical .nav-item{
+  display: block;
+
+}
+
+.nav-item{
+    text-decoration: none;
+    @include rem(padding, 8px 12px);
+    &:hover,
+    &:focus{
+      @include Opacity(0.90);
+      text-decoration: none;
+    }
+}
+
+.nav-item a{
+      text-decoration: none;
+    &:hover,
+    &:focus{
+      @include Opacity(0.90);
+      text-decoration: none;
+    }
+}
+
+
+
+.flex-nav{
+  list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+   display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-nav.is-vertical{
+    flex-direction: column;
+}
+
+.is-gapless .nav-item{
+	padding: 0;
+}
