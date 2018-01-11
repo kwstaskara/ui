@@ -1,0 +1,30 @@
+{
+  "name": "pyramid css",
+  "version": "0.0.1",
+  "description": "css framework",
+  "main": "",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwstaskara/pyramid.git"
+  },
+  "keywords": [
+    "pyramid css"
+  ],
+  "author": "kwstaskara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kwstaskara/pyramid/issues"
+  },
+  "homepage": "https://github.com/kwstaskara/pyramid#readme"
+}
