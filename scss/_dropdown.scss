@@ -75,9 +75,12 @@ display: list-item;
 .menu li {
 	list-style-type: none;
 	white-space: nowrap;
+	cursor: pointer;
 
 	&:hover{
-		@include Opacity(0.85)
+		@include Opacity(0.85);
+			cursor: pointer;
+
 	}
 }
 
