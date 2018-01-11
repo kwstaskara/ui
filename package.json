@@ -1,9 +1,10 @@
 {
-  "name": "pyramid css",
+  "name": "pyramidcss"
   "version": "0.0.1",
   "description": "css framework",
   "main": "",
   "dependencies": {
+    "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0"
   },
