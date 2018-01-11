@@ -7,11 +7,13 @@
 
 .dropdown-toggle:focus {
 	pointer-events: none;
+	  cursor: pointer;
 }
 
 .dropdown-toggle:focus + .menu {
 	opacity: 1;
 	visibility: visible;
+	  cursor: pointer;
 }
 
 .menu {
@@ -49,9 +51,11 @@
 	padding: 0;
 	margin: 0 0 1em 0;
 	outline: 0;
+	  cursor: pointer;
 }
 .dropdown:before {
 	padding: 5px 10px;
+	  cursor: pointer;
 
 }
 .menu {
@@ -61,6 +65,7 @@
 	margin-left: 0;
 	padding: 10px;
 	padding-left: 20px;
+	  cursor: pointer;
 }
 
 .menu.is-vertical li{
