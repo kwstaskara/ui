@@ -28,6 +28,7 @@
 
 .menu.menu-right{
 		right:0;
+		cursor: pointer;
 }
 
 .dropdown.no-pointer-events {
@@ -91,6 +92,7 @@ display: list-item;
 }
 .menu a:hover {
 	text-decoration: none;
+		cursor: pointer;
 }
 
 
