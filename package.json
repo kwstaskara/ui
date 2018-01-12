@@ -1,9 +1,10 @@
 {
-  "name": "pyramidcss"
+  "name": "pyramid",
   "version": "0.0.1",
   "description": "css framework",
   "main": "",
   "dependencies": {
+    "critical": "^1.1.0",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0"
@@ -20,7 +21,7 @@
     "url": "git+https://github.com/kwstaskara/pyramid.git"
   },
   "keywords": [
-    "pyramid css"
+    "pyramidcss"
   ],
   "author": "kwstaskara",
   "license": "MIT",
