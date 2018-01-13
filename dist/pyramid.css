@@ -407,7 +407,7 @@ template {
   display: none; }
 
 .is-primary {
-  background-color: #82d1ff;
+  background-color: #5b9aff;
   color: white; }
 
 .is-secondary {
@@ -466,8 +466,11 @@ template {
 .text-black {
   color: black !important; }
 
+.text-muted {
+  color: #94aa8e; }
+
 .text-primary {
-  color: #82d1ff; }
+  color: #5b9aff; }
 
 .text-success {
   color: #01C26E; }
@@ -695,7 +698,7 @@ mark {
   .is-form input:not([type]):focus,
   .is-form textarea:focus,
   .is-form select:focus {
-    border-color: #82d1ff;
+    border-color: #5b9aff;
     outline: 0; }
 
 .is-form select {
@@ -1330,7 +1333,6 @@ mark {
   cursor: pointer; }
 
 .menu {
-  background-color: #f7f7f7;
   width: 130px;
   margin-top: 1px;
   margin-left: 0;
