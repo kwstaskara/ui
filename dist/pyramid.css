@@ -484,6 +484,13 @@ template {
 .text-dark {
   color: #2e3035; }
 
+.gradient-rose {
+  background: #cc2b5e;
+  background: -webkit-gradient(linear, left top, right top, from(#753a88), to(#cc2b5e));
+  background: -webkit-linear-gradient(left, #753a88, #cc2b5e);
+  background: -o-linear-gradient(left, #753a88, #cc2b5e);
+  background: linear-gradient(to right, #753a88, #cc2b5e); }
+
 *,
 *::before,
 *::after {

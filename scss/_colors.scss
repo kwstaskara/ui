@@ -96,3 +96,8 @@ background-color: transparent;
 .text-dark{
   color: $dark-color;
 }
+//Everyone likes gradients
+.gradient-rose{
+background: #cc2b5e;
+background: linear-gradient(to right, #753a88, #cc2b5e);
+}

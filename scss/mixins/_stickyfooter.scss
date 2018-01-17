@@ -1,0 +1,19 @@
+@mixin stickyFooter($footerHeight, $wrapSelector, $footerSelector) {
+  html, body {
+    height: 100%;
+  }
+
+  #{$wrapSelector} {
+    min-height: 100%; /* equal to footer height */
+    margin-bottom: -$footerHeight;
+    &:after {
+      content: "";
+      display: block;
+    }
+  }
+
+  #{$footerSelector}, #{$wrapSelector}:after {
+    /* .push must be the same height as footer */
+    height: $footerHeight; 
+  }
+}
