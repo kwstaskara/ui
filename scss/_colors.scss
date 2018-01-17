@@ -7,18 +7,14 @@
   background-color: $secondary-color;
   color:white;
 }
-
-
 .is-success{
   background-color: $success-color;
   color:white;
 }
-
 .is-dark{
   background-color: $dark-color;
   color:white;
 }
-
 .is-flat{
   background-color: $flat-color;
   color:white;
@@ -27,23 +23,18 @@
   background-color: $error-color;
   color:white;
 }
-
 .is-warning{
   background-color: $warning-color;
   color:black;
 }
-
 .is-material{
   background-color: $material-color;
   color: white;
 }
-
 .is-grey{
   background-color: $grey-color;
   color: white;
 }
-
-
 .is-fancy{
   background-color: $fancy-color;
   color: white;
@@ -61,43 +52,37 @@ background-color: transparent;
     box-shadow: none!important;
   }
 }
-
 .is-transparent{
   background-color: transparent;
 }
-
 .text-white{
   color: white!important;
 }
-
 .text-black{
   color: black!important;
 }
-
 .text-muted{
   color: $muted-color;
 }
-
 .text-primary{
   color:$primary-color;
 }
-
 .text-success{
   color: $success-color;
 }
-
 .text-error {
   color: $error-color;
 }
 .text-grey{
   color: $grey-color;
 }
-
 .text-dark{
   color: $dark-color;
 }
+
+
 //Everyone likes gradients
-.gradient-rose{
+.is-gradient-rose{
 background: #cc2b5e;
 background: linear-gradient(to right, #753a88, #cc2b5e);
 }

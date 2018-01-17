@@ -484,7 +484,7 @@ template {
 .text-dark {
   color: #2e3035; }
 
-.gradient-rose {
+.is-gradient-rose {
   background: #cc2b5e;
   background: -webkit-gradient(linear, left top, right top, from(#753a88), to(#cc2b5e));
   background: -webkit-linear-gradient(left, #753a88, #cc2b5e);
