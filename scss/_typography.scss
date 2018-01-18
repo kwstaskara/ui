@@ -18,24 +18,24 @@ h6 {
   font-weight: 500;
 }
 .h1 {
-  font-size: 2rem;
+@include rem(font-size, 32px);
 }
 .h2 {
-  font-size: 1.6rem;
+@include rem(font-size, 25.6px);
 }
 
 .h3 {
-  font-size: 1.4rem;
+@include rem(font-size, 22.6px);
 }
 
 .h4 {
-  font-size: 1.2rem;
+@include rem(font-size, 19.4px);
 }
 .h5 {
-  font-size: 1rem;
+@include rem(font-size, 16px);
 }
 .h6 {
-  font-size: .8rem;
+@include rem(font-size, 12.8px);
 }
 
 mark{
