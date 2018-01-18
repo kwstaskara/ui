@@ -485,11 +485,48 @@ template {
   color: #2e3035; }
 
 .is-gradient-rose {
-  background: #cc2b5e;
-  background: -webkit-gradient(linear, left top, right top, from(#753a88), to(#cc2b5e));
-  background: -webkit-linear-gradient(left, #753a88, #cc2b5e);
-  background: -o-linear-gradient(left, #753a88, #cc2b5e);
-  background: linear-gradient(to right, #753a88, #cc2b5e); }
+  background: #ff6e7f;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#bfe9ff), to(#ff6e7f));
+  background: -webkit-linear-gradient(left, #bfe9ff, #ff6e7f);
+  background: -o-linear-gradient(left, #bfe9ff, #ff6e7f);
+  background: linear-gradient(to right, #bfe9ff, #ff6e7f);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.is-gradient-blue {
+  background: #0f0c29;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#24243e), color-stop(#302b63), to(#0f0c29));
+  background: -webkit-linear-gradient(left, #24243e, #302b63, #0f0c29);
+  background: -o-linear-gradient(left, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.is-gradient-purple {
+  background: #B993D6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#8CA6DB), to(#B993D6));
+  background: -webkit-linear-gradient(left, #8CA6DB, #B993D6);
+  background: -o-linear-gradient(left, #8CA6DB, #B993D6);
+  background: linear-gradient(to right, #8CA6DB, #B993D6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.is-gradient-candy {
+  background: #D3959B;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #BFE6BA, #D3959B);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#BFE6BA), to(#D3959B));
+  background: -webkit-linear-gradient(left, #BFE6BA, #D3959B);
+  background: -o-linear-gradient(left, #BFE6BA, #D3959B);
+  background: linear-gradient(to right, #BFE6BA, #D3959B);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 *,
 *::before,
@@ -502,7 +539,7 @@ html {
   font-family: sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  line-height: 1.5;
+  line-height: 1.6;
   -webkit-tap-highlight-color: transparent; }
 
 body {
@@ -512,8 +549,10 @@ body {
   font-size: 16px;
   color: #2e3035;
   background-color: #fff;
-  line-height: 1.5;
-  text-rendering: optimizeLegibility; }
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.16px;
+  letter-spacing: 0.01rem; }
 
 img,
 embed,
@@ -774,14 +813,13 @@ mark {
 @media (max-width: 767px) {
   .hide-xs {
     display: none !important; }
-  .container-sm {
+  .container {
     width: 100%;
     padding-right: 20px;
     padding-right: 1.25rem;
     padding-left: 20px;
     padding-left: 1.25rem;
-    margin-right: auto;
-    margin-left: auto; }
+    margin: 0 auto; }
   .col-xs-12 {
     width: 100%; }
   .col-xs-11 {
@@ -874,14 +912,6 @@ mark {
 @media (min-width: 1200px) {
   .hide-lg {
     display: none !important; }
-  .container-lg {
-    width: 100%;
-    padding-right: 120px;
-    padding-right: 7.5rem;
-    padding-left: 120px;
-    padding-left: 7.5rem;
-    margin-right: auto;
-    margin-left: auto; }
   .col-lg-12 {
     width: 100%; }
   .col-lg-11 {
@@ -1139,8 +1169,15 @@ mark {
   padding-right: 0.75rem;
   padding-left: 12px;
   padding-left: 0.75rem;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
+  width: 100%; }
+
+.container-center {
+  margin: 0 auto;
+  max-width: 880px;
+  max-width: 55rem;
+  padding: 0 2.0rem;
+  position: relative;
   width: 100%; }
 
 .text-center {

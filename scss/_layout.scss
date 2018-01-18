@@ -4,12 +4,11 @@
 
   }
 
-    .container-sm{
+    .container{
     width: 100%;
     @include rem(padding-right, 20px);
     @include rem(padding-left, 20px);
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
 }
 
 
@@ -153,15 +152,6 @@
   .hide-lg{
     display: none!important;
   }
-    .container-lg {
-  width: 100%;
-  @include rem(padding-right, 120px);
-  @include rem(padding-left, 120px);
-  margin-right: auto;
-  margin-left: auto;
-
-}
-
    .col-lg-12 {
   width: 100%;
 }
@@ -206,6 +196,7 @@
 .is-hidden{
   visibility: hidden;
 }
+
 
 
 .is-flex{
@@ -446,8 +437,15 @@
   .container {
     @include rem(padding-right, 12px);
     @include rem(padding-left, 12px);
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+    .container-center {
+    margin: 0 auto;
+    @include rem(max-width, 880px);
+    padding: 0 2.0rem;
+    position: relative;
     width: 100%;
   }
 

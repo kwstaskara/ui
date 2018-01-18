@@ -6,9 +6,9 @@
 html {
   height: 100%;
   font-family: sans-serif;
-box-sizing: border-box;
-line-height: 1.5;
--webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  line-height: 1.6;
+  -webkit-tap-highlight-color: transparent;
 }
 body {
   height: 100%;
@@ -17,8 +17,9 @@ body {
   font-size: $rem-baseline;
   color: $dark-color;
   background-color: #fff;
-  line-height: 1.5;
+  line-height: 1.6;
   text-rendering: optimizeLegibility;
+  @include rem(letter-spacing, 0.16px);
 }
 // responsive media
 img,
