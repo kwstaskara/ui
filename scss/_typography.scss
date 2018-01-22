@@ -17,28 +17,39 @@ h6 {
 .h6 {
   font-weight: 500;
 }
+
+
+
+h1,
 .h1 {
-@include rem(font-size, 32px);
+@include rem(font-size, 40px);
 }
+h2,
 .h2 {
-@include rem(font-size, 25.6px);
+@include rem(font-size, 36px);
 }
-
+h3,
 .h3 {
-@include rem(font-size, 22.6px);
+@include rem(font-size, 28px);
 }
-
+h4,
 .h4 {
-@include rem(font-size, 19.4px);
+@include rem(font-size, 24px);
 }
+h5,
 .h5 {
-@include rem(font-size, 16px);
+@include rem(font-size, 18px);
 }
+h6,
 .h6 {
-@include rem(font-size, 12.8px);
+@include rem(font-size, 16px);
 }
 
 mark{
   background-color: $marked-color;
 }
 
+pre {
+    white-space: pre-line;
+    word-wrap: break-word;
+}

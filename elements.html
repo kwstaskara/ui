@@ -14,7 +14,7 @@
 </head>
 
 
-<body>
+<body class="text-grey">
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -29,16 +29,17 @@
 <ul class="nav is-centered">
 
     <div class="dropdown">
-        <li class="nav-item"> <a class="text-white h4" href="elements">Elements </a></li><a  class=" dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
+        <li class="nav-item"> <a class="text-white h5" href="elements">Elements </a></li><a  class=" dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
     <ul class="menu is-vertical is-dark">
-        <li><a href="#" class="text-white"> Typography</a> </li>
+        <li><a href="elements#Typography" class="text-white"> Typography</a> </li>
+        <li><a href="elements#Colors" class="text-white"> Colors</a> </li>
         <li><a href="#" class="text-white"> Forms</a> </li>
         <li><a href="#" class="text-white"> Tables</a> </li>
         <li><a href="#" class="text-white"> Media</a> </li>
     </ul>
 </div>
       <div class="dropdown">
-        <li class="nav-item"> <a class="text-white h4" href="items">Items </a></li><a  class="dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
+        <li class="nav-item"> <a class="text-white h5" href="items">Items </a></li><a  class="dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
     <ul class="menu is-vertical is-dark">
         <li><a href="#" class="text-white" > Accordions</a> </li>
         <li><a href="#" class="text-white"> Buttons</a> </li>
@@ -46,7 +47,7 @@
     </ul>
 </div>
       <div class="dropdown">
-        <li class="nav-item"> <a class="text-white h4" href="layout">Layout </a></li><a  class="dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
+        <li class="nav-item"> <a class="text-white h5" href="layout">Layout </a></li><a  class="dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
     <ul class="menu  is-vertical menu-right is-dark">
         <li><a href="#" class="text-white"> Grid</a> </li>
         <li><a href="#" class="text-white"> Responsive</a> </li>
@@ -57,5 +58,52 @@
 </div>
 </ul>
 </div>
+<section class="container-center">
+    <div id="Typography">
+          <h2 class="pt-20">Typography</h2>
+        <hr class="mtn-20" />
+ <h3>Headings:</h3>
+            <h1>h1 Heading<small> 40px</small></h1>
+            <h2>h2 Heading <small> 36px</small></h2>
+            <h3>h3 Heading <small> 28px</small></h3>
+            <h4>h4 Heading <small> 24px</small></h4>
+            <h5>h5 Heading <small> 18px</small></h5>
+            <h6>h6 Heading <small> 16px</small></h6>
+    </div>
+  <pre class="is-light">
+         <small>Html</small>
+        <code>
+            &lt;<span class="text-primary">h3</span>&gt;heading 3&lt;/<span class="text-primary">h3</span>&gt;
+            &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="h3"&gt;Paragraph as h3  &lt;/<span class="text-primary">p</span>&gt;
+        </code>
+    </pre>
+    <div id="Colors">
+       <h2 class="pt-20">Colors</h2>
+        <hr class="mtn-20" />
+    <p class="text-primary">Primary text color</p>
+    <p class="text-error">Error text color</p>
+    <p class="text-success">Success text color</p>
+    <p class="text-warning">Warning text color</p>
+    <p class="text-black">Black text color</p>
+    <p class="text-white is-dark col-lg-2">White text color</p>
+    <p class="text-grey">Grey text color</p>
+    <p class="text-dark">Dark text color</p>
+    <mark>Marked text</mark>
+    <pre class="is-light">
+           <small>Html</small>
+        <code>
+    &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="text-primary"&gt;Primary text color&lt;/<span class="text-primary">p</span>&gt;
+    &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="text-error"&gt;Error text color&lt;/<span class="text-primary">p</span>&gt;
+    &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="text-success"&gt;Success text color&lt;/<span class="text-primary">p</span>&gt;
+    &lt;<span class="text-primary">p</span>  <span class="text-warning">class</span>="text-warning"&gt;Warning text color&lt;/<span class="text-primary">p</span>&gt;
+    &lt;<span class="text-primary">p</span>  <span class="text-warning">class</span>="text-black"&gt;Black text color&lt;/<span class="text-primary">p</span>&gt;
+    &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="text-white"&gt;White text color&lt;/<span class="text-primary">p</span>&gt;
+    &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="text-grey"&gt;Grey text color&lt;/<span class="text-primary">p</span>&gt;
+    &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="text-dark"&gt;Dark text color&lt;/<span class="text-primary">p</span>&gt;
+    &lt;<span class="text-primary">mark</span>&gt;Marked text&lt;/<span class="text-primary">mark</span>&gt;
+        </code>
+    </pre>
+    </div>
+</section>
 </body>
 </html>

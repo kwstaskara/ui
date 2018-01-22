@@ -484,6 +484,9 @@ template {
 .text-dark {
   color: #2e3035; }
 
+.text-warning {
+  color: #ffdb4d; }
+
 .is-gradient-rose {
   background: #ff6e7f;
   /* fallback for old browsers */
@@ -596,32 +599,42 @@ h6 {
 .h6 {
   font-weight: 500; }
 
+h1,
 .h1 {
-  font-size: 32px;
-  font-size: 2rem; }
+  font-size: 40px;
+  font-size: 2.5rem; }
 
+h2,
 .h2 {
-  font-size: 25.6px;
-  font-size: 1.6rem; }
+  font-size: 36px;
+  font-size: 2.25rem; }
 
+h3,
 .h3 {
-  font-size: 22.6px;
-  font-size: 1.4125rem; }
+  font-size: 28px;
+  font-size: 1.75rem; }
 
+h4,
 .h4 {
-  font-size: 19.4px;
-  font-size: 1.2125rem; }
+  font-size: 24px;
+  font-size: 1.5rem; }
 
+h5,
 .h5 {
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+h6,
+.h6 {
   font-size: 16px;
   font-size: 1rem; }
 
-.h6 {
-  font-size: 12.8px;
-  font-size: 0.8rem; }
-
 mark {
   background-color: #fff2a8; }
+
+pre {
+  white-space: pre-line;
+  word-wrap: break-word; }
 
 .is-table {
   max-width: 100%;
