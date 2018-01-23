@@ -1424,7 +1424,9 @@ pre {
 .menu a {
   cursor: inherit;
   cursor: pointer;
-  display: block; }
+  display: block;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis; }
 
 .menu a:hover {
   text-decoration: none;
