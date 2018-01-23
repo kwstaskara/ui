@@ -33,9 +33,9 @@
     <ul class="menu is-vertical is-dark">
         <li><a href="elements#Typography" class="text-white"> Typography</a> </li>
         <li><a href="elements#Colors" class="text-white"> Colors</a> </li>
-        <li><a href="#" class="text-white"> Forms</a> </li>
-        <li><a href="#" class="text-white"> Tables</a> </li>
-        <li><a href="#" class="text-white"> Media</a> </li>
+        <li><a href="elements#Forms" class="text-white"> Forms</a> </li>
+        <li><a href="elements#Tables" class="text-white"> Tables</a> </li>
+        <li><a href="elements#Media" class="text-white"> Media</a> </li>
     </ul>
 </div>
       <div class="dropdown">
@@ -70,11 +70,11 @@
             <h5>h5 Heading <small> 18px</small></h5>
             <h6>h6 Heading <small> 16px</small></h6>
     </div>
-  <pre class="is-light">
+  <pre class="is-light pl-10">
          <small>Html</small>
         <code>
             &lt;<span class="text-primary">h3</span>&gt;heading 3&lt;/<span class="text-primary">h3</span>&gt;
-            &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="h3"&gt;Paragraph as h3  &lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">h3</span>"&gt;Paragraph as h3  &lt;/<span class="text-primary">p</span>&gt;
         </code>
     </pre>
     <div id="Colors">
@@ -88,22 +88,107 @@
     <p class="text-white is-dark col-lg-2">White text color</p>
     <p class="text-grey">Grey text color</p>
     <p class="text-dark">Dark text color</p>
+    <p class="text-fancy">Fancy text color</p>
     <mark>Marked text</mark>
-    <pre class="is-light">
+    <pre class="is-light pl-10">
            <small>Html</small>
         <code>
-    &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="text-primary"&gt;Primary text color&lt;/<span class="text-primary">p</span>&gt;
-    &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="text-error"&gt;Error text color&lt;/<span class="text-primary">p</span>&gt;
-    &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="text-success"&gt;Success text color&lt;/<span class="text-primary">p</span>&gt;
-    &lt;<span class="text-primary">p</span>  <span class="text-warning">class</span>="text-warning"&gt;Warning text color&lt;/<span class="text-primary">p</span>&gt;
-    &lt;<span class="text-primary">p</span>  <span class="text-warning">class</span>="text-black"&gt;Black text color&lt;/<span class="text-primary">p</span>&gt;
-    &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="text-white"&gt;White text color&lt;/<span class="text-primary">p</span>&gt;
-    &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="text-grey"&gt;Grey text color&lt;/<span class="text-primary">p</span>&gt;
-    &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="text-dark"&gt;Dark text color&lt;/<span class="text-primary">p</span>&gt;
+    &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-primary</span>"&gt;Primary text color&lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-error</span>"&gt;Error text color&lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-success</span>"&gt;Success text color&lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span>  <span class="text-warning">class</span>="<span class="text-fancy">text-warning</span>"&gt;Warning text color&lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span>  <span class="text-warning">class</span>="<span class="text-fancy">text-black</span>"&gt;Black text color&lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-white</span>"&gt;White text color&lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-grey</span>"&gt;Grey text color&lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-dark</span>"&gt;Dark text color&lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-fancy</span>"&gt;Fancy text color&lt;/<span class="text-primary">p</span>&gt;
     &lt;<span class="text-primary">mark</span>&gt;Marked text&lt;/<span class="text-primary">mark</span>&gt;
         </code>
     </pre>
+        <h4>Backgrounds</h4>
+        <div class="row has-gutters">
+            <div class="col">
+        <div class="is-light col-lg-8 pb-30 pt-30 mt-10 pl-10" >Light background</div>
+        <div class="is-dark col-lg-8 pb-30 pt-30 mt-10 pl-10">Dark background</div>
+        <div class="is-grey col-lg-8 pb-30 pt-30 mt-10 pl-10">Grey background</div>
+            </div>
+            <div class="col">
+        <div class="is-success col-lg-8 pb-30 pt-30 mt-10 pl-10">Success background</div>
+        <div class="is-warning col-lg-8 pb-30 pt-30 mt-10 pl-10">Warning background</div>
+        <div class="is-error col-lg-8 pb-30 pt-30 mt-10 pl-10">Error background</div>
+                </div>
+<div class="col">
+        <div class="is-primary col-lg-8 pb-30 pt-30 mt-10 pl-10">Primary background</div>
+        <div class="is-secondary col-lg-8 pb-30 pt-30 mt-10 pl-10">Secondary background</div>
+        <div class="is-fancy col-lg-8 pb-30 pt-30 mt-10 pl-10">Fancy background</div>
     </div>
+            <div class="col">
+        <div class="is-material col-lg-8 pb-30 pt-30 mt-10 pl-10">Material background</div>
+        <div class="is-flat col-lg-8 pb-30 pt-30 mt-10 pl-10">Flat background</div>
+    </div>
+    </div>
+                   <pre class="is-light pl-10">
+           <small>Html</small>
+        <code>
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-light</span>"&gt;Light background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-dark</span>"&gt;Dark background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-grey</span>"&gt;Grey background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span>  <span class="text-warning">class</span>="<span class="text-fancy">is-success</span>"&gt;Success background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span>  <span class="text-warning">class</span>="<span class="text-fancy">is-warning</span>"&gt;Warning background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-error</span>"&gt;Error background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-primary</span>"&gt;Primary background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-secondary</span>"&gt;Secondary background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-fancy</span>"&gt;Fancy background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-material</span>"&gt;Material background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-flat</span>"&gt;Flat background&lt;/<span class="text-primary">div</span>&gt;
+
+        </code>
+    </pre>
+
+        <h4 class="mt-20">Gradient backgrounds</h4>
+        <div class="row has-gutters mt-20">
+            <div class="col">
+                <div class="is-gradient-rose text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
+                    Gradient rose
+                </div>
+
+            </div>
+             <div class="col">
+                <div class="is-gradient-purple text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
+                    Gradient purple
+                </div>
+
+            </div>
+              <div class="col">
+                <div class="is-gradient-blue text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
+                    Gradient blue
+                </div>
+
+            </div>
+               <div class="col">
+                <div class="is-gradient-candy text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
+                    Gradient candy
+                </div>
+
+            </div>
+
+        </div>
+       <pre class="is-light pl-10">
+           <small>Html</small>
+        <code>
+
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-gradient-rose</span>"&gt;Gradient rose&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-gradient-purple</span>"&gt;Gradient purple&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-gradient-blue</span>"&gt;Gradient blue&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-gradient-candy</span>"&gt;Gradient candy&lt;/<span class="text-primary">div</span>&gt;
+        </code>
+    </pre>
+        </div>
+<section id="Forms">
+    <h2 class="pt-20">Forms</h2>
+        <hr class="mtn-20" />
+
+</section>
 </section>
 </body>
 </html>

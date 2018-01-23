@@ -487,6 +487,9 @@ template {
 .text-warning {
   color: #ffdb4d; }
 
+.text-fancy {
+  color: #9E58DC; }
+
 .is-gradient-rose {
   background: #ff6e7f;
   /* fallback for old browsers */
@@ -816,7 +819,9 @@ pre {
       border-spacing: 10px 0;
       border-spacing: 0.625rem 0; }
   .col {
-    display: table-cell; }
+    display: table-cell;
+    word-wrap: break-word;
+    overflow-wrap: break-word; }
   .flex-row {
     display: -webkit-box;
     display: -webkit-flex;

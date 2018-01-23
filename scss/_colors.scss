@@ -52,6 +52,7 @@ background-color: transparent;
     box-shadow: none!important;
   }
 }
+
 .is-transparent{
   background-color: transparent;
 }
@@ -81,6 +82,9 @@ background-color: transparent;
 }
 .text-warning{
   color: $warning-color;
+}
+.text-fancy {
+  color: $fancy-color;
 }
 
 //Everyone likes gradients
