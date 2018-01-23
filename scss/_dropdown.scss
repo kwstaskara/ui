@@ -88,6 +88,7 @@ display: list-item;
 .menu a {
 	cursor: inherit;
 	cursor: pointer;
+	display: block;
 }
 .menu a:hover {
 	text-decoration: none;

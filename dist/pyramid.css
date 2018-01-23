@@ -1423,7 +1423,8 @@ pre {
 
 .menu a {
   cursor: inherit;
-  cursor: pointer; }
+  cursor: pointer;
+  display: block; }
 
 .menu a:hover {
   text-decoration: none;
