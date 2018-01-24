@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="dist/pyramid.css">
+<link rel="stylesheet" type="text/css" href="ionicons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <style>
+
+    </style>
+
+</head>
+
+
+<body class="text-grey">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<a class="btn is-link text-white absol-right " href="https://github.com/kwstaskara/pyramid" target="_blank"><i class="ion-social-github"></i> Github</a>
+<div id="header" class="is-gradient-rose pb-30">
+   <a href="https://ui.redpyramids.com/" class="img-centered">
+    <img src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width=120 height=120>
+  </a>
+    <ul class="nav is-centered">
+       <a class="btn is-small is-success" href="docs"><i class=" ion-home"></i></a>
+    <div class="dropdown">
+<ul class="nav is-centered">
+
+    <div class="dropdown">
+        <li class="nav-item"> <a class="text-white h5" href="elements">Elements </a></li><a  class=" dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
+    <ul class="menu is-vertical is-primary">
+        <li><a href="elements#Typography" class="text-white"> Typography</a> </li>
+        <li><a href="elements#Colors" class="text-white"> Colors</a> </li>
+        <li><a href="elements#Forms" class="text-white"> Forms</a> </li>
+        <li><a href="elements#Tables" class="text-white"> Tables</a> </li>
+        <li><a href="elements#Media" class="text-white"> Media</a> </li>
+    </ul>
+</div>
+      <div class="dropdown">
+        <li class="nav-item"> <a class="text-white h5" href="items">Items </a></li><a  class="dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
+    <ul class="menu is-vertical is-primary">
+        <li><a href="#" class="text-white" > Accordions</a> </li>
+        <li><a href="#" class="text-white"> Buttons</a> </li>
+        <li><a href="#" class="text-white"> Dropdowns</a> </li>
+    </ul>
+</div>
+      <div class="dropdown">
+        <li class="nav-item"> <a class="text-white h5" href="layout">Layout </a></li><a  class="dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
+    <ul class="menu  is-vertical menu-right is-primary">
+        <li><a href="#" class="text-white"> Grid</a> </li>
+        <li><a href="#" class="text-white"> Responsive</a> </li>
+        <li><a href="#" class="text-white"> Utilities</a> </li>
+    </ul>
+</div>
+</ul>
+</div>
+</ul>
+</div>
+<section class="container-center">
+    <div id="Typography">
+          <h2 class="pt-20">Typography</h2>
+        <hr class="mtn-20" />
+ <h3>Headings:</h3>
+            <h1>h1 Heading<small> 40px</small></h1>
+            <h2>h2 Heading <small> 36px</small></h2>
+            <h3>h3 Heading <small> 28px</small></h3>
+            <h4>h4 Heading <small> 24px</small></h4>
+            <h5>h5 Heading <small> 18px</small></h5>
+            <h6>h6 Heading <small> 16px</small></h6>
+    </div>
+  <pre class="is-light pl-10">
+         <small>Html</small>
+        <code>
+            &lt;<span class="text-primary">h3</span>&gt;heading 3&lt;/<span class="text-primary">h3</span>&gt;
+            &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">h3</span>"&gt;Paragraph as h3  &lt;/<span class="text-primary">p</span>&gt;
+        </code>
+    </pre>
+    <div id="Colors">
+       <h2 class="pt-20">Colors</h2>
+        <hr class="mtn-20" />
+    <p class="text-primary">Primary text color</p>
+    <p class="text-error">Error text color</p>
+    <p class="text-success">Success text color</p>
+    <p class="text-warning">Warning text color</p>
+    <p class="text-black">Black text color</p>
+    <p class="text-white is-dark col-lg-2">White text color</p>
+    <p class="text-grey">Grey text color</p>
+    <p class="text-dark">Dark text color</p>
+    <p class="text-fancy">Fancy text color</p>
+    <mark>Marked text</mark>
+    <pre class="is-light pl-10">
+           <small>Html</small>
+        <code>
+    &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-primary</span>"&gt;Primary text color&lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-error</span>"&gt;Error text color&lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-success</span>"&gt;Success text color&lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span>  <span class="text-warning">class</span>="<span class="text-fancy">text-warning</span>"&gt;Warning text color&lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span>  <span class="text-warning">class</span>="<span class="text-fancy">text-black</span>"&gt;Black text color&lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-white</span>"&gt;White text color&lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-grey</span>"&gt;Grey text color&lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-dark</span>"&gt;Dark text color&lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-fancy</span>"&gt;Fancy text color&lt;/<span class="text-primary">p</span>&gt;
+    &lt;<span class="text-primary">mark</span>&gt;Marked text&lt;/<span class="text-primary">mark</span>&gt;
+        </code>
+    </pre>
+        <h4>Backgrounds</h4>
+        <div class="row has-gutters">
+            <div class="col">
+        <div class="is-light col-lg-8 pb-30 pt-30 mt-10 pl-10" >Light background</div>
+        <div class="is-dark col-lg-8 pb-30 pt-30 mt-10 pl-10">Dark background</div>
+        <div class="is-grey col-lg-8 pb-30 pt-30 mt-10 pl-10">Grey background</div>
+            </div>
+            <div class="col">
+        <div class="is-success col-lg-8 pb-30 pt-30 mt-10 pl-10">Success background</div>
+        <div class="is-warning col-lg-8 pb-30 pt-30 mt-10 pl-10">Warning background</div>
+        <div class="is-error col-lg-8 pb-30 pt-30 mt-10 pl-10">Error background</div>
+                </div>
+<div class="col">
+        <div class="is-primary col-lg-8 pb-30 pt-30 mt-10 pl-10">Primary background</div>
+        <div class="is-secondary col-lg-8 pb-30 pt-30 mt-10 pl-10">Secondary background</div>
+        <div class="is-fancy col-lg-8 pb-30 pt-30 mt-10 pl-10">Fancy background</div>
+    </div>
+            <div class="col">
+        <div class="is-material col-lg-8 pb-30 pt-30 mt-10 pl-10">Material background</div>
+        <div class="is-flat col-lg-8 pb-30 pt-30 mt-10 pl-10">Flat background</div>
+    </div>
+    </div>
+                   <pre class="is-light pl-10">
+           <small>Html</small>
+        <code>
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-light</span>"&gt;Light background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-dark</span>"&gt;Dark background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-grey</span>"&gt;Grey background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span>  <span class="text-warning">class</span>="<span class="text-fancy">is-success</span>"&gt;Success background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span>  <span class="text-warning">class</span>="<span class="text-fancy">is-warning</span>"&gt;Warning background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-error</span>"&gt;Error background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-primary</span>"&gt;Primary background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-secondary</span>"&gt;Secondary background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-fancy</span>"&gt;Fancy background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-material</span>"&gt;Material background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-flat</span>"&gt;Flat background&lt;/<span class="text-primary">div</span>&gt;
+
+        </code>
+    </pre>
+
+        <h4 class="mt-20">Gradient backgrounds</h4>
+        <div class="row has-gutters mt-20">
+            <div class="col">
+                <div class="is-gradient-rose text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
+                    Gradient rose
+                </div>
+
+            </div>
+             <div class="col">
+                <div class="is-gradient-purple text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
+                    Gradient purple
+                </div>
+
+            </div>
+              <div class="col">
+                <div class="is-gradient-blue text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
+                    Gradient blue
+                </div>
+
+            </div>
+               <div class="col">
+                <div class="is-gradient-candy text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
+                    Gradient candy
+                </div>
+
+            </div>
+
+        </div>
+       <pre class="is-light pl-10">
+           <small>Html</small>
+        <code>
+
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-gradient-rose</span>"&gt;Gradient rose&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-gradient-purple</span>"&gt;Gradient purple&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-gradient-blue</span>"&gt;Gradient blue&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-gradient-candy</span>"&gt;Gradient candy&lt;/<span class="text-primary">div</span>&gt;
+        </code>
+    </pre>
+        </div>
+<section id="Forms">
+    <h2 class="pt-20">Forms</h2>
+        <hr class="mtn-20" />
+    <form class="is-form">
+
+        <label for="name">Name</label>
+        <input class="col-lg-7" id="name" type="text">
+        <label for="select">Gender</label>
+          <select class="col-lg-7" id="select">
+    <option>Choose an option</option>
+    <option>Male</option>
+    <option>Female</option>
+    <option>Other</option>
+  </select>
+        <label for="surname">Email</label>
+        <input class="col-lg-7" id="surname" type="email">
+        <label for="message">Message</label>
+        <textarea class="col-lg-7" id="message"></textarea>
+        <h4>label inlined</h4>
+ <label class="label-inline" for="inlined">Inlined: </label>
+        <input class="col-lg-7" id="inlined" type="email">
+    </form>
+ <pre class="is-light pl-10">
+           <small>Html</small>
+        <code>
+            <small> just use is-form class and all inputs will be formed</small>
+            &lt;<span class="text-primary">form</span> <span class="text-warning">class</span>="<span class="text-fancy">is-form</span>"&gt;&lt;/<span class="text-primary">form</span>&gt;
+            <small>inline label</small>
+            &lt;<span class="text-primary">label</span> <span class="text-warning">class</span>="<span class="text-fancy">label-inline</span>"&gt;Inlined:&lt;/<span class="text-primary">label</span>&gt;
+
+        </code>
+    </pre>
+    <h4 class="pt-20">Form states</h4>
+    <form class="is-form">
+                <label for="Email">Success state</label>
+        <input class="col-lg-7 form-success" id="Email" type="email">
+                        <label for="error">Error state</label>
+        <input class="col-lg-7 form-error" id="error" type="email">
+                                <label for="warning">Warning state</label>
+        <input class="col-lg-7 form-warning" id="warning" type="email">
+    </form>
+<pre class="is-light pl-10">
+           <small>Html</small>
+        <code>
+            <small></small>
+            &lt;<span class="text-primary">input</span> <span class="text-warning">class</span>="<span class="text-fancy">form-success</span>"&gt;
+            &lt;<span class="text-primary">input</span> <span class="text-warning">class</span>="<span class="text-fancy">form-error</span>"&gt;
+            &lt;<span class="text-primary">input</span> <span class="text-warning">class</span>="<span class="text-fancy">form-warning</span>"&gt;
+
+        </code>
+    </pre>
+</section>
+    <section id="Tables">
+         <h2 class="pt-20">Tables</h2>
+        <hr class="mtn-20" />
+<table class="is-table is-responsive">
+          <thead>
+            <tr>
+              <th>Programming Language</th>
+              <th>Ratings</th>
+              <th>Change</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Java</td>
+              <td>14.215%</td>
+              <td>-3.06%</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>11.037%</td>
+              <td>+1.69%</td>
+            </tr>
+            <tr>
+              <td>C++</td>
+              <td>5.603%</td>
+              <td>-0.70%</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>4.678%</td>
+              <td>+1.21%</td>
+            </tr>
+          </tbody>
+        </table>
+         <pre class="is-light pl-10">
+           <small>Html</small>
+        <code>
+            <small> just use is-table class and all table elements will be formed</small>
+            &lt;<span class="text-primary">table</span> <span class="text-warning">class</span>="<span class="text-fancy">is-table</span>"&gt;&lt;/<span class="text-primary">table</span>&gt;
+            <small>Responsive table with scrollbar</small>
+            &lt;<span class="text-primary">table</span> <span class="text-warning">class</span>="<span class="text-fancy">is-responsive</span>"&gt;&lt;/<span class="text-primary">table</span>&gt;
+
+        </code>
+    </pre>
+    </section>
+ <section id="Media">
+         <h2 class="pt-20">Media</h2>
+        <hr class="mtn-20" />
+     <h4>Media: images video iframes audio and objects are responsive by default</h4>
+ </section>
+</section>
+<section class="row is-light mt-20 ">
+        <p class="text-center"><a href="#header" class="btn is-link is-large"> <i class="ion-arrow-up-c"></i> </a></p>
+        <p class="text-center text-dark ">Made with <span class="text-error">&hearts;</span> by <a href="https://github.com/kwstaskara" class="text-grey">Konstantinos Karagiorgos</a> <i class="ion-social-tux"></i> <i class="ion-social-sass text-error"></i> <i class="ion-social-css3 text-dark"></i> <i class="ion-social-html5-outline"></i></p>
+           <small> <a class="text-dark" href="https://github.com/kwstaskara/pyramid" target="_blank">Github |</a>
+            <a class="text-dark" href="#"> Documentation</a></small>
+
+          <small> / Licensed under the <a class="text-dark" href="https://github.com/kwstaskara/pyramid/blob/master/LICENSE">MIT License </a></small>
+
+    </section>
+</body>
+</html>
