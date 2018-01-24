@@ -22,18 +22,12 @@
 			padding-right: 0;
 		}
 	}
-}
-
-
-
-
-.table-responsive {
-	width: 100%;
-	overflow-y: auto;
-	_overflow: auto;
-	margin: 0 0 1em;
-
-	&::-webkit-scrollbar {
+	 &.is-responsive {
+    display: block;
+	 _overflow: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+		 	&::-webkit-scrollbar {
 		-webkit-appearance: none;
 		@include rem(width, 14px);
 		@include rem(height, 14px);
@@ -43,5 +37,5 @@
 		background-color: grey;
 	}
 
+  }
 }
-

@@ -19,7 +19,7 @@
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <a class="btn is-link text-white absol-right " href="https://github.com/kwstaskara/pyramid" target="_blank"><i class="ion-social-github"></i> Github</a>
-<div class="is-gradient-rose pb-30">
+<div id="header" class="is-gradient-rose pb-30">
    <a href="https://ui.redpyramids.com/" class="img-centered">
     <img src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width=120 height=120>
   </a>
@@ -187,8 +187,114 @@
 <section id="Forms">
     <h2 class="pt-20">Forms</h2>
         <hr class="mtn-20" />
+    <form class="is-form">
 
+        <label for="name">Name</label>
+        <input class="col-lg-7" id="name" type="text">
+        <label for="select">Gender</label>
+          <select class="col-lg-7" id="select">
+    <option>Choose an option</option>
+    <option>Male</option>
+    <option>Female</option>
+    <option>Other</option>
+  </select>
+        <label for="surname">Email</label>
+        <input class="col-lg-7" id="surname" type="email">
+        <label for="message">Message</label>
+        <textarea class="col-lg-7" id="message"></textarea>
+        <h4>label inlined</h4>
+ <label class="label-inline" for="inlined">Inlined: </label>
+        <input class="col-lg-7" id="inlined" type="email">
+    </form>
+ <pre class="is-light pl-10">
+           <small>Html</small>
+        <code>
+            <small> just use is-form class and all inputs will be formed</small>
+            &lt;<span class="text-primary">form</span> <span class="text-warning">class</span>="<span class="text-fancy">is-form</span>"&gt;&lt;/<span class="text-primary">form</span>&gt;
+            <small>inline label</small>
+            &lt;<span class="text-primary">label</span> <span class="text-warning">class</span>="<span class="text-fancy">label-inline</span>"&gt;Inlined:&lt;/<span class="text-primary">label</span>&gt;
+
+        </code>
+    </pre>
+    <h4 class="pt-20">Form states</h4>
+    <form class="is-form">
+                <label for="Email">Success state</label>
+        <input class="col-lg-7 form-success" id="Email" type="email">
+                        <label for="error">Error state</label>
+        <input class="col-lg-7 form-error" id="error" type="email">
+                                <label for="warning">Warning state</label>
+        <input class="col-lg-7 form-warning" id="warning" type="email">
+    </form>
+<pre class="is-light pl-10">
+           <small>Html</small>
+        <code>
+            <small></small>
+            &lt;<span class="text-primary">input</span> <span class="text-warning">class</span>="<span class="text-fancy">form-success</span>"&gt;
+            &lt;<span class="text-primary">input</span> <span class="text-warning">class</span>="<span class="text-fancy">form-error</span>"&gt;
+            &lt;<span class="text-primary">input</span> <span class="text-warning">class</span>="<span class="text-fancy">form-warning</span>"&gt;
+
+        </code>
+    </pre>
 </section>
+    <section id="Tables">
+         <h2 class="pt-20">Tables</h2>
+        <hr class="mtn-20" />
+<table class="is-table is-responsive">
+          <thead>
+            <tr>
+              <th>Programming Language</th>
+              <th>Ratings</th>
+              <th>Change</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Java</td>
+              <td>14.215%</td>
+              <td>-3.06%</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>11.037%</td>
+              <td>+1.69%</td>
+            </tr>
+            <tr>
+              <td>C++</td>
+              <td>5.603%</td>
+              <td>-0.70%</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>4.678%</td>
+              <td>+1.21%</td>
+            </tr>
+          </tbody>
+        </table>
+         <pre class="is-light pl-10">
+           <small>Html</small>
+        <code>
+            <small> just use is-table class and all table elements will be formed</small>
+            &lt;<span class="text-primary">table</span> <span class="text-warning">class</span>="<span class="text-fancy">is-table</span>"&gt;&lt;/<span class="text-primary">table</span>&gt;
+            <small>Responsive table with scrollbar</small>
+            &lt;<span class="text-primary">table</span> <span class="text-warning">class</span>="<span class="text-fancy">is-responsive</span>"&gt;&lt;/<span class="text-primary">table</span>&gt;
+
+        </code>
+    </pre>
+    </section>
+ <section id="Media">
+         <h2 class="pt-20">Media</h2>
+        <hr class="mtn-20" />
+     <h4>Media: images video iframes audio and objects are responsive by default</h4>
+ </section>
 </section>
+<section class="row is-light mt-20 ">
+        <p class="text-center"><a href="#header" class="btn is-link is-large"> <i class="ion-arrow-up-c"></i> </a></p>
+        <p class="text-center text-dark ">Made with <span class="text-error">&hearts;</span> by <a href="https://github.com/kwstaskara" class="text-grey">Konstantinos Karagiorgos</a> <i class="ion-social-tux"></i> <i class="ion-social-sass text-error"></i> <i class="ion-social-css3 text-dark"></i> <i class="ion-social-html5-outline"></i></p>
+           <small> <a class="text-dark" href="https://github.com/kwstaskara/pyramid" target="_blank">Github |</a>
+            <a class="text-dark" href="#"> Documentation</a></small>
+
+          <small> / Licensed under the <a class="text-dark" href="https://github.com/kwstaskara/pyramid/blob/master/LICENSE">MIT License </a></small>
+
+    </section>
 </body>
 </html>

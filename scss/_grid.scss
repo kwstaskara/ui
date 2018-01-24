@@ -10,8 +10,12 @@
     }
     }
     .col { display: table-cell;
-      word-wrap: break-word;
-      overflow-wrap: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
     }
      .flex-row { display: -webkit-box;  display: -webkit-flex;  display: -ms-flexbox;  display: flex; /*align-items: flex-start*/;}
     .flex-col { flex: auto; }

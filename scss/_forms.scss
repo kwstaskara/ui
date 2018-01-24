@@ -11,7 +11,7 @@
    & input:not([type]),
    & textarea,
     select {
-
+        display: block;
        -webkit-appearance: none;
        -moz-appearance: none;
        appearance: none;
@@ -29,7 +29,7 @@
 
         select {
             background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="%23d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
-            padding-right: 12rem;
+            @include rem(padding-right, 83px);
 
             &:focus {
             background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="%233cccccc" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
@@ -58,9 +58,13 @@
             display: inline;
         }
         .label-inline {
-            display: inline-block;
-            font-weight: normal;
-            margin-left: .5rem;
+ display:inline-block;
+    *display: inline;
+    zoom:1;
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+   // width: 140px;
         }
     }
 .is-centered{
@@ -68,14 +72,20 @@
    & label{
        margin-right:160px;
    }
-  .form-error{
-    border-color: $error-color;
+
+}
+
+input,
+textarea
+{
+    &.form-error{
+    border-color: $error-color!important;
   }
 
-  .form-success{
-    border-color: $success-color;
+  &.form-success{
+    border-color: $success-color!important;
   }
-  .form-warning {
-    border-color: $warning-color;
+  &.form-warning {
+    border-color: $warning-color!important;
   }
 }
