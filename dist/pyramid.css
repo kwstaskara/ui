@@ -1258,6 +1258,12 @@ textarea.form-warning {
   width: 100%;
   text-align: center; }
 
+.is-rounded {
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-border-radius: 0.25rem;
+          border-radius: 0.25rem; }
+
 .accordion {
   position: relative;
   margin-bottom: 1px;
@@ -1360,6 +1366,16 @@ textarea.form-warning {
 
 .is-gapless .nav-item {
   padding: 0; }
+
+.is-label {
+  display: inline-block;
+  padding: 1.7px 2.5px;
+  padding: 0.10625rem 0.15625rem;
+  line-height: 1.2;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-border-radius: 0.125rem;
+          border-radius: 0.125rem; }
 
 /* The necessities */
 .dropdown {

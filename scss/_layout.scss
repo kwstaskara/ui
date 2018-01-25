@@ -498,3 +498,7 @@
     width: 100%;
     text-align: center;
   }
+
+  .is-rounded {
+    @include rem(border-radius, 4px);
+  }

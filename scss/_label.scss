@@ -1,0 +1,6 @@
+.is-label {
+    display: inline-block;
+    @include rem(padding, 1.7px 2.5px);
+    line-height: 1.2;
+    @include rem(border-radius, 2px);
+}
