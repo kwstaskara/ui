@@ -450,6 +450,10 @@ template {
   background-color: #f7f7f7;
   color: #2e3035; }
 
+.is-deep-blue {
+  background-color: #000b66;
+  color: white; }
+
 .is-link {
   background-color: transparent;
   color: #3498DB; }
@@ -1367,7 +1371,7 @@ textarea.form-warning {
 .is-gapless .nav-item {
   padding: 0; }
 
-.is-label {
+.label {
   display: inline-block;
   padding: 1.7px 2.5px;
   padding: 0.10625rem 0.15625rem;
