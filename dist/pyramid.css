@@ -431,7 +431,7 @@ template {
   color: white; }
 
 .is-warning {
-  background-color: #ffdb4d;
+  background-color: #ffc83f;
   color: black; }
 
 .is-material {
@@ -452,6 +452,10 @@ template {
 
 .is-deep-blue {
   background-color: #000b66;
+  color: white; }
+
+.is-pink {
+  background-color: #ff708e;
   color: white; }
 
 .is-link {
@@ -489,7 +493,7 @@ template {
   color: #2e3035; }
 
 .text-warning {
-  color: #ffdb4d; }
+  color: #ffc83f; }
 
 .text-fancy {
   color: #9E58DC; }
@@ -821,7 +825,7 @@ textarea.form-success {
 
 input.form-warning,
 textarea.form-warning {
-  border-color: #ffdb4d !important; }
+  border-color: #ffc83f !important; }
 
 @media (min-width: 30em) {
   .row {
