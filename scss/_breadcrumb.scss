@@ -1,0 +1,40 @@
+.breadcrumb {
+    list-style: none;
+    @include rem(padding, 3.6px 0);
+    @include rem(padding, 3.6px 0);
+  }
+
+
+.flex-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    @include rem(padding, 0 1.6px);
+}
+
+.breadcrumb .breadcrumb-item {
+  display: inline-block;
+  @include rem(padding, 2px 1px);
+  color: $primary-color;
+}
+
+.flex-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: $muted-grey;
+  @include rem(padding-right, 8px);
+  @include rem(padding-left, 12px);
+    content: "/";
+  }
+
+  .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    color: $muted-grey;
+    @include rem(padding-right, 8px);
+    @include rem(padding-left, 1px);
+      content: "/";
+    }
+
+  .breadcrumb-item .is-active {
+    color: $grey-color;
+    pointer-events: none;
+    cursor: default;
+  }
+
