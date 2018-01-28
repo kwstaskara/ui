@@ -451,7 +451,7 @@ template {
   color: #2e3035; }
 
 .is-deep-blue {
-  background-color: #000b66;
+  background-color: #133999;
   color: white; }
 
 .is-pink {
@@ -1411,10 +1411,8 @@ a.label {
 
 .breadcrumb {
   list-style: none;
-  padding: 3.6px 0;
-  padding: 0.225rem 0;
-  padding: 3.6px 0;
-  padding: 0.225rem 0; }
+  padding: 4px 7px;
+  padding: 0.25rem 0.4375rem; }
 
 .flex-breadcrumb {
   display: -webkit-box;
@@ -1425,35 +1423,31 @@ a.label {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   list-style: none;
-  padding: 0 1.6px;
-  padding: 0 0.1rem; }
-
-.breadcrumb .breadcrumb-item {
-  display: inline-block;
-  padding: 2px 1px;
-  padding: 0.125rem 0.0625rem;
-  color: #5b9aff; }
+  padding: 4px 7px;
+  padding: 0.25rem 0.4375rem; }
 
 .flex-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
-  color: #c8cbd1;
-  padding-right: 8px;
-  padding-right: 0.5rem;
-  padding-left: 12px;
-  padding-left: 0.75rem;
-  content: "/"; }
+  padding-right: 7px;
+  padding-right: 0.4375rem;
+  padding-left: 7px;
+  padding-left: 0.4375rem; }
 
 .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
-  color: #c8cbd1;
-  padding-right: 8px;
-  padding-right: 0.5rem;
-  padding-left: 1px;
-  padding-left: 0.0625rem;
-  content: "/"; }
+  padding-right: 7px;
+  padding-right: 0.4375rem; }
 
-.breadcrumb-item .is-active {
-  color: #60646D;
-  pointer-events: none;
-  cursor: default; }
+.breadcrumb-item {
+  display: inline-block;
+  padding: 2px 1px;
+  padding: 0.125rem 0.0625rem; }
+  .breadcrumb-item + .breadcrumb-item::before {
+    color: #60646D;
+    display: inline-block;
+    content: "/"; }
+  .breadcrumb-item .is-active {
+    color: #bcbcbc;
+    pointer-events: none;
+    cursor: default; }
 
 /* The necessities */
 .dropdown {
