@@ -647,37 +647,37 @@ pre {
   white-space: pre-line;
   word-wrap: break-word; }
 
-.is-table {
+.table {
   max-width: 100%;
   width: 100%;
   margin-bottom: 1rem;
   border-spacing: 0; }
-  .is-table th {
+  .table th {
     border-bottom: 1.5px solid #DDDFD8;
     border-bottom: 0.09375rem solid #DDDFD8;
     padding: 1.2rem 1.5rem;
     text-align: left; }
-  .is-table td {
+  .table td {
     border-bottom: 1.4px solid #DDDFD8;
     border-bottom: 0.0875rem solid #DDDFD8;
     padding: 1.2rem 1.5rem;
     text-align: left; }
-    .is-table td:first-child {
+    .table td:first-child {
       padding-left: 0; }
-    .is-table td:last-child {
+    .table td:last-child {
       padding-right: 0; }
-  .is-table.is-responsive {
+  .table.is-responsive {
     display: block;
     _overflow: auto;
     overflow-x: auto;
     white-space: nowrap; }
-    .is-table.is-responsive::-webkit-scrollbar {
+    .table.is-responsive::-webkit-scrollbar {
       -webkit-appearance: none;
       width: 14px;
       width: 0.875rem;
       height: 14px;
       height: 0.875rem; }
-    .is-table.is-responsive::-webkit-scrollbar-thumb {
+    .table.is-responsive::-webkit-scrollbar-thumb {
       border: 3px solid #fff;
       border: 0.1875rem solid #fff;
       background-color: grey; }
@@ -738,16 +738,16 @@ pre {
     font-size: 20px;
     font-size: 1.25rem; }
 
-.is-form input[type='email'],
-.is-form input[type='number'],
-.is-form input[type='password'],
-.is-form input[type='search'],
-.is-form input[type='tel'],
-.is-form input[type='text'],
-.is-form input[type='url'],
-.is-form input:not([type]),
-.is-form textarea,
-.is-form select {
+.form input[type='email'],
+.form input[type='number'],
+.form input[type='password'],
+.form input[type='search'],
+.form input[type='tel'],
+.form input[type='text'],
+.form input[type='url'],
+.form input:not([type]),
+.form textarea,
+.form select {
   display: block;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -764,45 +764,45 @@ pre {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   padding: .6rem 1.0rem; }
-  .is-form input[type='email']:focus,
-  .is-form input[type='number']:focus,
-  .is-form input[type='password']:focus,
-  .is-form input[type='search']:focus,
-  .is-form input[type='tel']:focus,
-  .is-form input[type='text']:focus,
-  .is-form input[type='url']:focus,
-  .is-form input:not([type]):focus,
-  .is-form textarea:focus,
-  .is-form select:focus {
+  .form input[type='email']:focus,
+  .form input[type='number']:focus,
+  .form input[type='password']:focus,
+  .form input[type='search']:focus,
+  .form input[type='tel']:focus,
+  .form input[type='text']:focus,
+  .form input[type='url']:focus,
+  .form input:not([type]):focus,
+  .form textarea:focus,
+  .form select:focus {
     border-color: #5b9aff;
     outline: 0; }
 
-.is-form select {
+.form select {
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="%23d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
   padding-right: 83px;
   padding-right: 5.1875rem; }
-  .is-form select:focus {
+  .form select:focus {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="%233cccccc" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>'); }
 
-.is-form textarea {
+.form textarea {
   min-height: 6.5rem; }
 
-.is-form label,
-.is-form legend {
+.form label,
+.form legend {
   display: block;
   font-size: 1rem;
   margin-bottom: .5rem;
   font-weight: 700; }
 
-.is-form fieldset {
+.form fieldset {
   border-width: 0;
   padding: 0; }
 
-.is-form input[type='checkbox'],
-.is-form input[type='radio'] {
+.form input[type='checkbox'],
+.form input[type='radio'] {
   display: inline; }
 
-.is-form .label-inline {
+.form .label-inline {
   display: inline-block;
   *display: inline;
   zoom: 1;
