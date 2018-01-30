@@ -55,16 +55,15 @@
 	  cursor: pointer;
 }
 .dropdown:before {
-	padding: 5px 10px;
+	@include rem(padding, 5px 10px);
 	  cursor: pointer;
 
 }
 .menu {
-	width: 130px;
-	margin-top: 1px;
-	margin-left: 0;
-	padding: 10px;
-	padding-left: 20px;
+	width: auto;
+	@include rem(margin-top, 1px);
+	@include rem(padding-right, 3px);
+	@include rem(padding-left, 5px);
 	  cursor: pointer;
 }
 
@@ -76,6 +75,7 @@ display: list-item;
 	list-style-type: none;
 	white-space: nowrap;
 	cursor: pointer;
+	@include rem(padding, 6px);
 
 	&:hover{
 		@include Opacity(0.85);
@@ -100,4 +100,8 @@ display: list-item;
 .dropdown {
 
   text-align: left;
+}
+
+.has-lines li{
+@include rem(border-bottom, 1px solid $grey-color);
 }
