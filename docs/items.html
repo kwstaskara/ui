@@ -6,11 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-    <style>
-
-    </style>
-
 </head>
 
 
@@ -19,7 +14,7 @@
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
   <a class="btn is-link text-white absol-right " href="https://github.com/kwstaskara/pyramid" target="_blank"><i class="ion-social-github"></i> Github</a>
-<div class="is-gradient-rose pb-30">
+<div class="is-gradient-rose pb-30" id="header">
    <a href="https://ui.redpyramids.com/" class="img-centered">
     <img src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width=180 height=180>
   </a>
@@ -228,7 +223,36 @@
 </code>
 </pre>
 </section>
+<section id="Modals">
+    <h2 class="pt-20">Modal</h2>
+       <hr class="mtn-20" />
+       <pre>A modal is a dialog box/popup window
+            Pyramid allows you to customize modal whatever you want.
+            Modals can contain any element.
+       </pre>
+       <button class="btn is-secondary open-modal">Flexbox modal</button>
+<div class="flex-modal">
+                <div class="modal-overlay"></div>
+                <div class="modal-content is-dark pl-20 col-lg-4  col-md-5 col-sm-5 col-xs-11">
+                        <a class="btn is-small is-flat flex-right close-modal">X</a>
+                    <h4 class="text-white">This is a flexbox modal dialog box</h4>
+                    <p class="text-white">Lorem ipsum dolor sit amet, usu modus consul maiorum at, vis inimicus expetendis ei, id appareat appetere democritum qui. Ad ius cibo ferri, pro te vocent principes. Suas populo prompta at per, qui illum intellegam et, et aeque dicit nonumy qui. Sit partiendo maiestatis cu, ex numquam platonem honestatis cum. Te aeque possit voluptua mea, tale tollit praesent eum ei. Purto posse dolor usu ea, ne augue nusquam sea.</p>
+                    <div class="text-right"><button class="btn is-primary" style="margin-left: auto;" >Log in</button></div>
+                </div>
+            </div>
+            <div class="mt-10">
+            <button class="btn is-grey open-modal2">Modal</button></div>
+            <div class="modal">
+                <div class="modal-overlay"></div>
+                <div class="modal-content is-dark pl-20 col-lg-4  col-md-5 col-sm-5 col-xs-11">
+                        <a class="btn is-small is-flat float-right close-modal">X</a>
+                    <h4 class="text-white">This is a normal modal dialog box</h4>
+                    <p class="text-white">Lorem ipsum dolor re m. Te aeZ dolor usu ea, ne augue nusquam sea.Lorem ipsum dolor sit amet, usu modus consul maiorum at, vis inimicus expetendis ei, id appareat appetere democritum qui. Ad ius cibo ferri, pro te vocent principes. Suas populo prompta at per, qui illum intellegam et, et aeque dicit nonumy qui. Sit partiendo maiestatis cu, ex numquam platonem honestatis cum. Te aeque possit voluptua mea, tale tollit praesent eum ei. Purto posse dolor usu ea, ne augue nusquam sea.</p>
+                    <div class="text-right"><button class="btn is-primary" style="margin-left: auto;" >Log in</button></div>
+                </div>
+            </div>
 
+</section>
 </section>
 <section class="row is-light mt-20 ">
         <p class="text-center"><a href="#header" class="btn is-link is-large"> <i class="ion-arrow-up-c"></i> </a></p>
@@ -237,7 +261,28 @@
             <a class="text-dark" href="#"> Documentation</a></small>
 
           <small> / Licensed under the <a class="text-dark" href="https://github.com/kwstaskara/pyramid/blob/master/LICENSE">MIT License </a></small>
-
     </section>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script>
+$(function() {                       //run when the DOM is ready
+    $(".open-modal").click(function() {  //use a class, since your ID gets mangled
+      $(".flex-modal").addClass("is-active");      //add the class to the clicked element
+    });
+  });
+  $(function() {  
+  $(".open-modal2").click(function() {  //use a class, since your ID gets mangled
+      $(".modal").addClass("is-active");      //add the class to the clicked element
+    });
+  });
+
+  $(function() {                       //run when the DOM is ready
+    $(".close-modal").click(function() {  //use a class, since your ID gets mangled
+      $(".flex-modal").removeClass("is-active");      //add the class to the clicked element
+    });
+  });
+    </script>
 </body>
 </html>

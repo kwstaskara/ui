@@ -549,7 +549,6 @@ template {
           box-sizing: border-box; }
 
 html {
-  height: 100%;
   font-family: sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -860,12 +859,9 @@ textarea.form-warning {
   .hide-xs {
     display: none !important; }
   .container {
+    overflow: hidden;
     width: 100%;
-    padding-right: 20px;
-    padding-right: 1.25rem;
-    padding-left: 20px;
-    padding-left: 1.25rem;
-    margin: 0 auto; }
+    margin: 0px; }
   .col-xs-12 {
     width: 100%; }
   .col-xs-11 {
@@ -1296,6 +1292,14 @@ textarea.form-warning {
   -webkit-border-radius: 3.125rem !important;
           border-radius: 3.125rem !important; }
 
+.border-top {
+  border-top: 1px solid #60646D;
+  border-top: 0.0625rem solid #60646D; }
+
+.border-bottom {
+  border-bottom: 1px solid #60646D;
+  border-bottom: 0.0625rem solid #60646D; }
+
 .accordion {
   position: relative;
   margin-bottom: 1px;
@@ -1562,6 +1566,53 @@ a.label {
   border-bottom: 1px solid #60646D;
   border-bottom: 0.0625rem solid #60646D; }
 
+section {
+  position: relative; }
+
+section::before,
+section::after {
+  position: absolute;
+  content: '';
+  pointer-events: none; }
+
+.ss-style-multitriangles::before {
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) rotate(45deg);
+      transform: translateX(-50%) rotate(45deg); }
+
+.ss-style-multitriangles::before {
+  top: -25px;
+  background: inherit;
+  -webkit-box-shadow: -50px 50px 0 #005c5c, 50px -50px 0 #005c5c;
+          box-shadow: -50px 50px 0 #005c5c, 50px -50px 0 #005c5c; }
+
+.ss-style-zigzag::before,
+.ss-style-zigzag-after::after {
+  right: 0;
+  left: 0;
+  z-index: 10;
+  display: block;
+  height: 90px;
+  -webkit-background-size: 25px 100%;
+          background-size: 25px 100%; }
+
+.ss-style-zigzag::before {
+  top: -90px;
+  background-image: -webkit-linear-gradient(135deg, #007676 25%, transparent 25%), -webkit-linear-gradient(45deg, #005c5c 25%, transparent 25%);
+  background-image: -o-linear-gradient(135deg, #007676 25%, transparent 25%), -o-linear-gradient(45deg, #005c5c 25%, transparent 25%);
+  background-image: linear-gradient(315deg, #007676 25%, transparent 25%), linear-gradient(45deg, #005c5c 25%, transparent 25%);
+  background-position: 50%; }
+
+.ss-style-zigzag-after::after {
+  top: 100%;
+  background-image: -webkit-linear-gradient(315deg, #005c5c 25%, transparent 25%), -webkit-linear-gradient(225deg, #005c5c 25%, transparent 25%);
+  background-image: -o-linear-gradient(315deg, #005c5c 25%, transparent 25%), -o-linear-gradient(225deg, #005c5c 25%, transparent 25%);
+  background-image: linear-gradient(135deg, #005c5c 25%, transparent 25%), linear-gradient(225deg, #005c5c 25%, transparent 25%);
+  background-position: 50%; }
+
 .flex-modal {
   bottom: 0;
   left: 0;
@@ -1580,12 +1631,33 @@ a.label {
   z-index: 100;
   overflow: hidden; }
 
+.modal {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: none;
+  position: fixed;
+  z-index: 100;
+  overflow: hidden;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0); }
+
+.close-modal {
+  margin-bottom: -26px;
+  margin-bottom: -1.625rem; }
+
 .flex-modal:target,
 .flex-modal.is-active {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+
+.modal:target,
+.modal.is-active {
+  display: block; }
 
 .modal-overlay {
   bottom: 0;
@@ -1601,7 +1673,31 @@ a.label {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow: hidden;
-  padding: .6rem .8rem 1rem;
+  padding: 9.6px 12.8px 16px;
+  padding: 0.6rem 0.8rem 1rem;
   text-align: left; }
+
+.modal .modal-content {
+  -webkit-filter: blur(0);
+  padding: 9.6px 12.8px 16px;
+  padding: 0.6rem 0.8rem 1rem;
+  height: 40%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 40%;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%); }

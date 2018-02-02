@@ -1,3 +1,4 @@
+
 .flex-modal{
     bottom: 0;
     left: 0;
@@ -12,10 +13,32 @@
     
 }
 
+.modal{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    overflow: hidden;
+    transform: translate(0, 0);
+}
+
+.close-modal {
+    @include rem(margin-bottom, -26px);
+}
+
 
 .flex-modal:target,
 .flex-modal.is-active{
     display: flex;
+}
+
+.modal:target,
+.modal.is-active{
+    display: block;
+
 }
 
 .modal-overlay{
@@ -31,10 +54,30 @@
 & .modal-content{
     position: relative;
     display: flex;
-    display: block;
+    flex-direction: column;
     overflow: hidden;
-    padding: .6rem .8rem 1rem;
+    @include rem(padding, 9.6px 12.8px 16px);
   text-align: left;
 
 }
+}
+
+.modal{
+ & .modal-content{
+    -webkit-filter: blur(0);
+    @include rem(padding, 9.6px 12.8px 16px);
+    height: 40%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    top: 40%;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+ }   
 }
