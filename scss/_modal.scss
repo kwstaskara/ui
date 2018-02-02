@@ -1,3 +1,40 @@
 .flex-modal{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    overflow: hidden;
+    
+}
 
+
+.flex-modal:target,
+.flex-modal.is-active{
+    display: flex;
+}
+
+.modal-overlay{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(10, 10, 10, 0.70);
+}
+
+.flex-modal{
+& .modal-content{
+    position: relative;
+    display: flex;
+    display: block;
+    overflow: hidden;
+    padding: .6rem .8rem 1rem;
+  text-align: left;
+
+}
 }

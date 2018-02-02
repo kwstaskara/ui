@@ -1183,6 +1183,24 @@ textarea.form-warning {
       -ms-flex-align: end;
           align-items: flex-end; }
 
+.flex-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.flex-start {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.flex-end {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
 .fixed-left {
   position: fixed;
   left: 0; }
@@ -1543,3 +1561,47 @@ a.label {
 .has-lines li {
   border-bottom: 1px solid #60646D;
   border-bottom: 0.0625rem solid #60646D; }
+
+.flex-modal {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  z-index: 100;
+  overflow: hidden; }
+
+.flex-modal:target,
+.flex-modal.is-active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.modal-overlay {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(10, 10, 10, 0.7); }
+
+.flex-modal .modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  display: block;
+  overflow: hidden;
+  padding: .6rem .8rem 1rem;
+  text-align: left; }
