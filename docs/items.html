@@ -33,23 +33,27 @@
         <li><a href="elements#Media" class="text-white"> Media</a> </li>
     </ul>
 </div>
-      <div class="dropdown">
-        <li class="nav-item"> <a class="text-white h5" href="items">Items </a></li><a  class="dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
-    <ul class="menu is-vertical is-flat has-lines">
-        <li><a href="items#Accordions" class="text-white" > Accordions</a> </li>
-        <li><a href="items#Buttons" class="text-white"> Buttons</a> </li>
-        <li><a href="items#Labels" class="text-white"> Labels</a> </li>
-        <li><a href="items#Dropdowns" class="text-white"> Dropdowns</a> </li>
-    </ul>
+<div class="dropdown">
+    <li class="nav-item"> <a class="text-white h5" href="layout">Layout </a></li><a  class="dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
+<ul class="menu  is-vertical  is-flat has-lines">
+    <li><a href="#" class="text-white"> Grid</a> </li>
+    <li><a href="#" class="text-white"> Responsive</a> </li>
+    <li><a href="#" class="text-white"> Utilities</a> </li>
+</ul>
 </div>
-      <div class="dropdown">
-        <li class="nav-item"> <a class="text-white h5" href="layout">Layout </a></li><a  class="dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
-    <ul class="menu  is-vertical menu-right is-flat has-lines">
-        <li><a href="#" class="text-white"> Grid</a> </li>
-        <li><a href="#" class="text-white"> Responsive</a> </li>
-        <li><a href="#" class="text-white"> Utilities</a> </li>
-    </ul>
+<div class="dropdown">
+    <li class="nav-item"> <a class="text-white h5" href="items">Items </a></li><a  class="dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
+<ul class="menu is-vertical menu-right is-flat has-lines">
+    <li><a href="items#Accordions" class="text-white" > Accordions</a> </li>
+    <li><a href="items#Buttons" class="text-white"> Buttons</a> </li>
+    <li><a href="items#Breadcrumbs" class="text-white"> Breadcrumbs</a> </li>
+    <li><a href="items#Dropdowns" class="text-white"> Dropdowns</a> </li>
+    <li><a href="items#Labels" class="text-white"> Labels</a> </li>
+    <li><a href="items#Modals" class="text-white"> Modals</a> </li>
+    <li><a href="items#Navs" class="text-white"> Navs</a> </li>
+</ul>
 </div>
+
 </ul>
 </div>
 </ul>
@@ -138,7 +142,7 @@
 <section id="Breadcrumbs">
         <h2 class="pt-20">Breadcrumbs</h2>
         <hr class="mtn-20" />
-    <span class="label is-grey">Normal</span>
+    <p>Normal breadcrumb</p>
         <ul class="breadcrumb">
             <li class="breadcrumb-item"><a class="is-active" href="#">Home</a></li>
             <li class="breadcrumb-item"><a href="#">About</a></li>
@@ -160,7 +164,7 @@
                &lt;/<span class="text-primary">ul</span>&gt;
               </code>
         </pre>
-        <span class="label is-fancy">Flexbox</span>
+        <p>Flexbox breadcrumb</p>
         <ul class="flex-breadcrumb">
             <li class="breadcrumb-item"><a class="is-active" href="#">Home</a></li>
             <li class="breadcrumb-item"><a href="#">About</a></li>
@@ -228,31 +232,294 @@
        <hr class="mtn-20" />
        <pre>A modal is a dialog box/popup window
             Pyramid allows you to customize modal whatever you want.
-            Modals can contain any element.
+            Modals can contain any element.<strong>You need to implement your own js
+                to open modal by adding is-active class. </strong>
+           Modals have not default size you need to use our col system.
        </pre>
+       <p> If legacy browsers is not an issue, we recommend flexbox modal</p>
        <button class="btn is-secondary open-modal">Flexbox modal</button>
 <div class="flex-modal">
                 <div class="modal-overlay"></div>
-                <div class="modal-content is-dark pl-20 col-lg-4  col-md-5 col-sm-5 col-xs-11">
-                        <a class="btn is-small is-flat flex-right close-modal">X</a>
+                <div class="modal-content is-dark pl-20 col-lg-4  col-md-5 col-sm-8 col-xs-11">
+                        <a class="btn is-small is-flat float-right close-modal">X</a>
                     <h4 class="text-white">This is a flexbox modal dialog box</h4>
-                    <p class="text-white">Lorem ipsum dolor sit amet, usu modus consul maiorum at, vis inimicus expetendis ei, id appareat appetere democritum qui. Ad ius cibo ferri, pro te vocent principes. Suas populo prompta at per, qui illum intellegam et, et aeque dicit nonumy qui. Sit partiendo maiestatis cu, ex numquam platonem honestatis cum. Te aeque possit voluptua mea, tale tollit praesent eum ei. Purto posse dolor usu ea, ne augue nusquam sea.</p>
-                    <div class="text-right"><button class="btn is-primary" style="margin-left: auto;" >Log in</button></div>
+                    <p class="text-white">Lorem ipsum dolor sit amet, usu modus consul maiorum at, vis inimicus expetendis ei, id appareat appetLorem ipsum dolor sit amet, usu modus consul maiorum at, vis sul maiorum at, vis inimicus expetendis ei, id appareat appetLorem ipsum dolor sit amet, usu modus consul maiorum at, vis sul maiorum at, vis inimicus expetendis ei, id appareat appetLorem ipsum dolor sit amet, usu modus consul maiorum at, vis sul maiorum at, vis inimicus expetendis ei, id appareat appetLorem ipsum dolor sit amet, usu modus consul maiorum at, vis inimicus expetendis ei, id appareat appLorem ipsum dolor sit amet, usu modus consul maiorum at, vis inimicus expetendis ei, id appareat appLorem ipsum dolor sit amet, usu modus consul maiorum at, vis inimicus expetendis ei, id appareat appLorem ipsum dolor sit amet, usu modus consul maiorum at, vis inimicus expetendis ei, id appareat appere democritum qui. Ad ius cibo ferri, pro te vocent principes. Suas populo prompta at per, qui illum intellegam et, et aeque dicit nonumy qui. Sit partiendo maiestatis cu, ex numquam platonem honestatis cum. Te aeque possit voluptua mea, tale tollit praesent eum ei. Purto posse dolor usu ea, ne augue nusquam sea.</p>
+                    <div>
+                    <button class="btn is-primary float-right">Log in</button>
+                </div>
                 </div>
             </div>
-            <div class="mt-10">
-            <button class="btn is-grey open-modal2">Modal</button></div>
+            <pre class="is-light pl-10">
+                    <small>Html</small>
+                   <code>
+                       &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-modal</span>"&gt;
+                       &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">modal-overlay</span>"&gt;&lt;/<span class="text-primary">div</span>&gt;
+                       &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">modal-content is-dark col-lg-4  col-md-5 col-sm-5 col-xs-11</span>"&gt;
+                       &lt;<span class="text-primary">a</span> <span class="text-warning">class</span>="<span class="text-fancy">btn is-small is-flat float-right close-modal</span>"&gt;X&lt;/<span class="text-primary">a</span>&gt;
+                       &lt;<span class="text-primary">h4</span> <span class="text-warning">class</span>="<span class="text-fancy">text-white</span>"&gt;This is a flexbox modal dialog box&lt;/<span class="text-primary">h4</span>&gt;
+                       &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-white</span>"&gt;Lorem ipsum text&lt;/<span class="text-primary">p</span>&gt;
+                       &lt;<span class="text-primary">button</span> <span class="text-warning">class</span>="<span class="text-fancy">btn is-primary float-right</span>"&gt;Log in&lt;/<span class="text-primary">button</span>&gt;
+                       &lt;/<span class="text-primary">div</span>&gt;
+                        &lt;/<span class="text-primary">div</span>&gt;
+                                       </code>
+               </pre>
+            <div class="mt-10 border-top">
+                <p> Better for legacy browsers</p>
+            <button class="btn is-grey open-modal2">Standard Modal</button></div> 
             <div class="modal">
                 <div class="modal-overlay"></div>
                 <div class="modal-content is-dark pl-20 col-lg-4  col-md-5 col-sm-5 col-xs-11">
                         <a class="btn is-small is-flat float-right close-modal">X</a>
                     <h4 class="text-white">This is a normal modal dialog box</h4>
                     <p class="text-white">Lorem ipsum dolor re m. Te aeZ dolor usu ea, ne augue nusquam sea.Lorem ipsum dolor sit amet, usu modus consul maiorum at, vis inimicus expetendis ei, id appareat appetere democritum qui. Ad ius cibo ferri, pro te vocent principes. Suas populo prompta at per, qui illum intellegam et, et aeque dicit nonumy qui. Sit partiendo maiestatis cu, ex numquam platonem honestatis cum. Te aeque possit voluptua mea, tale tollit praesent eum ei. Purto posse dolor usu ea, ne augue nusquam sea.</p>
-                    <div class="text-right"><button class="btn is-primary" style="margin-left: auto;" >Log in</button></div>
+                    <button class="btn is-primary float-right">Log in</button>
                 </div>
             </div>
-
+            <pre class="is-light pl-10">
+                    <small>Html</small>
+                   <code>
+                       &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">modal</span>"&gt;
+                       &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">modal-overlay</span>"&gt;&lt;/<span class="text-primary">div</span>&gt;
+                       &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">modal-content is-dark col-lg-4  col-md-5 col-sm-5 col-xs-11</span>"&gt;
+                       &lt;<span class="text-primary">a</span> <span class="text-warning">class</span>="<span class="text-fancy">btn is-small is-flat float-right close-modal</span>"&gt;X&lt;/<span class="text-primary">a</span>&gt;
+                       &lt;<span class="text-primary">h4</span> <span class="text-warning">class</span>="<span class="text-fancy">text-white</span>"&gt;This is a flexbox modal dialog box&lt;/<span class="text-primary">h4</span>&gt;
+                       &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-white</span>"&gt;Lorem ipsum text&lt;/<span class="text-primary">p</span>&gt;
+                       &lt;<span class="text-primary">button</span> <span class="text-warning">class</span>="<span class="text-fancy">btn is-primary float-right</span>"&gt;Log in&lt;/<span class="text-primary">button</span>&gt;
+                       &lt;/<span class="text-primary">div</span>&gt;
+                        &lt;/<span class="text-primary">div</span>&gt;
+                                       </code>
+               </pre>
 </section>
+<section id="Navs">
+    <h2 class="pt-20">Navs</h2>
+       <hr class="mtn-20" />
+       <p>Normal, simple nav</p>
+<ul class=" nav">
+<li class=" nav-item"><a href="">Home</a></li>
+<li class=" nav-item"><a href="">About</a></li>
+<li class=" nav-item"><a href="">Contact</a></li>
+</ul>
+<pre class="is-light pl-10">
+    <small>Html</small>
+   <code>
+        &lt;<span class="text-primary">ul</span> <span class="text-warning">class</span>="<span class="text-fancy">nav</span>"&gt;
+        &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Home&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+        &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; About&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+        &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Contact&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;               
+        &lt;/<span class="text-primary">ul</span>&gt;            
+    </code>
+    </pre>
+
+    <p>Normal, simple nav vertical</p>
+    <ul class=" nav is-vertical">
+    <li class=" nav-item"><a href="">Home</a></li>
+    <li class=" nav-item"><a href="">About</a></li>
+    <li class=" nav-item"><a href="">Contact</a></li>
+    </ul>
+    <pre class="is-light pl-10">
+        <small>Html</small>
+       <code>
+            &lt;<span class="text-primary">ul</span> <span class="text-warning">class</span>="<span class="text-fancy">nav is-vertical</span>"&gt;
+            &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Home&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+            &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; About&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+            &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Contact&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;               
+            &lt;/<span class="text-primary">ul</span>&gt;            
+        </code>
+        </pre>
+
+
+        <p>Normal, simple nav vertical centered</p>
+        <ul class=" nav is-vertical is-centered">
+        <li class=" nav-item"><a href="">Home</a></li>
+        <li class=" nav-item"><a href="">About</a></li>
+        <li class=" nav-item"><a href="">Contact</a></li>
+        </ul>
+        <pre class="is-light pl-10">
+            <small>Html</small>
+           <code>
+                &lt;<span class="text-primary">ul</span> <span class="text-warning">class</span>="<span class="text-fancy">nav is-vertical is-vertical</span>"&gt;
+                &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Home&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+                &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; About&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+                &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Contact&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;               
+                &lt;/<span class="text-primary">ul</span>&gt;            
+            </code>
+            </pre>
+<p>Normal, simple nav centered</p>
+<ul class=" nav is-centered">
+    <li class=" nav-item"><a href="">Home</a></li>
+    <li class=" nav-item"><a href="">About</a></li>
+    <li class=" nav-item"><a href="">Contact</a></li>
+    </ul>
+    <pre class="is-light pl-10">
+            <small>Html</small>
+           <code>
+                &lt;<span class="text-primary">ul</span> <span class="text-warning">class</span>="<span class="text-fancy">nav is-centered</span>"&gt;
+                &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Home&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+                &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; About&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+                &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Contact&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;               
+                &lt;/<span class="text-primary">ul</span>&gt;           
+                </code>
+            </pre>
+
+            <p>Flexbox, simple nav</p>  
+            <ul class=" flex-nav">
+                    <li class=" nav-item"><a href="">Home</a></li>
+                    <li class=" nav-item"><a href="">About</a></li>
+                    <li class=" nav-item"><a href="">Contact</a></li>
+                    </ul>
+                    <pre class="is-light pl-10">
+                            <small>Html</small>
+                           <code>
+                                &lt;<span class="text-primary">ul</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-nav</span>"&gt;
+                                &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Home&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+                                &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; About&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+                                &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Contact&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;               
+                                &lt;/<span class="text-primary">ul</span>&gt;                          
+                               </code>
+                            </pre>
+                            <p>Flexbox, simple nav vertical</p>  
+                            <ul class=" flex-nav is-vertical">
+                                    <li class=" nav-item"><a href="">Home</a></li>
+                                    <li class=" nav-item"><a href="">About</a></li>
+                                    <li class=" nav-item"><a href="">Contact</a></li>
+                                    </ul>
+                                    <pre class="is-light pl-10">
+                                            <small>Html</small>
+                                           <code>
+                                                &lt;<span class="text-primary">ul</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-nav</span>"&gt;
+                                                &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Home&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+                                                &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; About&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+                                                &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Contact&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;               
+                                                &lt;/<span class="text-primary">ul</span>&gt;                          
+                                               </code>
+                                            </pre>
+                                            <p>Flexbox, simple nav vertical centered</p>  
+                                            <ul class=" flex-nav is-vertical is-centered">
+                                                    <li class=" nav-item"><a href="">Home</a></li>
+                                                    <li class=" nav-item"><a href="">About</a></li>
+                                                    <li class=" nav-item"><a href="">Contact</a></li>
+                                                    </ul>
+                                                    <pre class="is-light pl-10">
+                                                            <small>Html</small>
+                                                           <code>
+                                                                &lt;<span class="text-primary">ul</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-nav</span>"&gt;
+                                                                &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Home&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+                                                                &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; About&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+                                                                &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Contact&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;               
+                                                                &lt;/<span class="text-primary">ul</span>&gt;                          
+                                                               </code>
+                                                            </pre>
+
+                            <p>Flexbox, simple nav centered</p>  
+                            <ul class=" flex-nav flex-center">
+                                <li class=" nav-item"><a href="">Home</a></li>
+                                <li class=" nav-item"><a href="">About</a></li>
+                                <li class=" nav-item"><a href="">Contact</a></li>
+                                </ul>
+                                <pre class="is-light pl-10">
+                                    <small>Html</small>
+                                   <code>
+                                    &lt;<span class="text-primary">ul</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-nav flex-center</span>"&gt;
+                                    &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Home&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+                                    &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; About&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+                                    &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Contact&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;               
+                                    &lt;/<span class="text-primary">ul</span>&gt;                          
+                                   </code>
+                                </pre>
+
+                                <p>Flexbox, simple nav end</p>  
+                                <ul class=" flex-nav flex-end">
+                                    <li class=" nav-item"><a href="">Home</a></li>
+                                    <li class=" nav-item"><a href="">About</a></li>
+                                    <li class=" nav-item"><a href="">Contact</a></li>
+                                    </ul>
+                                    <pre class="is-light pl-10">
+                                        <small>Html</small>
+                                       <code>
+                                        &lt;<span class="text-primary">ul</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-nav flex-end</span>"&gt;
+                                        &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Home&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+                                        &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; About&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
+                                        &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Contact&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;               
+                                        &lt;/<span class="text-primary">ul</span>&gt;                          
+                                       </code>
+                                    </pre>
+
+
+                                <strong>Navs without ul</strong>
+                                <nav class="nav">
+                                    <a class="nav-item" href="#">Home</a>
+                                    <a class="nav-item " href="#">About</a>
+                                    <a class="nav-item " href="#">Contact</a>
+                                  </nav>
+                                  <pre class="is-light pl-10">
+                                    <small>Html</small>
+                                   <code>
+                                    &lt;<span class="text-primary">nav</span> <span class="text-warning">class</span>="<span class="text-fancy">nav</span>"&gt;
+                                    &lt;<span class="text-primary">a</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item href="#" </span>"&gt;  Home<span class=" text-primary"></span> &lt;/<span class="text-primary">a</span>&gt;
+                                    &lt;<span class="text-primary">a</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item href="#" </span>"&gt;  About<span class=" text-primary"></span> &lt;/<span class="text-primary">a</span>&gt;       
+                                    &lt;<span class="text-primary">a</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item href="#" </span>"&gt;  Contact<span class=" text-primary"></span> &lt;/<span class="text-primary">a</span>&gt;        
+                                    &lt;/<span class="text-primary">nav</span>&gt;                          
+                                   </code>
+                                </pre>
+
+
+                                <strong>Navs without ul vertical</strong>
+                                <nav class="nav is-vertical">
+                                    <a class="nav-item" href="#">Home</a>
+                                    <a class="nav-item " href="#">About</a>
+                                    <a class="nav-item " href="#">Contact</a>
+                                  </nav>
+                                  <pre class="is-light pl-10">
+                                    <small>Html</small>
+                                   <code>
+                                    &lt;<span class="text-primary">nav</span> <span class="text-warning">class</span>="<span class="text-fancy">nav is-vertical</span>"&gt;
+                                    &lt;<span class="text-primary">a</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item href="#" </span>"&gt;  Home<span class=" text-primary"></span> &lt;/<span class="text-primary">a</span>&gt;
+                                    &lt;<span class="text-primary">a</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item href="#" </span>"&gt;  About<span class=" text-primary"></span> &lt;/<span class="text-primary">a</span>&gt;       
+                                    &lt;<span class="text-primary">a</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item href="#" </span>"&gt;  Contact<span class=" text-primary"></span> &lt;/<span class="text-primary">a</span>&gt;        
+                                    &lt;/<span class="text-primary">nav</span>&gt;                          
+                                   </code>
+                                </pre>
+
+
+
+
+
+                                <strong> Flexbox Navs without ul</strong>
+                                <nav class="flex-nav">
+                                    <a class="nav-item" href="#">Home</a>
+                                    <a class="nav-item " href="#">About</a>
+                                    <a class="nav-item " href="#">Contact</a>
+                                  </nav>
+                                  <pre class="is-light pl-10">
+                                    <small>Html</small>
+                                   <code>
+                                    &lt;<span class="text-primary">nav</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-nav</span>"&gt;
+                                    &lt;<span class="text-primary">a</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item href="#" </span>"&gt;  Home<span class=" text-primary"></span> &lt;/<span class="text-primary">a</span>&gt;
+                                    &lt;<span class="text-primary">a</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item href="#" </span>"&gt;  About<span class=" text-primary"></span> &lt;/<span class="text-primary">a</span>&gt;       
+                                    &lt;<span class="text-primary">a</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item href="#" </span>"&gt;  Contact<span class=" text-primary"></span> &lt;/<span class="text-primary">a</span>&gt;        
+                                    &lt;/<span class="text-primary">nav</span>&gt;                          
+                                   </code>
+                                </pre>
+
+
+                                <strong>Flexbox Navs without ul vertical</strong>
+                                <nav class="flex-nav is-vertical">
+                                    <a class="nav-item" href="#">Home</a>
+                                    <a class="nav-item " href="#">About</a>
+                                    <a class="nav-item " href="#">Contact</a>
+                                  </nav>
+                                  <pre class="is-light pl-10">
+                                    <small>Html</small>
+                                   <code>
+                                    &lt;<span class="text-primary">nav</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-nav is-vertical</span>"&gt;
+                                    &lt;<span class="text-primary">a</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item href="#" </span>"&gt;  Home<span class=" text-primary"></span> &lt;/<span class="text-primary">a</span>&gt;
+                                    &lt;<span class="text-primary">a</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item href="#" </span>"&gt;  About<span class=" text-primary"></span> &lt;/<span class="text-primary">a</span>&gt;       
+                                    &lt;<span class="text-primary">a</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item href="#" </span>"&gt;  Contact<span class=" text-primary"></span> &lt;/<span class="text-primary">a</span>&gt;        
+                                    &lt;/<span class="text-primary">nav</span>&gt;                          
+                                   </code>
+                                </pre>
+                                <strong>You can align navs again as before</strong>
+ </section>
 </section>
 <section class="row is-light mt-20 ">
         <p class="text-center"><a href="#header" class="btn is-link is-large"> <i class="ion-arrow-up-c"></i> </a></p>
@@ -262,6 +529,12 @@
 
           <small> / Licensed under the <a class="text-dark" href="https://github.com/kwstaskara/pyramid/blob/master/LICENSE">MIT License </a></small>
     </section>
+
+
+
+
+
+
     <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
@@ -278,9 +551,10 @@ $(function() {                       //run when the DOM is ready
     });
   });
 
-  $(function() {                       //run when the DOM is ready
-    $(".close-modal").click(function() {  //use a class, since your ID gets mangled
-      $(".flex-modal").removeClass("is-active");      //add the class to the clicked element
+  $(function() {                      
+    $(".close-modal").click(function() { 
+      $(".flex-modal").removeClass("is-active");   
+      $(".modal").removeClass("is-active");  
     });
   });
     </script>

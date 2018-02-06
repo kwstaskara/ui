@@ -1673,31 +1673,30 @@ section::after {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: hidden;
+  display: block;
+  overflow: auto;
   padding: 9.6px 12.8px 16px;
   padding: 0.6rem 0.8rem 1rem;
-  text-align: left; }
+  text-align: left;
+  max-height: 80%; }
 
 .modal .modal-content {
   -webkit-filter: blur(0);
   padding: 9.6px 12.8px 16px;
   padding: 0.6rem 0.8rem 1rem;
-  height: 40%;
   overflow: auto;
   margin: auto;
   position: absolute;
+  height: 90%;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  top: 40%;
+  top: 50%;
   left: 50%;
   right: 50%;
+  max-height: 352px;
   -webkit-transform: translateX(-50%) translateY(-50%);
       -ms-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%); }
+          transform: translateX(-50%) translateY(-50%);
+  margin-top: 5px; }

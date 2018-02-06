@@ -10,7 +10,6 @@
     position: fixed;
     z-index: 100;
     overflow: hidden;
-    
 }
 
 .modal{
@@ -54,11 +53,11 @@
 & .modal-content{
     position: relative;
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    display: block;
+    overflow: auto;
     @include rem(padding, 9.6px 12.8px 16px);
   text-align: left;
-
+  max-height: 80%;
 }
 }
 
@@ -66,18 +65,19 @@
  & .modal-content{
     -webkit-filter: blur(0);
     @include rem(padding, 9.6px 12.8px 16px);
-    height: 40%;
     overflow: auto;
     margin: auto;
     position: absolute;
+    height: 90%;
     top: 0; 
     left: 0; 
     bottom: 0; 
     right: 0;
-    top: 40%;
+    top: 50%;
     left: 50%;
     right: 50%;
+max-height: 352px;
     transform: translateX(-50%) translateY(-50%);
-
+    margin-top:5px;
  }   
 }
