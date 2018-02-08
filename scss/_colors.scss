@@ -51,6 +51,10 @@
   background-color: $pink-color;
   color: white;
 }
+.is-brown{
+  background-color: $brown-color;
+  color: white;
+}
 
 .is-link{
 background-color: transparent;
@@ -92,6 +96,10 @@ background-color: transparent;
 }
 .text-fancy {
   color: $fancy-color;
+}
+
+.text-brown{
+  color: $brown-color;
 }
 
 //Everyone likes gradients

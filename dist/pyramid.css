@@ -458,6 +458,10 @@ template {
   background-color: #ff708e;
   color: white; }
 
+.is-brown {
+  background-color: #BF955A;
+  color: white; }
+
 .is-link {
   background-color: transparent;
   color: #3498DB; }
@@ -497,6 +501,9 @@ template {
 
 .text-fancy {
   color: #9E58DC; }
+
+.text-brown {
+  color: #BF955A; }
 
 .is-gradient-rose {
   background: #5f2c82;
@@ -840,20 +847,36 @@ textarea.form-warning {
     overflow-wrap: break-word;
     word-wrap: break-word;
     -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto; }
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto; }
   .flex-row {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
-    /*align-items: flex-start*/ }
+    display: flex; }
   .flex-col {
     -webkit-box-flex: 1;
     -webkit-flex: auto;
         -ms-flex: auto;
-            flex: auto; } }
+            flex: auto; }
+  .has-gutters .flex-col {
+    border-left: 5px solid transparent;
+    border-left: 0.3125rem solid transparent;
+    border-right: 5px solid transparent;
+    border-right: 0.3125rem solid transparent;
+    -webkit-background-clip: padding-box;
+            background-clip: padding-box; } }
+
+.row.row-reversed {
+  direction: rtl; }
+
+.flex-row.row-reversed {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
 
 @media (max-width: 767px) {
   .hide-xs {
@@ -1229,16 +1252,30 @@ textarea.form-warning {
   padding-right: 0.75rem;
   padding-left: 12px;
   padding-left: 0.75rem;
-  margin: 0 auto;
-  width: 100%; }
+  margin: 0 auto; }
 
 .container-center {
   margin: 0 auto;
-  max-width: 880px;
-  max-width: 55rem;
-  padding: 0 2.0rem;
-  position: relative;
-  width: 100%; }
+  max-width: 860px;
+  max-width: 53.75rem; }
+
+.container-1 {
+  margin: 0 auto;
+  max-width: 1170px;
+  max-width: 73.125rem;
+  padding-right: 14px;
+  padding-right: 0.875rem;
+  padding-left: 14px;
+  padding-left: 0.875rem; }
+
+.container-2 {
+  margin: 0 auto;
+  max-width: 1400px;
+  max-width: 87.5rem;
+  padding-right: 14px;
+  padding-right: 0.875rem;
+  padding-left: 14px;
+  padding-left: 0.875rem; }
 
 .text-center {
   text-align: center; }
@@ -1281,10 +1318,10 @@ textarea.form-warning {
   text-align: center; }
 
 .is-rounded {
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
-  -webkit-border-radius: 0.25rem;
-          border-radius: 0.25rem; }
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-border-radius: 0.3125rem;
+          border-radius: 0.3125rem; }
 
 .is-circled {
   -webkit-border-radius: 50px !important;

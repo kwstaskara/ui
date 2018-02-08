@@ -448,15 +448,26 @@
     @include rem(padding-right, 12px);
     @include rem(padding-left, 12px);
     margin: 0 auto;
-    width: 100%;
   }
 
     .container-center {
     margin: 0 auto;
-    @include rem(max-width, 880px);
-    padding: 0 2.0rem;
-    position: relative;
-    width: 100%;
+    @include rem(max-width, 860px);
+  }
+
+  .container-1 {
+    margin: 0 auto;
+    @include rem(max-width, 1170px);
+    @include rem(padding-right, 14px);
+    @include rem(padding-left, 14px);
+  }
+
+
+  .container-2 {
+    margin: 0 auto;
+    @include rem(max-width, 1400px);
+    @include rem(padding-right, 14px);
+    @include rem(padding-left, 14px);
   }
 
   .text-center{
@@ -510,7 +521,7 @@
   }
 
   .is-rounded {
-    @include rem(border-radius, 4px);
+    @include rem(border-radius, 5px);
   }
 
   .is-circled {
@@ -520,7 +531,6 @@
   .border-top {
     @include rem(border-top, 1px solid $grey-color);
   }
-
 
 
   .border-bottom {

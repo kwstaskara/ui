@@ -5,14 +5,23 @@
 <link rel="stylesheet" type="text/css" href="ionicons.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+<title>Pyramid Ui</title>
 </head>
 <body>
+        <div class="modal">
+                <div class="modal-overlay"></div>
+                <div class="modal-content is-light text-grey pl-20 col-lg-4  col-md-5 col-sm-5 col-xs-11">
+                        <a class="btn is-small is-primary float-right close-modal">X</a>
+                    <h4>News</h4>
+                    <small><span class="label is-primary">New</span> | February 6 2018</small>
+                    <p>First release of pyramid framework coming soon!</p>
+                    <hr />
+                </div>
+            </div>
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-    <section id="header" class="is-gradient-rose pb-30">
+    <section id="header" class="is-gradient-blue pb-30">
             <a class="btn is-link text-white absol-right " href="https://github.com/kwstaskara/pyramid" target="_blank"><i class="ion-social-github"></i> Github</a>
     <div>
 <div class="text-center">
@@ -21,15 +30,15 @@
     <img  src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width=250 height=250>
   </a>
 <h3 class="text-white text-center mtn-30">Pyramid Ui</h3>
-        <a class="btn is-secondary" href="#"><i class="ion-ios-paper"></i> News</a>
+        <button class="btn is-secondary open-modal"><i class="ion-ios-paper"></i> News</button>
     <a class="btn is-flat" href="docs"><i class="ion-ios-book"></i> Documentation</a>
     <a class="btn is-fancy " href="https://blog.redpyramids.com" target="_blank"><i class="ion-ios-glasses"></i> Blog</a>
 </div>
 </div>
 </section>
 <div >
-    <section class=""></section>
-    <div class="row pt-30 has-gutters">
+   
+    <div class="row pt-30 has-gutters container-2">
         <div class="col  col-xs-12 col-sm-5 col-md-5">
             <h4 class="text-dark text-center"><i class="ion-social-css3-outline text-primary"></i> Css only</h4>
             <h5 class="text-grey text-center pl-10 pr-10">Pyramid is an css only framework Javascript is not required, this result in fewer requests and faster page response. </h5>
@@ -48,10 +57,10 @@
         </div>
     </div>
                 </div>
-    <section class="pb-30 border-top mt-30">
-        <div class="container-sm container-lg">
-            <h3 class="text-center pt-30">Why pyramid</h3>
-            <p class="text-left text-grey h5 ml-20 mr-20 col-lg-11">Pyramid is a new responsive css framework that aims in better browser compatibility. Pyramid is based on rem unit built upon <i class="ion-social-sass text-error"></i> sass preprocessor providing fallbacks for better browser support. Yes pyramid is not based on any css feature and is not obsessed with specific color values instead it provides multiple ways of doing things depending the user preference in theming and browser support. Multiple features ready such as flexbox, tables and many more!</p>
+    <section class="pb-30 border-top mt-30 is-dark">
+        <div class="container-2">
+            <h3 class="text-center pt-30">Why pyramid <i class="ion-help"></i></h3>
+            <p class="text-left  h5 col-lg-11">Pyramid is a new responsive css framework that aims in better browser compatibility. Pyramid is based on rem unit built upon <i class="ion-social-sass text-error"></i> sass preprocessor providing fallbacks for better browser support. Yes pyramid is not based on any css feature and is not obsessed with specific color values instead it provides multiple ways of doing things depending the user preference in theming and browser support. Multiple features ready such as flexbox, tables and many more!</p>
 <h3 class="text-center">Get started <span class="text-error">&hearts;</span></h3>
             <div class="text-center">
             <a class="btn is-primary mb-20" href="https://github.com/kwstaskara/pyramid" target="_blank"><i class="ion-android-download"></i> Download pyramid css</a>
@@ -59,26 +68,12 @@
         </div>
 
     </section>
-    <section class="is-light pb-30 pt-30">
-
-        <div class="container-lg container-sm">
-            <h3 class="text-center text-fancy">Templates</h3>
-        <div class="text-center">
-            <p class="pr-10 pl-10">Here you can find templates that are built with pyramid ui but also you can download the starter template to get started easily with the framework. </p>
-             <a class="btn is-primary text-center mb-20"><i class="ion-ios-list"></i> Starter template</a>
-             <a class="btn is-fancy text-center mb-20" ><i class="ion-ios-more-outline"></i> More templates</a>
-        </div>
-
-        </div>
-
-    </section>
-
-
+  
     <section class="is-flat pb-30 pt-30">
 
-        <div class=" container-lg container-sm">
+        <div class=" container-2">
             <h3 class="text-center">Help us improve!</h3>
-            <p class="text-left h5 ml-20 mr-20">Do not hesitate to tell us your opinion about new features and improvements,also if you have found any bug or inconsistencies please consider posting them in the issues section in our github page. We like to hear people opinions to improve pyramid constantly in order to provide a better polished framework.</p>
+            <p class="text-left h5">Do not hesitate to tell us your opinion about new features and improvements,also if you have found any bug or inconsistencies please consider posting them in the issues section in our github page. We like to hear people opinions to improve pyramid constantly in order to provide a better polished framework.</p>
             <p class="text-center"> You can post your issues or improvements here:
         
         </p>
@@ -87,22 +82,29 @@
         </div>
 
         </div>
-
+      
     </section>
   
+    <section class="is-light pb-30 pt-30">
 
-    <section class="row is-grey pb-30 pt-30 mt-20">
+        <div class="container-2">
+            <h3 class="text-center text-fancy">Templates</h3>
+        <div class="text-center">
+            <p class="h5">Here you can find templates that are built with pyramid ui but also you can download the starter template to get started easily with the framework. </p>
+             <a class="btn is-deep-blue text-center mb-20"><i class="ion-ios-list"></i> Starter template</a>
+             <a class="btn is-fancy text-center mb-20" ><i class="ion-ios-more-outline"></i> More templates</a>
+        </div>
 
-            <div class="col container-lg container-sm">
-                <h3 class="text-center">Find us on social media <i class="ion-happy text-white"></i></h3>
-            <div class="text-center">
-                 <a class="btn is-primary text-center mb-20" href="https://www.facebook.com/redpyramids/" target="_blank"><i class="ion-social-facebook"></i> Facebook</a>
-                 <a class="btn is-dark text-center mb-20" href="https://github.com/kwstaskara/pyramid" target="_blank"><i class="ion-social-github"></i> Github</a>
+        </div>
+        <div class="mt-30">
+            <h3 class="text-center">Find us on social media <i class="ion-happy text-dark"></i></h3>
+                <div class="text-center">
+                     <a class="btn is-primary text-center mb-20" href="https://www.facebook.com/redpyramids/" target="_blank"><i class="ion-social-facebook"></i> Facebook</a>
+                     <a class="btn is-dark text-center mb-20" href="https://github.com/kwstaskara/pyramid" target="_blank"><i class="ion-social-github"></i> Github</a>
+                </div>
             </div>
+    </section>
     
-            </div>
-    
-        </section>
 
     <section class="row is-light mt-20 ">
         <p class="text-center"><a href="#header" class="btn is-link is-large"> <i class="ion-arrow-up-c"></i> </a></p>
@@ -114,5 +116,22 @@
 
     </section>
   
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script>
+$(function() {                       //run when the DOM is ready
+    $(".open-modal").click(function() {  //use a class, since your ID gets mangled
+      $(".modal").addClass("is-active");      //add the class to the clicked element
+    });
+  });
+
+  $(function() {                      
+    $(".close-modal").click(function() { 
+      $(".modal").removeClass("is-active");   
+    });
+  });
+    </script>
 </body>
 </html>

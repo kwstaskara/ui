@@ -1,68 +1,507 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" type="text/css" href="dist/pyramid.css">
-<link rel="stylesheet" type="text/css" href="ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/pyramid.css">
+    <link rel="stylesheet" type="text/css" href="ionicons.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-    <style>
-
-    </style>
+    <title>Pyramid Ui</title>
 
 </head>
 
 
 <body class="text-grey">
-<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-  <a class="btn is-link text-white absol-right " href="https://github.com/kwstaskara/pyramid" target="_blank"><i class="ion-social-github"></i> Github</a>
-<div class="is-gradient-rose pb-30">
-   <a href="https://ui.redpyramids.com/" class="img-centered">
-    <img src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width=180 height=180>
-  </a>
-    <ul class="nav is-centered">
-       <a class="btn is-small is-success" href="docs"><i class=" ion-home"></i></a>
-    <div class="dropdown">
-<ul class="nav is-centered">
+    <a class="btn is-link text-white absol-right " href="https://github.com/kwstaskara/pyramid" target="_blank">
+        <i class="ion-social-github"></i> Github</a>
+    <div class="is-gradient-rose pb-30">
+        <a href="https://ui.redpyramids.com/" class="img-centered">
+            <img src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width=180 height=180>
+        </a>
+        <ul class="nav is-centered">
+            <a class="btn is-small is-success" href="docs">
+                <i class=" ion-home"></i>
+            </a>
+            <div class="dropdown">
+                <ul class="nav is-centered">
 
-    <div class="dropdown">
-        <li class="nav-item"> <a class="text-white h5" href="elements">Elements </a></li><a  class=" dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
-    <ul class="menu is-vertical is-flat has-lines">
-        <li><a href="elements#Typography" class="text-white"> Typography</a> </li>
-        <li><a href="elements#Colors" class="text-white"> Colors</a> </li>
-        <li><a href="elements#Forms" class="text-white"> Forms</a> </li>
-        <li><a href="elements#Tables" class="text-white"> Tables</a> </li>
-        <li><a href="elements#Media" class="text-white"> Media</a> </li>
-    </ul>
-</div>
-<div class="dropdown">
-    <li class="nav-item"> <a class="text-white h5" href="layout">Layout </a></li><a  class="dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
-<ul class="menu  is-vertical is-flat has-lines">
-    <li><a href="#" class="text-white"> Grid</a> </li>
-    <li><a href="#" class="text-white"> Responsive</a> </li>
-    <li><a href="#" class="text-white"> Utilities</a> </li>
-</ul>
-</div>
-<div class="dropdown">
-    <li class="nav-item"> <a class="text-white h5" href="items">Items </a></li><a  class="dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
-<ul class="menu is-vertical menu-right is-flat has-lines">
-    <li><a href="items#Accordions" class="text-white" > Accordions</a> </li>
-    <li><a href="items#Buttons" class="text-white"> Buttons</a> </li>
-    <li><a href="items#Breadcrumbs" class="text-white"> Breadcrumbs</a> </li>
-    <li><a href="items#Dropdowns" class="text-white"> Dropdowns</a> </li>
-    <li><a href="items#Labels" class="text-white"> Labels</a> </li>
-    <li><a href="items#Modals" class="text-white"> Modals</a> </li>
-    <li><a href="items#Navs" class="text-white"> Navs</a> </li>
-</ul>
-</div>
+                    <div class="dropdown">
+                        <li class="nav-item">
+                            <a class="text-white h5" href="elements">Elements </a>
+                        </li>
+                        <a class=" dropdown-toggle text-white h4" tabindex="0"> &#x25BE;</a>
+                        <ul class="menu is-vertical is-flat has-lines">
+                            <li>
+                                <a href="elements#Typography" class="text-white"> Typography</a>
+                            </li>
+                            <li>
+                                <a href="elements#Colors" class="text-white"> Colors</a>
+                            </li>
+                            <li>
+                                <a href="elements#Forms" class="text-white"> Forms</a>
+                            </li>
+                            <li>
+                                <a href="elements#Tables" class="text-white"> Tables</a>
+                            </li>
+                            <li>
+                                <a href="elements#Media" class="text-white"> Media</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <li class="nav-item">
+                            <a class="text-white h5" href="layout">Layout </a>
+                        </li>
+                        <a class="dropdown-toggle text-white h4" tabindex="0"> &#x25BE;</a>
+                        <ul class="menu  is-vertical is-flat has-lines">
+                            <li>
+                                <a href="#" class="text-white"> Grid</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white"> Responsive</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white"> Utilities</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <li class="nav-item">
+                            <a class="text-white h5" href="items">Items </a>
+                        </li>
+                        <a class="dropdown-toggle text-white h4" tabindex="0"> &#x25BE;</a>
+                        <ul class="menu is-vertical menu-right is-flat has-lines">
+                            <li>
+                                <a href="items#Accordions" class="text-white"> Accordions</a>
+                            </li>
+                            <li>
+                                <a href="items#Buttons" class="text-white"> Buttons</a>
+                            </li>
+                            <li>
+                                <a href="items#Breadcrumbs" class="text-white"> Breadcrumbs</a>
+                            </li>
+                            <li>
+                                <a href="items#Dropdowns" class="text-white"> Dropdowns</a>
+                            </li>
+                            <li>
+                                <a href="items#Labels" class="text-white"> Labels</a>
+                            </li>
+                            <li>
+                                <a href="items#Modals" class="text-white"> Modals</a>
+                            </li>
+                            <li>
+                                <a href="items#Navs" class="text-white"> Navs</a>
+                            </li>
+                        </ul>
+                    </div>
 
+
+                </ul>
+            </div>
+        </ul>
+    </div>
+    <div class=" container-2">
+        <section id="Grid">
+
+            <h2 class="pt-20 text-center">Grid System</h2>
+            <hr class="mtn-20" />
+            <h4 class="text-center">Grid using tables showcase</h4>
+            <p>Grid can go up to 12 cols but not recommended</p>
+            <div class="row">
+                <div class="col is-dark pb-30 pt-30 mt-10 pl-10">1</div>
+                <div class="col is-pink pb-30 pt-30 mt-10 pl-10">2</div>
+                <div class="col is-error pb-30 pt-30 mt-10 pl-10">3</div>
+                <div class="col is-primary pb-30 pt-30 mt-10 pl-10">4</div>
+                <div class="col is-secondary pb-30 pt-30 mt-10 pl-10">5</div>
+                <div class="col is-success pb-30 pt-30 mt-10 pl-10">6</div>
+                <div class="col is-warning pb-30 pt-30 mt-10 pl-10">7</div>
+                <div class="col is-brown pb-30 pt-30 mt-10 pl-10">8</div>
+                <div class="col is-deep-blue pb-30 pt-30 mt-10 pl-10">9</div>
+                <div class="col is-grey pb-30 pt-30 mt-10 pl-10">10</div>
+                <div class="col is-fancy pb-30 pt-30 mt-10 pl-10">11</div>
+                <div class="col is-flat pb-30 pt-30 mt-10 pl-10">12</div>
+            </div>
+            <pre class="is-light pl-10">
+            <small>Html</small>
+         <code>
+                &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">row</span>"&gt;
+             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;1&lt;/<span class="text-primary">div</span>&gt;
+             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;2&lt;/<span class="text-primary">div</span>&gt;
+             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;3&lt;/<span class="text-primary">div</span>&gt;
+             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;4&lt;/<span class="text-primary">div</span>&gt;
+             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;5&lt;/<span class="text-primary">div</span>&gt;
+             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;6&lt;/<span class="text-primary">div</span>&gt;
+             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;7&lt;/<span class="text-primary">div</span>&gt;
+             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;8&lt;/<span class="text-primary">div</span>&gt;
+             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;9&lt;/<span class="text-primary">div</span>&gt;
+             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;10&lt;/<span class="text-primary">div</span>&gt;
+             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;11&lt;/<span class="text-primary">div</span>&gt;
+             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;12&lt;/<span class="text-primary">div</span>&gt;
+                     &lt;/<span class="text-primary">div</span>&gt;
+             </code>
+             </pre>
+
+
+            <h4 class="text-center">Row reversed</h4>
+            <div class="row row-reversed">
+                <div class="col is-dark pb-30 pt-30 mt-10 pl-10">1</div>
+                <div class="col is-pink pb-30 pt-30 mt-10 pl-10">2</div>
+                <div class="col is-error pb-30 pt-30 mt-10 pl-10">3</div>
+                <div class="col is-primary pb-30 pt-30 mt-10 pl-10">4</div>
+                <div class="col is-secondary pb-30 pt-30 mt-10 pl-10">5</div>
+                <div class="col is-success pb-30 pt-30 mt-10 pl-10">6</div>
+                <div class="col is-warning pb-30 pt-30 mt-10 pl-10">7</div>
+                <div class="col is-brown pb-30 pt-30 mt-10 pl-10">8</div>
+                <div class="col is-deep-blue pb-30 pt-30 mt-10 pl-10">9</div>
+                <div class="col is-grey pb-30 pt-30 mt-10 pl-10">10</div>
+                <div class="col is-fancy pb-30 pt-30 mt-10 pl-10">11</div>
+                <div class="col is-flat pb-30 pt-30 mt-10 pl-10">12</div>
+            </div>
+            <pre class="is-light pl-10">
+                        <small>Html</small>
+                     <code>
+                            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">row row-reversed</span>"&gt;
+                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;1&lt;/<span class="text-primary">div</span>&gt;
+                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;2&lt;/<span class="text-primary">div</span>&gt;
+                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;3&lt;/<span class="text-primary">div</span>&gt;
+                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;4&lt;/<span class="text-primary">div</span>&gt;
+                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;5&lt;/<span class="text-primary">div</span>&gt;
+                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;6&lt;/<span class="text-primary">div</span>&gt;
+                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;7&lt;/<span class="text-primary">div</span>&gt;
+                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;8&lt;/<span class="text-primary">div</span>&gt;
+                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;9&lt;/<span class="text-primary">div</span>&gt;
+                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;10&lt;/<span class="text-primary">div</span>&gt;
+                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;11&lt;/<span class="text-primary">div</span>&gt;
+                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;12&lt;/<span class="text-primary">div</span>&gt;
+                         &lt;/<span class="text-primary">div</span>&gt;
+                         </code>
+                         </pre>
+
+            <h4 class="text-center mt-10">Row with gutters</h4>
+            <div class="row has-gutters">
+                <div class="col is-dark pb-30 pt-30 mt-10 pl-10">1</div>
+                <div class="col is-pink pb-30 pt-30 mt-10 pl-10">2</div>
+                <div class="col is-error pb-30 pt-30 mt-10 pl-10">3</div>
+                <div class="col is-primary pb-30 pt-30 mt-10 pl-10">4</div>
+                <div class="col is-secondary pb-30 pt-30 mt-10 pl-10">5</div>
+                <div class="col is-success pb-30 pt-30 mt-10 pl-10">6</div>
+                <div class="col is-warning pb-30 pt-30 mt-10 pl-10">7</div>
+                <div class="col is-brown pb-30 pt-30 mt-10 pl-10">8</div>
+                <div class="col is-deep-blue pb-30 pt-30 mt-10 pl-10">9</div>
+                <div class="col is-grey pb-30 pt-30 mt-10 pl-10">10</div>
+                <div class="col is-fancy pb-30 pt-30 mt-10 pl-10">11</div>
+                <div class="col is-flat pb-30 pt-30 mt-10 pl-10">12</div>
+            </div>
+
+            <pre class="is-light pl-10">
+                <small>Html</small>
+             <code>
+                    &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">row has-gutters</span>"&gt;
+                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;1&lt;/<span class="text-primary">div</span>&gt;
+                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;2&lt;/<span class="text-primary">div</span>&gt;
+                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;3&lt;/<span class="text-primary">div</span>&gt;
+                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;4&lt;/<span class="text-primary">div</span>&gt;
+                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;5&lt;/<span class="text-primary">div</span>&gt;
+                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;6&lt;/<span class="text-primary">div</span>&gt;
+                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;7&lt;/<span class="text-primary">div</span>&gt;
+                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;8&lt;/<span class="text-primary">div</span>&gt;
+                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;9&lt;/<span class="text-primary">div</span>&gt;
+                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;10&lt;/<span class="text-primary">div</span>&gt;
+                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;11&lt;/<span class="text-primary">div</span>&gt;
+                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col</span>"&gt;12&lt;/<span class="text-primary">div</span>&gt;
+                 &lt;/<span class="text-primary">div</span>&gt;
+                 </code>
+                 </pre>
+
+            <h4 class="text-center">Nesting</h4>
+            <div class="row">
+                <div class="col is-dark pb-30 pt-30 mt-10">
+
+                    <div class="row">
+                        <div class="col is-fancy pb-30 pt-30 mt-10 pl-10"></div>
+                        <div class="col is-flat pb-30 pt-30 mt-10 pl-10"></div>
+                    </div>
+                </div>
+                <div class="col is-grey pb-30 pt-30 mt-10 pl-10"></div>
+            </div>
+
+            <pre class="is-light pl-10">
+                            <small>Html</small>
+                         <code>
+                                &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">row</span>"&gt;
+                                &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col is-dark</span>"&gt;
+                                &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">row</span>"&gt;
+                                &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col is-fancy</span>"&gt;&lt;/<span class="text-primary">div</span>&gt;
+                                &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col is-flat</span>"&gt;&lt;/<span class="text-primary">div</span>&gt;
+                                &lt;/<span class="text-primary">div</span>&gt;
+                                &lt;/<span class="text-primary">div</span>&gt;
+                                &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col is-grey</span>"&gt;&lt;/<span class="text-primary">div</span>&gt;
+                                &lt;/<span class="text-primary">div</span>&gt;
+                            </code>
+                            </pre>
+
+
+            <h4 class="text-center">Grid using flexbox showcase</h4>
+
+            <div class="flex-row">
+                <div class="flex-col is-dark pb-30 pt-30 mt-10 pl-10">1</div>
+                <div class="flex-col is-pink pb-30 pt-30 mt-10 pl-10">2</div>
+                <div class="flex-col is-error pb-30 pt-30 mt-10 pl-10">3</div>
+                <div class="flex-col is-primary pb-30 pt-30 mt-10 pl-10">4</div>
+                <div class="flex-col is-secondary pb-30 pt-30 mt-10 pl-10">5</div>
+                <div class="flex-col is-success pb-30 pt-30 mt-10 pl-10">6</div>
+                <div class="flex-col is-warning pb-30 pt-30 mt-10 pl-10">7</div>
+                <div class="flex-col is-brown pb-30 pt-30 mt-10 pl-10">8</div>
+                <div class="flex-col is-deep-blue pb-30 pt-30 mt-10 pl-10">9</div>
+                <div class="flex-col is-grey pb-30 pt-30 mt-10 pl-10">10</div>
+                <div class="flex-col is-fancy pb-30 pt-30 mt-10 pl-10">11</div>
+                <div class="flex-col is-flat pb-30 pt-30 mt-10 pl-10">12</div>
+            </div>
+
+            <pre class="is-light pl-10">
+                            <small>Html</small>
+                         <code>
+                                &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-row</span>"&gt;
+                             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;1&lt;/<span class="text-primary">div</span>&gt;
+                             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;2&lt;/<span class="text-primary">div</span>&gt;
+                             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;3&lt;/<span class="text-primary">div</span>&gt;
+                             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;4&lt;/<span class="text-primary">div</span>&gt;
+                             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;5&lt;/<span class="text-primary">div</span>&gt;
+                             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;6&lt;/<span class="text-primary">div</span>&gt;
+                             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;7&lt;/<span class="text-primary">div</span>&gt;
+                             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;8&lt;/<span class="text-primary">div</span>&gt;
+                             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;9&lt;/<span class="text-primary">div</span>&gt;
+                             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;10&lt;/<span class="text-primary">div</span>&gt;
+                             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;11&lt;/<span class="text-primary">div</span>&gt;
+                             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;12&lt;/<span class="text-primary">div</span>&gt;
+                             &lt;/<span class="text-primary">div</span>&gt;
+                             </code>
+                             </pre>
+
+            <h4 class="text-center">Flexbox row reverse</h4>
+
+            <div class="flex-row row-reversed">
+                <div class="flex-col is-dark pb-30 pt-30 mt-10 pl-10">1</div>
+                <div class="flex-col is-pink pb-30 pt-30 mt-10 pl-10">2</div>
+                <div class="flex-col is-error pb-30 pt-30 mt-10 pl-10">3</div>
+                <div class="flex-col is-primary pb-30 pt-30 mt-10 pl-10">4</div>
+                <div class="flex-col is-secondary pb-30 pt-30 mt-10 pl-10">5</div>
+                <div class="flex-col is-success pb-30 pt-30 mt-10 pl-10">6</div>
+                <div class="flex-col is-warning pb-30 pt-30 mt-10 pl-10">7</div>
+                <div class="flex-col is-brown pb-30 pt-30 mt-10 pl-10">8</div>
+                <div class="flex-col is-deep-blue pb-30 pt-30 mt-10 pl-10">9</div>
+                <div class="flex-col is-grey pb-30 pt-30 mt-10 pl-10">10</div>
+                <div class="flex-col is-fancy pb-30 pt-30 mt-10 pl-10">11</div>
+                <div class="flex-col is-flat pb-30 pt-30 mt-10 pl-10">12</div>
+            </div>
+
+            <pre class="is-light pl-10">
+                                        <small>Html</small>
+                                     <code>
+                                            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-row row-reversed</span>"&gt;
+                                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;1&lt;/<span class="text-primary">div</span>&gt;
+                                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;2&lt;/<span class="text-primary">div</span>&gt;
+                                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;3&lt;/<span class="text-primary">div</span>&gt;
+                                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;4&lt;/<span class="text-primary">div</span>&gt;
+                                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;5&lt;/<span class="text-primary">div</span>&gt;
+                                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;6&lt;/<span class="text-primary">div</span>&gt;
+                                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;7&lt;/<span class="text-primary">div</span>&gt;
+                                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;8&lt;/<span class="text-primary">div</span>&gt;
+                                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;9&lt;/<span class="text-primary">div</span>&gt;
+                                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;10&lt;/<span class="text-primary">div</span>&gt;
+                                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;11&lt;/<span class="text-primary">div</span>&gt;
+                                         &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;12&lt;/<span class="text-primary">div</span>&gt;
+                                         &lt;/<span class="text-primary">div</span>&gt;
+                                         </code>
+                                         </pre>
+
+
+
+
+            <h4 class="text-center">Flex nesting</h4>
+            <div class="flex-row">
+                <div class="flex-col is-dark pb-30 pt-30 mt-10">
+
+                    <div class="flex-row">
+                        <div class="flex-col is-fancy pb-30 pt-30 mt-10 pl-10"></div>
+                        <div class="flex-col is-flat pb-30 pt-30 mt-10 pl-10"></div>
+                    </div>
+                </div>
+                <div class="flex-col is-grey pb-30 pt-30 mt-10 pl-10"></div>
+            </div>
+
+            <pre class="is-light pl-10">
+                            <small>Html</small>
+                         <code>
+                                &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-row</span>"&gt;
+                                &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col is-dark</span>"&gt;
+                                &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-row</span>"&gt;
+                                &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col is-fancy</span>"&gt;&lt;/<span class="text-primary">div</span>&gt;
+                                &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col is-flat</span>"&gt;&lt;/<span class="text-primary">div</span>&gt;
+                                &lt;/<span class="text-primary">div</span>&gt;
+                                &lt;/<span class="text-primary">div</span>&gt;
+                                &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col is-grey</span>"&gt;&lt;/<span class="text-primary">div</span>&gt;
+                                &lt;/<span class="text-primary">div</span>&gt;
+                            </code>
+                            </pre>
+
+
+            <h4 class="text-center mt-10">Flex-row with gutters</h4>
+            <div class="flex-row has-gutters">
+                <div class="flex-col is-dark pb-30 pt-30 mt-10 pl-10">1</div>
+                <div class="flex-col is-pink pb-30 pt-30 mt-10 pl-10">2</div>
+                <div class="flex-col is-error pb-30 pt-30 mt-10 pl-10">3</div>
+                <div class="flex-col is-primary pb-30 pt-30 mt-10 pl-10">4</div>
+                <div class="flex-col is-secondary pb-30 pt-30 mt-10 pl-10">5</div>
+                <div class="flex-col is-success pb-30 pt-30 mt-10 pl-10">6</div>
+                <div class="flex-col is-warning pb-30 pt-30 mt-10 pl-10">7</div>
+                <div class="flex-col is-brown pb-30 pt-30 mt-10 pl-10">8</div>
+                <div class="flex-col is-deep-blue pb-30 pt-30 mt-10 pl-10">9</div>
+                <div class="flex-col is-grey pb-30 pt-30 mt-10 pl-10">10</div>
+                <div class="flex-col is-fancy pb-30 pt-30 mt-10 pl-10">11</div>
+                <div class="flex-col is-flat pb-30 pt-30 mt-10 pl-10">12</div>
+            </div>
+
+            <pre class="is-light pl-10">
+                                <small>Html</small>
+                             <code>
+                                    &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-row has-gutters</span>"&gt;
+                                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;1&lt;/<span class="text-primary">div</span>&gt;
+                                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;2&lt;/<span class="text-primary">div</span>&gt;
+                                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;3&lt;/<span class="text-primary">div</span>&gt;
+                                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;4&lt;/<span class="text-primary">div</span>&gt;
+                                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;5&lt;/<span class="text-primary">div</span>&gt;
+                                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;6&lt;/<span class="text-primary">div</span>&gt;
+                                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;7&lt;/<span class="text-primary">div</span>&gt;
+                                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;8&lt;/<span class="text-primary">div</span>&gt;
+                                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;9&lt;/<span class="text-primary">div</span>&gt;
+                                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;10&lt;/<span class="text-primary">div</span>&gt;
+                                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;11&lt;/<span class="text-primary">div</span>&gt;
+                                 &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-col</span>"&gt;12&lt;/<span class="text-primary">div</span>&gt;
+                                 &lt;/<span class="text-primary">div</span>&gt;
+                                 </code>
+                                 </pre>
+        </section>
+        <section id="Responsive">
+            <h2 class="pt-20 text-center">Responsive System</h2>
+            <hr class="mtn-20" />
+            <p class="text-center">With responsive system you can control html structure in differrent screen sizes</p>
+            <pre class="text-center">
+    Classes:
+    col-xs for Mobile Devices
+    col-sm for Tablet Devices
+    col-md for Desktops
+    col-lg for Widescreen Desktops
+    col system starts from 1 down to 12.
+    Example:
+    col-xs-1 col-md-5 col-sm-12 col-lg-7
+</pre>
+            <div class="text-center">
+                <div class=" is-primary col-xs-1 col-sm-1 col-md-1 col-lg-1">Col</div>
+                <div class=" is-primary col-xs-2  col-sm-2  col-md-2 col-lg-2">Col</div>
+                <div class=" is-primary col-xs-3  col-sm-3  col-md-3 col-lg-3">Col</div>
+                <div class=" is-primary col-xs-4  col-sm-4  col-md-4 col-lg-4">Col</div>
+                <div class=" is-primary col-xs-5  col-sm-5  col-md-5 col-lg-5">Col</div>
+                <div class=" is-primary col-xs-6  col-sm-6  col-md-6 col-lg-6">Col</div>
+                <div class=" is-primary col-xs-7  col-sm-7  col-md-7 col-lg-7">Col</div>
+                <div class=" is-primary col-xs-8  col-sm-8  col-md-8 col-lg-8">Col</div>
+                <div class=" is-primary col-xs-9  col-sm-9  col-md-9 col-lg-9">Col</div>
+                <div class=" is-primary col-xs-10  col-sm-10  col-md-10 col-lg-10">Col</div>
+                <div class=" is-primary col-xs-11  col-sm-11  col-md-11 col-lg-11">Col</div>
+                <div class=" is-primary col-xs-12  col-sm-12  col-md-12 col-lg-12">Col</div>
+            </div>
+            <pre class="is-light pl-10">
+    <small>Html</small>
+ <code>
+     &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col-xs-1 col-sm-1 col-md-1 col-lg-1</span>"&gt;col&lt;/<span class="text-primary">div</span>&gt;
+     &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col-xs-2  col-sm-2  col-md-2 col-lg-2</span>"&gt;col&lt;/<span class="text-primary">div</span>&gt;
+     &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col-xs-3  col-sm-3  col-md-3 col-lg-3</span>"&gt;col&lt;/<span class="text-primary">div</span>&gt;
+     &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col-xs-4  col-sm-4  col-md-4 col-lg-4</span>"&gt;col&lt;/<span class="text-primary">div</span>&gt;
+     &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col-xs-5  col-sm-5  col-md-5 col-lg-5</span>"&gt;col&lt;/<span class="text-primary">div</span>&gt;
+     &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col-xs-6  col-sm-6  col-md-6 col-lg-6</span>"&gt;col&lt;/<span class="text-primary">div</span>&gt;
+     &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col-xs-7  col-sm-7  col-md-7 col-lg-7</span>"&gt;col&lt;/<span class="text-primary">div</span>&gt;
+     &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col-xs-8  col-sm-8  col-md-8 col-lg-8</span>"&gt;col&lt;/<span class="text-primary">div</span>&gt;
+     &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col-xs-9  col-sm-9  col-md-9 col-lg-9</span>"&gt;col&lt;/<span class="text-primary">div</span>&gt;
+     &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col-xs-10  col-sm-10  col-md-10 col-lg-10</span>"&gt;col&lt;/<span class="text-primary">div</span>&gt;
+     &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col-xs-11  col-sm-11  col-md-11 col-lg-11</span>"&gt;col&lt;/<span class="text-primary">div</span>&gt;
+     &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">col-xs-12  col-sm-12  col-md-12 col-lg-12</span>"&gt;col&lt;/<span class="text-primary">div</span>&gt;
+     </code>
+     </pre>
+            <h4 class="text-center">Hide elements across different devices</h4>
+            <pre class="text-center">
+    Classes:
+    hide-xs for Mobile Devices
+    hide-sm for Tablet Devices
+    hide-md for Desktops
+    hide-lg for Widescreen Desktops
+  For example  an element with hide-xs class will be hidden in Mobile devices
+</pre>
+
+            <h4 class="text-center mt-30 pt-30 border-top">Layouts</h4>
+            <p class="text-center">Pyramid Ui provides layout helpers</p>
+            <p class="text-center">So if you want boxed layout you can add a class to body boxed-layout</p>
+            <p>Content Example</p>
+            <div class="text-center">
+                <button class=" btn is-deep-blue toggle-box-layout is-rounded mt-10">Toggle boxed layout on</button>
+                <button class=" btn is-error toggle-box-layout-off is-rounded mt-10">Toggle boxed layout off</button>
+                <div>
+                    <small class="text-error">Boxed layout wont work under 768 px devices such as mobiles</small>
+                </div>
+            </div>
+            <pre class="is-light pl-10">
+    <small>Html</small>
+ <code>
+     &lt;<span class="text-primary">body</span> <span class="text-warning">class</span>="<span class="text-fancy">boxed-layout</span>"&gt;&lt;/<span class="text-primary">body</span>&gt;
     
-</ul>
-</div>
-</ul>
-</div>
+     </code>
+     </pre>
+        </section>
+        <section id="Utilities">
+            <h2 class="pt-20 text-center">Utilities and helpers</h2>
+            <hr class="mtn-20" />
+        </section>
+    </div>
+    <section class="row is-light mt-20 ">
+        <p class="text-center">
+            <a href="#header" class="btn is-link is-large">
+                <i class="ion-arrow-up-c"></i>
+            </a>
+        </p>
+        <p class="text-center text-dark ">Made with
+            <span class="text-error">&hearts;</span> by
+            <a href="https://github.com/kwstaskara" class="text-grey">Konstantinos Karagiorgos</a>
+            <i class="ion-social-tux"></i>
+            <i class="ion-social-sass text-error"></i>
+            <i class="ion-social-css3 text-dark"></i>
+            <i class="ion-social-html5-outline"></i>
+        </p>
+        <small>
+            <a class="text-dark" href="https://github.com/kwstaskara/pyramid" target="_blank">Github |</a>
+            <a class="text-dark" href="#"> Documentation</a>
+        </small>
+
+        <small> / Licensed under the
+            <a class="text-dark" href="https://github.com/kwstaskara/pyramid/blob/master/LICENSE">MIT License </a>
+        </small>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () { //run when the DOM is ready
+            $(".toggle-box-layout").click(function () { //use a class, since your ID gets mangled
+                $("body").addClass("boxed-layout"); //add the class to the clicked element
+            });
+        });
+        $(function () { //run when the DOM is ready
+            $(".toggle-box-layout-off").click(function () { //use a class, since your ID gets mangled
+                $("body").removeClass("boxed-layout"); //add the class to the clicked element
+            });
+        });
+    </script>
+
 </body>
+
 </html>
