@@ -13,6 +13,7 @@
   @include rem(border, 1px solid transparent);
   -webkit-backface-visibility: hidden;
   outline: none;
+  @include rem(border-radius, 3px);
   &:focus,
   &:hover {
     text-decoration: none;

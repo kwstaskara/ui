@@ -56,6 +56,12 @@
   color: white;
 }
 
+.is-ios{
+  background-color: $ios-color;
+  color: $dark-color;
+}
+
+
 .is-link{
 background-color: transparent;
   color: $secondary-color;

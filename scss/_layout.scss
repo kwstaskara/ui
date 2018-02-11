@@ -391,7 +391,17 @@
 
 .flex-center{
   justify-content: center;
+  align-items: center;
+}
 
+@include breakpoint(xs){
+  .flex-center{
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-start {
+    align-items: flex-start;
+  }
 }
 
 .is-vertical {
@@ -407,9 +417,7 @@
   }
 }
 
-.flex-center {
-  align-items: center;
-}
+
 
 .flex-start {
   align-items: flex-start;
@@ -453,6 +461,8 @@
     .container-center {
     margin: 0 auto;
     @include rem(max-width, 860px);
+    @include rem(padding-right, 12px);
+    @include rem(padding-left, 12px);
   }
 
   .container-1 {
@@ -535,4 +545,8 @@
 
   .border-bottom {
     @include rem(border-bottom, 1px solid $grey-color);
+  }
+
+  .space-around{
+    justify-content: space-around;
   }
