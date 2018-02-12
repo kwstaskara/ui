@@ -2,30 +2,35 @@ var gulp = require('gulp');
 
 var sass = require('gulp-sass');
 
+var cssnano = require('gulp-cssnano');
+
+var rename = require('gulp-rename');
+
 var autoprefixer = require('gulp-autoprefixer');
 
 
 var input = 'scss/pyramid.scss';
 
+var input2 = 'dist/pyramid.css';
+
 var output = 'dist';
+
+gulp.task('cssnano', function() {
+    return gulp.src(input2)
+    .pipe(cssnano())
+    .pipe(rename("pyramid.min.css"))
+    .pipe(gulp.dest(output));
+    
+});
+
 gulp.task('sass', function () {
-
-gulp //add gulp without return to keep session going
-
-// Find all .scss files from the sass/ folder
-
+gulp 
 .src(input)
-
-// Run Sass on those files || pipe adds everything together
-
 .pipe(sass().on('error', sass.logError)) //error log to keep session going when scss contains error
-
 .pipe( autoprefixer( 'last 20 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4' ) )
 
-// Write the resulting CSS in the output folder
-
 .pipe(gulp.dest(output));
-
+gulp.start('cssnano');
 });
 gulp.task("default", ['sass'], function() {
 

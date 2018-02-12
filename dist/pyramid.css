@@ -1420,6 +1420,22 @@ textarea.form-warning {
     -webkit-transform: rotateX(160deg);
             transform: rotateX(160deg); }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fadeIn {
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s; }
+
 .nav {
   list-style: none;
   padding-left: 0;
@@ -1582,7 +1598,16 @@ textarea.form-warning {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; } }
+            flex-direction: column;
+    display: none; } }
+
+.toggle-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s; }
 
 .label {
   display: inline-block;

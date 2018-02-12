@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="dist/pyramid.css">
+    <link rel="stylesheet" type="text/css" href="dist/pyramid.min.css">
     <link rel="stylesheet" type="text/css" href="ionicons.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -351,7 +351,7 @@
             </div>
             <div class="modal">
                 <div class="modal-overlay"></div>
-                <div class="modal-content is-ios is-rounded pl-20 col-lg-4  col-md-5 col-sm-5 col-xs-11">
+                <div class="modal-content is-dark is-rounded pl-20 col-lg-4  col-md-5 col-sm-5 col-xs-11">
                     <a class="btn is-small is-flat float-right close-modal">X</a>
                     <h4>This is a normal modal dialog box</h4>
                     <p>Lorem ipsum dolor re m. Te aeZ dolor usu ea, ne augue nusquam sea.Lorem ipsum dolor sit amet, usu modus
@@ -531,7 +531,7 @@
             <pre class="is-light pl-10">
                                                             <small>Html</small>
                                                            <code>
-                                                                &lt;<span class="text-primary">ul</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-nav</span>"&gt;
+                                                                &lt;<span class="text-primary">ul</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-nav is-vertical is-centered</span>"&gt;
                                                                 &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Home&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
                                                                 &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; About&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;
                                                                 &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">nav-item</span>"&gt; &lt;<span class="text-primary">a href=" "</span> &gt; Contact&lt;/<span class=" text-primary">a&gt;</span> &lt;/<span class="text-primary">li</span>&gt;               
@@ -586,7 +586,7 @@
                                     </pre>
 
 
-            <strong>Navs without ul</strong>
+            <strong>Navs without list</strong>
             <nav class="nav">
                 <a class="nav-item" href="#">Home</a>
                 <a class="nav-item " href="#">About</a>
@@ -604,7 +604,7 @@
                                 </pre>
 
 
-            <strong>Navs without ul vertical</strong>
+            <strong>Navs without list vertical</strong>
             <nav class="nav is-vertical">
                 <a class="nav-item" href="#">Home</a>
                 <a class="nav-item " href="#">About</a>
@@ -625,7 +625,7 @@
 
 
 
-            <strong> Flexbox Navs without ul</strong>
+            <strong> Flexbox Navs without list</strong>
             <nav class="flex-nav">
                 <a class="nav-item" href="#">Home</a>
                 <a class="nav-item " href="#">About</a>
@@ -643,7 +643,7 @@
                                 </pre>
 
 
-            <strong>Flexbox Navs without ul vertical</strong>
+            <strong>Flexbox Navs without list vertical</strong>
             <nav class="flex-nav is-vertical">
                 <a class="nav-item" href="#">Home</a>
                 <a class="nav-item " href="#">About</a>
@@ -680,7 +680,7 @@
 
 </div>
 <div class="section3">
-        <a href="" class="nav-item text-white">Menu</a> 
+        <button  class="btn is-link nav-item text-white nav-opener">Menu</button> 
         <a href="" class="nav-item text-white">Logout</a> 
 </div>
 </nav>
@@ -727,6 +727,11 @@
         $(function () { //run when the DOM is ready
             $(".open-modal").click(function () { //use a class, since your ID gets mangled
                 $(".flex-modal").addClass("is-active"); //add the class to the clicked element
+            });
+        });
+        $(function () { //run when the DOM is ready
+            $(".nav-opener").click(function () { //use a class, since your ID gets mangled
+                $(".flex-navbar").toggleClass("toggle-nav"); //add the class to the clicked element
             });
         });
         $(function () {

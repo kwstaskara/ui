@@ -67,8 +67,14 @@
     }
     .flex-navbar{
         flex-direction: column;
-        
+        display: none;
 
     }
 
+}
+
+.toggle-nav{
+    display: flex;
+    animation: fadeIn 1s;
+    
 }
