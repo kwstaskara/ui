@@ -8,7 +8,6 @@
   @include rem(padding, 5px 10px);
   @include no-select();
   font-size: $core-font-size;
-  @include rem(border-radius,1.5px);
   line-height: 1.5;
   @include rem(border, 1px solid transparent);
   -webkit-backface-visibility: hidden;

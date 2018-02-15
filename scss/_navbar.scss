@@ -1,55 +1,43 @@
-.flex-navbar{
-    display: flex;
-    height: auto;
-    @include rem(font-size, 15.5px);
-    & a,
-    :hover{
-        text-decoration: none;
-    }
-     @include rem(padding,9px);
-}
-
-.nav-item{
-    text-decoration: none;
-    @include rem(padding, 8px 12px);
-    &:hover,
-    &:focus{
-      @include Opacity(0.90);
-      text-decoration: none;
-    }
-}
-
-.flex-mobile-navbar{
+.flex-navbar-mobile{
     display: none;
 }
 
 @include breakpoint(xs){
-
-    .flex-mobile-navbar{
+    .flex-nav{
+    &.is-vertical{
+        ul{
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+    .flex-navbar-mobile{
         display: flex;
         align-items: center;
         height: auto;
         @include rem(font-size, 15.5px);
-        @include rem(padding-right,3px);
+        @include rem(padding-right,15px);
+        
         & a,
         :hover{
             text-decoration: none;
         }
-        .section1 {
-            flex: 1;          /* shorthand for: flex-grow: 1, flex-shrink: 1, flex-basis: 0 */
+        .section-1 {
+            flex: 1 2 auto;          
             display: flex;
             justify-content: flex-start;
             align-items: center;
           }
-          .section2 {
-            flex: 1;
+          .section-2 {
+            flex: 1 2 auto;  
             display: flex;
             justify-content: center;
             align-items: center;
+            @include rem(padding-left, 70px);
     
           }
-          .section3 {
-            flex: 1;
+          .section-3 {
+            flex: 1 2 auto;  
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -58,19 +46,25 @@
     }
     .nav-item{
         text-decoration: none;
-        @include rem(padding, 8px 12px);
+        @include rem(padding, 0px 8px);
         &:hover,
         &:focus{
           @include Opacity(0.90);
           text-decoration: none;
         }
     }
-    .flex-navbar{
-        flex-direction: column;
-        display: none;
 
-    }
+     
 
+
+
+
+
+
+}
+
+.navbar-logo{
+    @include rem(margin-left, 6px);
 }
 
 .toggle-nav{

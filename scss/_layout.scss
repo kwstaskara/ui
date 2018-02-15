@@ -363,22 +363,60 @@
 
 
 
-.absol-right{
-  position: absolute;
-  right: 0;
+
+//containers
+.container {
+  @include rem(padding-right, 12px);
+  @include rem(padding-left, 12px);
+  margin: 0 auto;
 }
 
-.absol-left{
-  position: absolute;
-  left: 0;
+  .container-center {
+  margin: 0 auto;
+  @include rem(max-width, 860px);
+  @include rem(padding-right, 12px);
+  @include rem(padding-left, 12px);
 }
 
-.absol-center{
-  position: absolute;
-  top:50%;
-  left:50%;
-
+.container-1 {
+  margin: 0 auto;
+  @include rem(max-width, 1170px);
+  @include rem(padding-right, 14px);
+  @include rem(padding-left, 14px);
 }
+
+
+.container-2 {
+  margin: 0 auto;
+  @include rem(max-width, 1400px);
+  @include rem(padding-right, 14px);
+  @include rem(padding-left, 14px);
+}
+// eof containers
+
+
+
+//flexbox things
+.space-between{
+  justify-content: space-between;
+}
+
+
+.space-around{
+  justify-content: space-around;
+}
+
+
+.flex-start {
+  align-items: flex-start!important;
+}
+.flex-end {
+  align-items: flex-end!important;
+}
+
+
+
+
 
 .flex-start{
   justify-content: flex-start;
@@ -396,35 +434,31 @@
 
 @include breakpoint(xs){
   .flex-center{
-    justify-content: center;
-    align-items: center;
+    justify-content: center!important;
+    align-items: center!important;
   }
   .flex-start {
-    align-items: flex-start;
+    align-items: flex-start!important;
   }
 }
 
 .is-vertical {
   &.flex-center {
-    align-items: center;
+    align-items: center!important;
   }
 
   &.flex-start {
-    align-items: flex-start;
+    align-items: flex-start!important;
   }
   &.flex-end {
-    align-items: flex-end;
+    align-items: flex-end!important;
   }
 }
 
 
 
-.flex-start {
-  align-items: flex-start;
-}
-.flex-end {
-  align-items: flex-end;
-}
+// eof flexbox things
+//normal alignment
 
   .fixed-left{
     position: fixed;
@@ -448,38 +482,31 @@
     position: fixed;
   }
 
+  .absol-right{
+    position: absolute;
+    right: 0;
+  }
+  
+  .absol-left{
+    position: absolute;
+    left: 0;
+  }
+  
+  .absol-center{
+    position: absolute;
+    top:50%;
+    left:50%;
+  
+  }
+// eof
+
+
+
   .no-dragging{
     @include no-select();
   }
 
-  .container {
-    @include rem(padding-right, 12px);
-    @include rem(padding-left, 12px);
-    margin: 0 auto;
-  }
-
-    .container-center {
-    margin: 0 auto;
-    @include rem(max-width, 860px);
-    @include rem(padding-right, 12px);
-    @include rem(padding-left, 12px);
-  }
-
-  .container-1 {
-    margin: 0 auto;
-    @include rem(max-width, 1170px);
-    @include rem(padding-right, 14px);
-    @include rem(padding-left, 14px);
-  }
-
-
-  .container-2 {
-    margin: 0 auto;
-    @include rem(max-width, 1400px);
-    @include rem(padding-right, 14px);
-    @include rem(padding-left, 14px);
-  }
-
+ 
   .text-center{
     text-align: center;
   }
@@ -545,8 +572,4 @@
 
   .border-bottom {
     @include rem(border-bottom, 1px solid $grey-color);
-  }
-
-  .space-around{
-    justify-content: space-around;
   }

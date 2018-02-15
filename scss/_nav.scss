@@ -2,8 +2,6 @@
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
-
-
 }
 
 .nav li {
@@ -17,7 +15,7 @@
 
 .nav-item{
     text-decoration: none;
-    @include rem(padding, 8px 12px);
+    @include rem(padding, 0px 12px);
     &:hover,
     &:focus{
       @include Opacity(0.90);
@@ -37,17 +35,43 @@
 
 
 .flex-nav{
+   list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+   display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; 
+  margin-top:0; 
+  align-items: center;
+  min-height: 68px;
+  ul{
   list-style: none;
     padding-left: 0;
     margin-bottom: 0;
    display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; 
+  margin-top:0; 
+  align-items: center;
+  min-height: 68px;
+}
+  li{
+    flex: 0 0 auto;
+    @include rem(padding-top,5px);
+    @include rem(padding-bottom,5px);
+    @include rem(padding-left, 16px);
+    -webkit-backface-visibility: hidden;
+  }
 }
 
-.flex-nav.is-vertical{
+/*.flex-nav.is-vertical{
     flex-direction: column;
 }
-
+*/
 .is-gapless .nav-item{
 	padding: 0;
 }
