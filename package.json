@@ -1,18 +1,21 @@
 {
-  "name": "pyramid",
-  "version": "0.0.1",
-  "description": "css framework",
+  "name": "pyramidui",
+  "version": "0.0.2",
+  "description": "css front-end framework",
   "main": "",
   "dependencies": {
-    "critical": "^1.1.0",
-    "cssnano": "^3.10.0",
     "gulp-rename": "^1.2.2"
   },
   "devDependencies": {
+    "autoprefixer": "^8.0.0",
+    "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-sass": "^3.1.0"
+    "gulp-csso": "^3.0.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-wait2": "0.0.5",
+    "run-sequence": "^2.2.1"
   },
   "scripts": {
     "test": "none"
