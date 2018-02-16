@@ -4,7 +4,8 @@
   "description": "css front-end framework",
   "main": "",
   "dependencies": {
-    "gulp-rename": "^1.2.2"
+    "gulp-rename": "^1.2.2",
+    "umd": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^8.0.0",
