@@ -1,11 +1,10 @@
 {
-  "name": "pyramidui",
-  "version": "0.0.2",
+  "name": "pyramid.ui",
+  "version": "0.0.1",
   "description": "css front-end framework",
   "main": "",
   "dependencies": {
-    "gulp-rename": "^1.2.2",
-    "umd": "^3.0.1"
+    "gulp-rename": "^1.2.2"
   },
   "devDependencies": {
     "autoprefixer": "^8.0.0",
@@ -21,12 +20,21 @@
   "scripts": {
     "test": "none"
   },
+  "files": [
+    "dist/",
+    "scss/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kwstaskara/pyramid.git"
   },
   "keywords": [
-    "pyramidcss"
+    "css",
+    "sass",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
   ],
   "author": "kwstaskara",
   "license": "MIT",

@@ -558,7 +558,7 @@
   }
 
   .is-rounded {
-    @include rem(border-radius, 5px);
+    @include rem(border-radius, 3.5px);
   }
 
   .is-circled {

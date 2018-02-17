@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="dist/pyramid.min.css">
+        <link rel="stylesheet" type="text/css" href="dist/pyramid.min.css">
 <link rel="stylesheet" type="text/css" href="ionicons.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Pyramid Ui</title>
-
+<!-- Google Analytics -->
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', 'UA-XXXX-Y', 'auto');  // Replace with your property ID.
+        ga('send', 'pageview');
+        
+        </script>
+        <!-- End Google Analytics -->
 </head>
 
 
@@ -27,7 +38,7 @@
 
     <div class="dropdown">
         <li class="nav-item"> <a class="text-white h5" href="elements">Elements </a></li><a  class=" dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
-    <ul class="menu is-vertical is-flat has-lines">
+    <ul class="menu is-vertical is-rounded is-flat has-lines">
         <li><a href="elements#Typography" class="text-white"> Typography</a> </li>
         <li><a href="elements#Colors" class="text-white"> Colors</a> </li>
         <li><a href="elements#Forms" class="text-white"> Forms</a> </li>
@@ -37,15 +48,21 @@
 </div>
 <div class="dropdown">
     <li class="nav-item"> <a class="text-white h5" href="layout">Layout </a></li><a  class="dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
-<ul class="menu  is-vertical  is-flat has-lines">
-    <li><a href="#" class="text-white"> Grid</a> </li>
-    <li><a href="#" class="text-white"> Responsive</a> </li>
-    <li><a href="#" class="text-white"> Utilities</a> </li>
+<ul class="menu  is-vertical is-rounded  is-flat has-lines">
+        <li>
+                <a href="layout#Grid" class="text-white"> Grid</a>
+            </li>
+            <li>
+                <a href="layout#Responsive" class="text-white"> Responsive</a>
+            </li>
+            <li>
+                <a href="layout#Utilities" class="text-white"> Utilities</a>
+            </li>
 </ul>
 </div>
 <div class="dropdown">
     <li class="nav-item"> <a class="text-white h5" href="items">Items </a></li><a  class="dropdown-toggle text-white h4" tabindex="0" > &#x25BE;</a>
-<ul class="menu is-vertical menu-right is-flat has-lines">
+<ul class="menu is-vertical menu-right is-rounded is-flat has-lines">
     <li><a href="items#Accordions" class="text-white" > Accordions</a> </li>
     <li><a href="items#Buttons" class="text-white"> Buttons</a> </li>
     <li><a href="items#Breadcrumbs" class="text-white"> Breadcrumbs</a> </li>
@@ -108,6 +125,7 @@
             &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-grey</span>"&gt;Grey text color&lt;/<span class="text-primary">p</span>&gt;
             &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-dark</span>"&gt;Dark text color&lt;/<span class="text-primary">p</span>&gt;
             &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-fancy</span>"&gt;Fancy text color&lt;/<span class="text-primary">p</span>&gt;
+            &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-brown</span>"&gt;Brown text color&lt;/<span class="text-primary">p</span>&gt;
     &lt;<span class="text-primary">mark</span>&gt;Marked text&lt;/<span class="text-primary">mark</span>&gt;
         </code>
     </pre>
@@ -129,6 +147,7 @@
         <div class="is-primary col-lg-8 pb-30 pt-30 mt-10 pl-10">Primary background</div>
         <div class="is-secondary col-lg-8 pb-30 pt-30 mt-10 pl-10">Secondary background</div>
         <div class="is-fancy col-lg-8 pb-30 pt-30 mt-10 pl-10">Fancy background</div>
+        <div class="is-ios col-lg-8 pb-30 pt-30 mt-10 pl-10">ios background</div>
     </div>
             <div class="col">
         <div class="is-material col-lg-8 pb-30 pt-30 mt-10 pl-10">Material background</div>
@@ -155,6 +174,7 @@
             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-deep-blue</span>"&gt;Deep blue background&lt;/<span class="text-primary">div</span>&gt;
             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-pink</span>"&gt;Pink background&lt;/<span class="text-primary">div</span>&gt;
             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-brown</span>"&gt;Brown background&lt;/<span class="text-primary">div</span>&gt;
+            &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-ios</span>"&gt;Ios background&lt;/<span class="text-primary">div</span>&gt;
         </code>
     </pre>
 

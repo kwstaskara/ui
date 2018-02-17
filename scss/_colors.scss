@@ -53,12 +53,21 @@
 }
 .is-brown{
   background-color: $brown-color;
-  color: white;
+  color:white;
 }
 
 .is-ios{
   background-color: $ios-color;
   color: $dark-color;
+}
+
+.is-white{
+  background-color: white;
+}
+
+.is-black{
+  background-color: black;
+  color:white;
 }
 
 

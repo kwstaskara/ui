@@ -1,9 +1,12 @@
-.flex-navbar-mobile{
+.flex-navbar-mobile,
+.navbar-mobile
+{
     display: none;
 }
 
 @include breakpoint(xs){
     .flex-nav{
+        display: none;
     &.is-vertical{
         ul{
           flex-direction: column;
@@ -54,7 +57,15 @@
         }
     }
 
-     
+     .navbar-mobile{
+         display: block;
+        min-height: 50px;
+        width: 100%;
+        @include rem(font-size, 15.5px);
+        li{
+            padding-top:13px;
+        }
+     }
 
 
 
@@ -67,7 +78,7 @@
     @include rem(margin-left, 6px);
 }
 
-.toggle-nav{
+.toggle-flex-nav{
     display: flex;
     animation: fadeIn 1s;
     

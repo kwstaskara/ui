@@ -2,10 +2,13 @@
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
+    
 }
 
 .nav li {
-  display:inline;
+  display:inline-block;
+  *display:inline; /*IE7*/
+  *zoom:1; /*IE7*/
 }
 
 .nav.is-vertical .nav-item{
