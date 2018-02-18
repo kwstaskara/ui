@@ -1,108 +1,26 @@
-/* The necessities */
-.dropdown {
-	position: relative;
-	display: inline-block;
-  cursor: pointer;
-}
 
-.dropdown-toggle:focus {
-	pointer-events: none;
-	  cursor: pointer;
-}
-
-.dropdown-toggle:focus + .menu {
-	opacity: 1;
-	visibility: visible;
-	  cursor: pointer;
-}
-
-.menu {
-	pointer-events: auto;
-	position: absolute;
-	z-index: 1;
-    cursor: pointer;
-	opacity: 0;
-	visibility: hidden;
-	transition: visibility 0.5s;
-	border: 1px solid rgba(0,0,0,.15);
-}
-
-.menu.menu-right{
-		right:0;
-		cursor: pointer;
-}
-
-.dropdown.no-pointer-events {
-	pointer-events: auto !important;
-}
-
-.dropdown.no-visibility .menu {
-	visibility: visible !important;
-	display: none;
-}
-
-.dropdown.no-visibility:focus .menu {
-	display: block;
-}
-
-.dropdown.no-opacity .menu {
-	opacity: 1 !important;
-}
-
-.dropdown {
-	padding: 0;
-	margin: 0 0 1em 0;
-	outline: 0;
-	  cursor: pointer;
-}
-.dropdown:before {
-	@include rem(padding, 5px 10px);
-	  cursor: pointer;
-
-}
-.menu {
-	width: auto;
-	@include rem(margin-top, 1px);
-	@include rem(padding-right, 3px);
-	@include rem(padding-left, 5px);
-	  cursor: pointer;
-}
-
-.menu.is-vertical li{
-display: list-item;
-}
-
-.menu li {
-	list-style-type: none;
-	white-space: nowrap;
-	cursor: pointer;
-	@include rem(padding, 6px);
-
-	&:hover{
-		@include Opacity(0.85);
-			cursor: pointer;
-
-	}
+.has-dropdown:hover > ul{
+display: block;
 }
 
 
-.menu a {
-	cursor: inherit;
-	cursor: pointer;
-	display: block;
-}
-.menu a:hover {
-	text-decoration: none;
-		cursor: pointer;
-}
-
-
-
-.dropdown {
-
-  text-align: left;
+.dropdown ul{
+    display: none;
+    position:absolute;
+    padding:6px;
+    z-index: 100;
+    text-align: left;
+    li{
+        padding: 5px;
+    }
 }
 
-.has-lines li{
-@include rem(border-bottom, 1px solid $grey-color);
-}
+.dropdown-left{
+    @include rem(margin-left, -80px);
+  
+  }
+
+  .dropdown-right{
+    @include rem(margin-right, -80px);
+  
+  }

@@ -378,7 +378,14 @@
   @include rem(padding-left, 12px);
 }
 
-.container-1 {
+.container-1{
+  margin: 0 auto;
+  @include rem(max-width, 950px);
+  @include rem(padding-right, 14px);
+  @include rem(padding-left, 14px);
+}
+
+.container-2 {
   margin: 0 auto;
   @include rem(max-width, 1170px);
   @include rem(padding-right, 14px);
@@ -386,7 +393,7 @@
 }
 
 
-.container-2 {
+.container-3 {
   margin: 0 auto;
   @include rem(max-width, 1400px);
   @include rem(padding-right, 14px);

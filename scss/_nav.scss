@@ -1,17 +1,39 @@
 .nav {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
-    
+      list-style: none;
+      margin: 0;
+      min-height: 60px;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
+      overflow-x: auto;
+      ul{
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-top:0; 
+          min-height: 60px;
+          -ms-overflow-style: -ms-autohiding-scrollbar;
+          -webkit-overflow-scrolling: touch;
+          white-space: nowrap;
+          overflow-x: auto;
+      }
+      .form {
+        display: inline-block;
+      }
+      .navbar-logo{
+        padding-top: 5px;
+      }
 }
 
 .nav li {
   display:inline-block;
   *display:inline; /*IE7*/
   *zoom:1; /*IE7*/
+  padding-top: 17px;
+ 
 }
 
-.nav.is-vertical .nav-item{
+.nav.is-vertical li{
   display: block;
 
 }

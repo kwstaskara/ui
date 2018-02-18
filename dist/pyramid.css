@@ -1198,6 +1198,15 @@ textarea.form-warning {
 
 .container-1 {
   margin: 0 auto;
+  max-width: 950px;
+  max-width: 59.375rem;
+  padding-right: 14px;
+  padding-right: 0.875rem;
+  padding-left: 14px;
+  padding-left: 0.875rem; }
+
+.container-2 {
+  margin: 0 auto;
   max-width: 1170px;
   max-width: 73.125rem;
   padding-right: 14px;
@@ -1205,7 +1214,7 @@ textarea.form-warning {
   padding-left: 14px;
   padding-left: 0.875rem; }
 
-.container-2 {
+.container-3 {
   margin: 0 auto;
   max-width: 1400px;
   max-width: 87.5rem;
@@ -1487,17 +1496,36 @@ textarea.form-warning {
 
 .nav {
   list-style: none;
-  padding-left: 0;
-  margin-bottom: 0; }
+  margin: 0;
+  min-height: 60px;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  overflow-x: auto; }
+  .nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    min-height: 60px;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    overflow-x: auto; }
+  .nav .form {
+    display: inline-block; }
+  .nav .navbar-logo {
+    padding-top: 5px; }
 
 .nav li {
   display: inline-block;
   *display: inline;
   /*IE7*/
   *zoom: 1;
-  /*IE7*/ }
+  /*IE7*/
+  padding-top: 17px; }
 
-.nav.is-vertical .nav-item {
+.nav.is-vertical li {
   display: block; }
 
 .nav-item {
@@ -1698,12 +1726,28 @@ textarea.form-warning {
       text-decoration: none; }
   .navbar-mobile {
     display: block;
-    min-height: 50px;
+    min-height: 60px;
     width: 100%;
     font-size: 15.5px;
     font-size: 0.96875rem; }
+    .navbar-mobile ul {
+      overflow-x: auto;
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      margin-top: 0;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap; }
     .navbar-mobile li {
-      padding-top: 13px; } }
+      display: inline-block;
+      *display: inline;
+      /*IE7*/
+      *zoom: 1;
+      /*IE7*/
+      padding-top: 17px; }
+    .navbar-mobile .navbar-logo {
+      padding-top: 7px; } }
 
 .navbar-logo {
   margin-left: 6px;
@@ -1715,6 +1759,12 @@ textarea.form-warning {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: fadeIn 1s;
+     -moz-animation: fadeIn 1s;
+          animation: fadeIn 1s; }
+
+.toggle-nav {
+  display: block;
   -webkit-animation: fadeIn 1s;
      -moz-animation: fadeIn 1s;
           animation: fadeIn 1s; }
@@ -1788,102 +1838,25 @@ a.label {
     pointer-events: none;
     cursor: default; }
 
-/* The necessities */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  cursor: pointer; }
+.has-dropdown:hover > ul {
+  display: block; }
 
-.dropdown-toggle:focus {
-  pointer-events: none;
-  cursor: pointer; }
-
-.dropdown-toggle:focus + .menu {
-  opacity: 1;
-  visibility: visible;
-  cursor: pointer; }
-
-.menu {
-  pointer-events: auto;
+.dropdown ul {
+  display: none;
   position: absolute;
-  z-index: 1;
-  cursor: pointer;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: visibility 0.5s;
-  -o-transition: visibility 0.5s;
-  -moz-transition: visibility 0.5s;
-  transition: visibility 0.5s;
-  border: 1px solid rgba(0, 0, 0, 0.15); }
-
-.menu.menu-right {
-  right: 0;
-  cursor: pointer; }
-
-.dropdown.no-pointer-events {
-  pointer-events: auto !important; }
-
-.dropdown.no-visibility .menu {
-  visibility: visible !important;
-  display: none; }
-
-.dropdown.no-visibility:focus .menu {
-  display: block; }
-
-.dropdown.no-opacity .menu {
-  opacity: 1 !important; }
-
-.dropdown {
-  padding: 0;
-  margin: 0 0 1em 0;
-  outline: 0;
-  cursor: pointer; }
-
-.dropdown:before {
-  padding: 5px 10px;
-  padding: 0.3125rem 0.625rem;
-  cursor: pointer; }
-
-.menu {
-  width: auto;
-  margin-top: 1px;
-  margin-top: 0.0625rem;
-  padding-right: 3px;
-  padding-right: 0.1875rem;
-  padding-left: 5px;
-  padding-left: 0.3125rem;
-  cursor: pointer; }
-
-.menu.is-vertical li {
-  display: list-item; }
-
-.menu li {
-  list-style-type: none;
-  white-space: nowrap;
-  cursor: pointer;
   padding: 6px;
-  padding: 0.375rem; }
-  .menu li:hover {
-    opacity: 0.85;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
-    filter: alpha(opacity=85);
-    cursor: pointer; }
-
-.menu a {
-  cursor: inherit;
-  cursor: pointer;
-  display: block; }
-
-.menu a:hover {
-  text-decoration: none;
-  cursor: pointer; }
-
-.dropdown {
+  z-index: 100;
   text-align: left; }
+  .dropdown ul li {
+    padding: 5px; }
 
-.has-lines li {
-  border-bottom: 1px solid #60646D;
-  border-bottom: 0.0625rem solid #60646D; }
+.dropdown-left {
+  margin-left: -80px;
+  margin-left: -5rem; }
+
+.dropdown-right {
+  margin-right: -80px;
+  margin-right: -5rem; }
 
 section {
   position: relative; }

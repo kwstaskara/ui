@@ -59,12 +59,29 @@
 
      .navbar-mobile{
          display: block;
-        min-height: 50px;
+        min-height: 60px;
         width: 100%;
         @include rem(font-size, 15.5px);
+        ul{
+            overflow-x: auto;
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            margin-top:0; 
+              -ms-overflow-style: -ms-autohiding-scrollbar;
+              -webkit-overflow-scrolling: touch;
+              white-space: nowrap;
+          }
         li{
-            padding-top:13px;
+            display:inline-block;
+            *display:inline; /*IE7*/
+            *zoom:1; /*IE7*/
+             padding-top: 17px;
         }
+        .navbar-logo{
+            padding-top: 7px;
+        }
+
      }
 
 
@@ -82,4 +99,9 @@
     display: flex;
     animation: fadeIn 1s;
     
+}
+
+.toggle-nav{
+    display: block;
+    animation: fadeIn 1s;
 }
