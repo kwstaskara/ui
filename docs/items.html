@@ -7,34 +7,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pyramid Ui</title>
-    <!-- Google Analytics -->
+<!-- Google Analytics -->
 <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        
-        ga('create', 'UA-XXXX-Y', 'auto');  // Replace with your property ID.
-        ga('send', 'pageview');
-        
-        </script>
-        <!-- End Google Analytics -->
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+    ga('create', 'UA-114329903-1', 'auto');  // Replace with your property ID.
+    ga('send', 'pageview');
+    
+    </script>
+    <!-- End Google Analytics -->
 </head>
 
 
 <body class="text-grey">
-        <nav class="nav is-gradient-rose">
-           
+        <nav class="nav is-gradient-rose is-fixed">
                 <div class="container-1">
-               <a href="https://ui.redpyramids.com"><img class="navbar-logo float-left" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50"></a> 
-                <ul class="nav text-right dropdown">
+                       
+                        <ul class="text-right navbar-mobile">
+                                <img class="navbar-logo float-left" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
+                                <li><a class="nav-item text-white nav-open3"> Menu</a></li>
+                            <li><a href="https://github.com/kwstaskara/pyramid" class="nav-item text-white "><i class="ion-social-github"></i> Github</a></li>
+                            
+                            </ul>
+                <img class="navbar-logo float-left hide-xs" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
+                <ul class="text-right text-left-xs navbar-desktop is-vertical  pyramid-nav">
+                        <li><a href="https://ui.redpyramids.com/" class="nav-item text-white">Home</a></li>
                     <li><a href="docs" class="nav-item text-white ">Install</a>
                     </li>
-                    <li class="has-dropdown"><a href="#" class="nav-item text-white">Elements</a>
-                        <ul class="nav is-vertical is-flat has-lines">
-                                <li class=" border-bottom">
-                                        <a href="elements" class="text-white h5"> Elements</a>
-                                    </li>
+                    <li class="has-dropdown"><a href="elements" class="nav-item text-white ">Elements</a>
+                        <ul class="nav is-vertical is-flat is-rounded dropdown ">
                             <li>
                                 <a href="elements#Typography" class="text-white"> Typography</a>
                             </li>
@@ -52,11 +56,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="has-dropdown"><a href="#" class="nav-item text-white">Layout</a>
-                        <ul class="nav is-vertical is-flat has-lines">
-                                <li class=" border-bottom">
-                                        <a href="layout" class="text-white h5"> Layout</a>
-                                    </li>
+
+                    <li class="has-dropdown"><a href="layout" class="nav-item text-white">Layout</a>
+                        
+                        <ul class="nav is-vertical is-flat has-lines is-rounded dropdown">
                                 <li>
                                         <a href="layout#Grid" class="text-white"> Grid</a>
                                     </li>
@@ -64,16 +67,21 @@
                                         <a href="layout#Responsive" class="text-white"> Responsive</a>
                                     </li>
                                     <li>
+                                            <a href="layout#Containers" class="text-white"> Containers</a>
+                                        </li>
+                                    <li>
                                         <a href="layout#Utilities" class="text-white"> Utilities</a>
+                                    </li>
+                                    <li>
+                                        <a href="layout#Controllers" class="text-white"> Controllers</a>
                                     </li>
                             </ul>
                     </li>
                     <li class="has-dropdown">
-                        <a href="#" class="nav-item text-white">Items</a>
-                        <ul class="nav is-vertical dropdown-right  is-flat has-lines">
-                                <li class=" border-bottom">
-                                        <a href="items" class="text-white h5"> Items</a>
-                                    </li>
+                        <a href="items" class="nav-item text-white">Items</a>
+                        
+                        <ul class="nav dropdown dropdown-right is-vertical is-rounded  is-flat">
+                               
                                 <li>
                                         <a href="items#Accordions" class="text-white"> Accordions</a>
                                     </li>
@@ -98,12 +106,12 @@
                             
                             </ul>
                         </li>
-                        <li><a href="" class="nav-item text-white "><i class="ion-social-github"></i> Github</a>
-                        </li>
+                        <li><a href="https://github.com/kwstaskara/pyramid" class="nav-item text-white "><i class="ion-social-github"></i> Github</a></li>
                     </ul>
-                  
                 </div>
+                  
             </nav>
+    
 
            
     <!--[if lt IE 9]>
@@ -111,8 +119,8 @@
 <![endif]-->
     
     
-    <section class="container-center">
-        <h2 class="pt-20">Accordions</h2>
+    <section class="container-center pt-30">
+        <h2 class="pt-30">Accordions</h2>
         <hr class="mtn-20" />
         <section id="Accordions">
             <div class="accordion is-success col-lg-5 mt-30">
@@ -154,6 +162,7 @@
             <button class="btn is-light mt-10">Button</button>
             <button class="btn is-black mt-10">Button</button>
             <button class="btn is-link mt-10">Button</button>
+            <p>Buttons can be rounded with is-rounded class</p>
             <pre class="is-light pl-10">
          <small>Html</small>
         <code>
@@ -393,111 +402,37 @@
             <hr class="mtn-20" />
             <h3 class="pt-20">Flexbox</h3>
             <p>Navbars are made to be modular so mobile navbars are seperated from desktop navbars.Resize window to see mobile-nav</p>
-            <p>Mobile navbars are sepereted in 3 sections to be easier to customize and they are visible only in small screens</p>
-            <p>By deafult expanded mobile navbar is horizontal</p>
-            <nav class="flex-navbar-mobile is-gradient-rose">
-                <div class="section-1">
-                    <img class="navbar-logo" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
-                </div>
-                <div class="section-2">
-                        <p class="text-white">Text</p>
-                </div>
-                <div class="section-3">
-                    <button class="nav-item btn is-link text-white nav-opener">Menu</button>
-                    <a href="" class="nav-item text-white">Logout</a>
-                </div>
-            </nav>
-<nav class="flex-nav is-dark navbar-1"> 
-        <img class="navbar-logo hide-xs" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
-      <ul>
-            <li><a href="" class="nav-item text-error">Pyramid</a></li>
-          <li><a href="" class="nav-item text-error">Home</a></li>
-          <li><a href="" class="nav-item text-error">About</a></li>
-          <li><a href="" class="nav-item text-error">Github</a></li>
-          <li><a href="" class="nav-item text-error">Games</a></li>
-          <li><a href="" class="nav-item text-error">Shop</a></li>
-          <li><a href="" class="nav-item text-error">Testimonials</a></li>
-      </ul>
-      
-    </nav>
-
-            <pre class="is-light pl-10">
-    <small>Html</small>
-   <code>
-    &lt;<span class="text-primary">nav</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-mobile-navbar is-gradient-rose</span>" &gt;
-  
- &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">section-1</span>" &gt;
-         &lt;<span class="text-primary">img</span> <span class="text-warning">class</span>="<span class="text-fancy">navbar-logo</span>" <span class="text-primary">src</span>="<span class="text-primary">https://ui.redpyramids.com/media/pyramidlogo.svg</span>"<span class="text-primary"> alt="" width="50" height="50"</span> &gt;
- &lt;/<span class="text-primary">div</span> &gt;
- &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">section-2</span>" &gt;
-&lt;<span class="text-primary">p</span>&gt;Pyramid&lt;/<span class="text-primary">p</span>&gt;
- &lt;/<span class="text-primary">div</span> &gt;
- &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">section-3</span>" &gt;
-         &lt;<span class="text-primary">button</span>  <span class="text-warning">class</span>="<span class="text-fancy">btn is-link nav-item text-white</span>" &gt;Menu &lt;/<span class="text-primary">button</span> &gt; 
-         &lt;<span class="text-primary">a</span> <span class="text-fancy">href</span>="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Logout &lt;/<span class="text-primary">a</span> &gt; 
- &lt;/<span class="text-primary">div</span> &gt;
- &lt;/<span class="text-primary">nav</span> &gt;
- &lt;<span class="text-primary">nav</span><span class="text-warning">class</span>="<span class="text-fancy">flex-navbar is-dark</span>" &gt;
-    &lt;<span class="text-primary">img</span> <span class="text-warning">class</span>="<span class="text-fancy">navbar-logo hide-xs</span>" <span class="text-primary">src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50" </span>&gt; 
-    &lt;<span class="text-primary">ul</span>&gt;
-    &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-error</span>" &gt;Pyramid &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
-    &lt;<span class="text-primary">li</span>&gt;   &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-error</span>" &gt;Home &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
-    &lt;<span class="text-primary">li</span>&gt;   &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-error</span>" &gt;About &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
-    &lt;<span class="text-primary">li</span>&gt;   &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-error</span>" &gt;Github &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
-    &lt;<span class="text-primary">li</span>&gt;   &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-error</span>" &gt;Game &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
-    &lt;<span class="text-primary">li</span>&gt;   &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-error</span>" &gt;Shop &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
-    &lt;<span class="text-primary">li</span>&gt;   &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-error</span>" &gt;Testimonials &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
-    &lt;<span class="text-primary">/ul</span>&gt;
- &lt;/<span class="text-primary">nav</span> &gt;  
-   </code>
-</pre>
-
-            <p>Vertical mobile expanded navbar resize window or view it from mobile to see the effect</p>
-
-            <nav class="flex-navbar-mobile is-gradient-purple mt-20">
-
-                <div class="section-1">
-                    <img class="navbar-logo" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
-                </div>
-                <div class="section-2">
-
-                </div>
-                <div class="section-3">
-                    <button class="btn is-material nav-opener1">Menu</button>
-                    <button class="btn is-error ml-10">Logout</button>
-                </div>
-            </nav>
-
-            <nav class="flex-nav is-vertical is-dark navbar-2"> 
-                    <img class="navbar-logo hide-xs" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
-                  <ul>
-                        <li><a href="" class="nav-item text-error">Pyramid</a></li>
-                      <li><a href="" class="nav-item text-error">Home</a></li>
-                      <li><a href="" class="nav-item text-error">About</a></li>
-                      <li><a href="" class="nav-item text-error">Github</a></li>
-                      <li><a href="" class="nav-item text-error">Games</a></li>
-                      <li><a href="" class="nav-item text-error">Shop</a></li>
-                      <li><a href="" class="nav-item text-error">Testimonials</a></li>
-                  </ul>
-                  
-                </nav>
-          
-            <pre class="is-light pl-10">
-                <small>Html</small>
-               <code>
-                    &lt;<span class="text-primary">nav</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-navbar is-vertical is-flat</span>" &gt;
-                    ...
-                    &lt;/<span class="text-primary">nav</span> &gt;  
-                </code>
-                </pre>
-                <p>Desktop nav with space around</p>
-                <nav class="flex-nav space-around is-deep-blue"> 
-                        <img class="navbar-logo" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
-                      <ul>
+            <p>Flexbox mobile navbars are sepereted in 3 sections to be easier to customize and they are visible only in small screens</p>
+            <p>Desktop navs become the expanded navs in smaller screens</p>
+            <p>By deafult expanded navbar is horizontal</p>
+            <p>In order to toggle mobile nav add classes listed below to desktop navs using javascript</p>
+            <p>Desktop navs become the expanded navbar in mobile</p>
+            <h4>Navbar toggler classes</h4>
+            <p>.toggle-nav toggle simple nav</p>
+            <p>.toggle-flex-nav toggle flexbox nav</p>
+                <nav class="flex-nav is-gradient-rose">
+                      
+                        <ul class="mobile-nav">
+                                <img class="navbar-logo" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
+                                <div class="section-1">
+                              <li><a href="" class="nav-item text-white">Pyramid</a></li>
+                           </div>
+                            <div class="section-2">
+                                    <li><a href="" class="nav-item text-white">Logo </a></li>
+                        </div>
+                        <div class="section-3">
+                                <li><a  class="nav-item text-white nav-open">Menu</a></li>
+                            </div>
+                        </ul>
+                        <img class="navbar-logo hide-xs" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
+                      <ul class="desktop-nav">
+                            
                             <li><a href="" class="nav-item text-white">Pyramid</a></li>
                           <li><a href="" class="nav-item text-white">Home</a></li>
                           <li><a href="" class="nav-item text-white">About</a></li>
-                          <li><a href="" class="nav-item text-white">Github</a></li>
+                          <li><a href="" class="nav-item text-white">Testimonials</a></li>
+                          <li><a href="" class="nav-item text-white">Contact us</a></li>
+                          <li><a href="" class="nav-item text-white">Tour</a></li>
                
                       </ul>
                       
@@ -506,41 +441,199 @@
             <pre class="is-light pl-10">
                     <small>Html</small>
                    <code>
-                        &lt;<span class="text-primary">nav</span><span class="text-warning">class</span>="<span class="text-fancy">flex-navbar space-around is-deep-blue</span>" &gt;
-                        &lt;<span class="text-primary">img</span> <span class="text-warning">class</span>="<span class="text-fancy">navbar-logo hide-xs</span>" <span class="text-primary">src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50" </span>&gt; 
-                        &lt;<span class="text-primary">ul</span>&gt;
-                        &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-error</span>" &gt;Pyramid &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
-                        &lt;<span class="text-primary">li</span>&gt;   &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-error</span>" &gt;Home &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
-                        &lt;<span class="text-primary">li</span>&gt;   &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-error</span>" &gt;About &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
-                        &lt;<span class="text-primary">li</span>&gt;   &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-error</span>" &gt;Github &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                        &lt;<span class="text-primary">nav</span><span class="text-warning"> class</span>="<span class="text-fancy">flex-navbar is-gradient-rose</span>" &gt;
+                      
+                        &lt;<span class="text-primary">ul <span class="text-warning">class</span>="<span class="text-fancy">mobile-nav</span>"</span>&gt;
+                        &lt;<span class="text-primary">img</span> <span class="text-warning">class</span>="<span class="text-fancy">navbar-logo</span>" <span class="text-primary">src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50" </span>&gt; 
+                        &lt;<span class="text-primary">div <span class="text-warning">class</span>="<span class="text-fancy">section-1</span>"&gt;</span>
+                        &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Pyramid &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                        &lt;<span class="text-primary">/div</span>&gt;
+                        &lt;<span class="text-primary">div <span class="text-warning">class</span>="<span class="text-fancy">section-2</span>"&gt;</span>
+                        &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Logo &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                        &lt;<span class="text-primary">/div</span>&gt;
+                        &lt;<span class="text-primary">div <span class="text-warning">class</span>="<span class="text-fancy">section-3</span>"&gt;</span>
+                        &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Menu &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                        &lt;<span class="text-primary">/div</span>&gt;
                         &lt;<span class="text-primary">/ul</span>&gt;
+                        &lt;<span class="text-primary">img</span> <span class="text-warning">class</span>="<span class="text-fancy">navbar-logo hide-xs</span>" <span class="text-primary">src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50" </span>&gt; 
+                        &lt;<span class="text-primary">ul <span class="text-warning">class</span>="<span class="text-fancy">desktop-nav</span>"</span>&gt;
+                        &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Pyramid &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                        &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Home &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                        &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;About &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                        &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Testimonials &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                        &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Contact us &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                        &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Tour &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                        
                      &lt;/<span class="text-primary">nav</span> &gt;  
 
                     </code>
                     </pre>
-                    <p>Simple mobile navbar without flexbox</p>
-                    <nav class="navbar-mobile is-gradient-purple mt-20">
-                            <img class="navbar-logo float-left" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
-                               <ul class="nav text-right">
-                                <li><a href="" class="nav-item text-white">Menu</a></li>
-                                <li><a href="" class="nav-item text-white">Logout</a></li>
-                                <li><a href="" class="nav-item text-white">Blog</a></li>
-                                </ul>
-                    </nav>
+                    <p>For fixed navbars add is-fixed class in nav element</p>
+                    <pre class="is-light pl-10">
+                        <small>Html</small>
+                       <code>
+                            &lt;<span class="text-primary">nav</span><span class="text-warning"> class</span>="<span class="text-fancy">flex-navbar is-fixed is-gradient-rose</span>" &gt;
+                            ...
+                        </code>
+                        </pre>
+
+                    <p>Flexbox navbar with vertical expanded menu</p>
+                    <nav class="flex-nav is-gradient-rose is-vertical">
+                      
+                            <ul class="mobile-nav">
+                                    <img class="navbar-logo" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
+                                    <div class="section-1">
+                                  <li><a href="" class="nav-item text-white">Pyramid</a></li>
+                               </div>
+                                <div class="section-2">
+                                        <li><a href="" class="nav-item text-white">Logo </a></li>
+                            </div>
+                            <div class="section-3">
+                                    <li><a  class="nav-item text-white nav-open">Menu</a></li>
+                                </div>
+                            </ul>
+                            <img class="navbar-logo hide-xs" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
+                          <ul class="desktop-nav ">
+                                
+                                <li><a href="" class="nav-item text-white">Pyramid</a></li>
+                              <li><a href="" class="nav-item text-white">Home</a></li>
+                              <li><a href="" class="nav-item text-white">About</a></li>
+                              <li><a href="" class="nav-item text-white">Testimonials</a></li>
+                              <li><a href="" class="nav-item text-white">Contact us</a></li>
+                              <li><a href="" class="nav-item text-white">Tour</a></li>
+                   
+                          </ul>
+                          
+                        </nav>
+                        <pre class="is-light pl-10">
+                                <small>Html</small>
+                               <code>
+                                    &lt;<span class="text-primary">nav</span><span class="text-warning"> class</span>="<span class="text-fancy">flex-navbar is-vertical is-gradient-rose</span>" &gt;
+                                 ...
+                                </code>
+                                </pre>
+
+                                <p>Flexbox with space around</p>
+                                <nav class="flex-nav is-gradient-rose space-around">
+                      
+                                        <ul class="mobile-nav">
+                                                <img class="navbar-logo" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
+                                                <div class="section-1">
+                                              <li><a href="" class="nav-item text-white">Pyramid</a></li>
+                                           </div>
+                                            <div class="section-2">
+                                                    <li><a href="" class="nav-item text-white">Logo </a></li>
+                                        </div>
+                                        <div class="section-3">
+                                                <li><a  class="nav-item text-white nav-open">Menu</a></li>
+                                            </div>
+                                        </ul>
+                                        <img class="navbar-logo hide-xs" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
+                                      <ul class="desktop-nav ">
+                                            
+                                            <li><a href="" class="nav-item text-white">Pyramid</a></li>
+                                          <li><a href="" class="nav-item text-white">Home</a></li>
+                                          <li><a href="" class="nav-item text-white">About</a></li>                    
+                                      </ul>
+                                      
+                                    </nav>
+                                    <pre class="is-light pl-10">
+                                            <small>Html</small>
+                                           <code>
+                                                &lt;<span class="text-primary">nav</span><span class="text-warning"> class</span>="<span class="text-fancy">flex-navbar space-around is-gradient-rose</span>" &gt;
+                                             ...
+                                            </code>
+                                            </pre>
                     <p>Simple navbar without flexbox</p>
+
+               
                     <nav class="nav is-brown">
-                        <div class="container-1">
-                        <img class="navbar-logo float-left" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
-                        <ul class="text-right">
+                        <div class="container-1"></div>
+                               
+                                <ul class="text-right navbar-mobile">
+                                        <img class="navbar-logo float-left" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
+                                    <li><a href="" class="nav-item text-white">Home</a></li>
+                                    <li><a  class="nav-item text-white nav-open2">Menu</a></li>
+                                    
+                                    </ul>
+                        <img class="navbar-logo float-left hide-xs" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
+                        <ul class="text-left navbar-desktop nav-test">
                             <li><a href="" class="nav-item text-white">Home</a></li>
                             <li><a href="" class="nav-item text-white">About</a></li>
-                            <li><a href="" class="nav-item text-white">Contact</a></li>
+    
                             <li><a href="" class="nav-item text-white">Testimonials</a></li>
                             
                             </ul>
+                    
                           
-                        </div>
                     </nav>
+                    <pre class="is-light pl-10">
+                            <small>Html</small>
+                           <code>
+    
+    
+    &lt;<span class="text-primary">nav</span><span class="text-warning"> class</span>="<span class="text-fancy">nav is-brown</span>" &gt;
+    &lt;<span class="text-primary">div</span><span class="text-warning"> class</span>="<span class="text-fancy">container-1</span>" &gt;
+                            &lt;<span class="text-primary">ul</span><span class="text-warning"> class</span>="<span class="text-fancy">text-right navbar-mobile</span>"&gt;
+                            &lt;<span class="text-primary">img</span> <span class="text-warning">class</span>="<span class="text-fancy">navbar-logo float-left</span>" <span class="text-primary">src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50" </span>&gt; 
+                            &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Home &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                            &lt;<span class="text-primary">li</span>&gt;   &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Menu &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                            &lt;<span class="text-primary">/ul</span>&gt;
+                            &lt;<span class="text-primary">img</span> <span class="text-warning">class</span>="<span class="text-fancy">navbar-logo float-left hide-xs</span>" <span class="text-primary">src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50" </span>&gt; 
+                            &lt;<span class="text-primary">ul</span><span class="text-warning"> class</span>="<span class="text-fancy">text-left navbar-desktop </span>"&gt;
+                            &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Home &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                            &lt;<span class="text-primary">li</span>&gt;   &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;About &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                            &lt;<span class="text-primary">li</span>&gt;   &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Testimonials &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                            &lt;<span class="text-primary">/ul</span>&gt;
+                            &lt;<span class="text-primary">/div</span>&gt;
+                         &lt;/<span class="text-primary">nav</span> &gt;  
+    
+                            </code>
+                            </pre>
+                            <p>Simple navbar with vertical expanded menu</p>
+                            <nav class="nav is-brown">
+                                    <div class="container-1"></div>
+                                           
+                                            <ul class="text-right navbar-mobile">
+                                                    <img class="navbar-logo float-left" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
+                                                <li><a href="" class="nav-item text-white">Home</a></li>
+                                                <li><a  class="nav-item text-white nav-open2">Menu</a></li>
+                                                
+                                                </ul>
+                                    <img class="navbar-logo float-left hide-xs" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
+                                    <ul class="text-left navbar-desktop is-vertical nav-test">
+                                        <li><a href="" class="nav-item text-white">Home</a></li>
+                                        <li><a href="" class="nav-item text-white">About</a></li>
+                
+                                        <li><a href="" class="nav-item text-white">Testimonials</a></li>
+                                        
+                                        </ul>
+                                
+                                      
+                                </nav>
+                                <pre class="is-light pl-10">
+                                        <small>Html</small>
+                                       <code>
+                
+                
+                &lt;<span class="text-primary">nav</span><span class="text-warning"> class</span>="<span class="text-fancy">nav is-brown</span>" &gt;
+                &lt;<span class="text-primary">div</span><span class="text-warning"> class</span>="<span class="text-fancy">container-1</span>" &gt;
+                                        &lt;<span class="text-primary">ul</span><span class="text-warning"> class</span>="<span class="text-fancy">text-right navbar-mobile</span>"&gt;
+                                        &lt;<span class="text-primary">img</span> <span class="text-warning">class</span>="<span class="text-fancy">navbar-logo float-left</span>" <span class="text-primary">src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50" </span>&gt; 
+                                        &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Home &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                                        &lt;<span class="text-primary">li</span>&gt;   &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Menu &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                                        &lt;<span class="text-primary">/ul</span>&gt;
+                                        &lt;<span class="text-primary">img</span> <span class="text-warning">class</span>="<span class="text-fancy">navbar-logo float-left hide-xs</span>" <span class="text-primary">src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50" </span>&gt; 
+                                        &lt;<span class="text-primary">ul</span><span class="text-warning"> class</span>="<span class="text-fancy">text-left navbar-desktop <span class="is-dark">is-vertical</span>  </span>"&gt;
+                                        &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Home &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                                        &lt;<span class="text-primary">li</span>&gt;   &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;About &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                                        &lt;<span class="text-primary">li</span>&gt;   &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Testimonials &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                                        &lt;<span class="text-primary">/ul</span>&gt;
+                                        &lt;<span class="text-primary">/div</span>&gt;
+                                     &lt;/<span class="text-primary">nav</span> &gt;  
+                
+                                        </code>
+                                        </pre>
             <!--
 <nav class="flex-navbar is-error mt-10">
         <img class="navbar-logo" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
@@ -589,19 +682,29 @@
             });
         });
         $(function () { //run when the DOM is ready
-            $(".nav-opener").click(function () { //use a class, since your ID gets mangled
-                $(".navbar-1").toggleClass("toggle-flex-nav"); //add the class to the clicked element
+            $(".nav-open").click(function () { //use a class, since your ID gets mangled
+                $(".desktop-nav").toggleClass("toggle-flex-nav"); //add the class to the clicked element
             });
         });
 
         $(function () { //run when the DOM is ready
-            $(".nav-opener1").click(function () { //use a class, since your ID gets mangled
-                $(".navbar-2").toggleClass("toggle-flex-nav"); //add the class to the clicked element
+            $(".nav-open2").click(function () { //use a class, since your ID gets mangled
+                $(".nav-test").toggleClass("toggle-nav"); //add the class to the clicked element
+            });
+        });
+        $(function () {
+            $(".nav-open3").click(function () { //use a class, since your ID gets mangled
+                $(".pyramid-nav").toggleClass("toggle-nav"); //add the class to the clicked element
             });
         });
         $(function () {
             $(".open-modal2").click(function () { //use a class, since your ID gets mangled
                 $(".modal").addClass("is-active"); //add the class to the clicked element
+            });
+        });
+        $(function () {
+            $(".dropdown a").click(function () { //use a class, since your ID gets mangled
+                $(".pyramid-nav").removeClass("toggle-nav"); //add the class to the clicked element
             });
         });
 

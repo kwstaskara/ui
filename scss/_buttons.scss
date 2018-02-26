@@ -5,14 +5,14 @@
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  @include rem(padding, 5px 10px);
+  @include rem(padding, 7px 11px);
   @include no-select();
   font-size: $core-font-size;
   line-height: 1.5;
   @include rem(border, 1px solid transparent);
   -webkit-backface-visibility: hidden;
   outline: none;
-  @include rem(border-radius, 3px);
+
   &:focus,
   &:hover {
     text-decoration: none;

@@ -1,26 +1,26 @@
-
-.has-dropdown:hover > ul{
-display: block;
+.has-dropdown{
+    position: relative;
 }
 
 
-.dropdown ul{
-    display: none;
-    position:absolute;
-    padding:6px;
-    z-index: 100;
-    text-align: left;
-    li{
-        padding: 5px;
+.has-dropdown:hover > .dropdown{
+    display: block;
+
     }
+    
+    
+    .dropdown{
+        display: none;
+        position:absolute;
+        padding:6px;
+        z-index: 10;
+        width: auto;
+        text-align: left;
+        li{
+            padding: 5px;
+        }
+    }
+.dropdown-right{
+    left: auto;
+    right: 0;
 }
-
-.dropdown-left{
-    @include rem(margin-left, -80px);
-  
-  }
-
-  .dropdown-right{
-    @include rem(margin-right, -80px);
-  
-  }

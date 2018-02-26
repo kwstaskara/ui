@@ -1,27 +1,30 @@
 .nav {
+
       list-style: none;
       margin: 0;
-      min-height: 60px;
+      @include rem(min-height, 60px);
       -ms-overflow-style: -ms-autohiding-scrollbar;
       -webkit-overflow-scrolling: touch;
       white-space: nowrap;
-      overflow-x: auto;
+
+      width: 100%;
       ul{
         list-style: none;
         padding-left: 0;
         margin-bottom: 0;
         margin-top:0; 
-          min-height: 60px;
+          @include rem(min-height, 60px);
           -ms-overflow-style: -ms-autohiding-scrollbar;
           -webkit-overflow-scrolling: touch;
           white-space: nowrap;
-          overflow-x: auto;
+        
+
       }
       .form {
         display: inline-block;
       }
       .navbar-logo{
-        padding-top: 5px;
+        @include rem(padding-top, 5px);
       }
 }
 
@@ -29,11 +32,11 @@
   display:inline-block;
   *display:inline; /*IE7*/
   *zoom:1; /*IE7*/
-  padding-top: 17px;
+  @include rem(padding-top, 17px);
  
 }
 
-.nav.is-vertical li{
+.has-dropdown li{
   display: block;
 
 }
@@ -69,20 +72,20 @@
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar; 
   margin-top:0; 
-  align-items: center;
-  min-height: 68px;
+  width: 100%;
+  @include rem(min-height, 58px);
   ul{
+
   list-style: none;
     padding-left: 0;
     margin-bottom: 0;
-   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar; 
   margin-top:0; 
   align-items: center;
-  min-height: 68px;
+  @include rem(min-height, 58px);
 }
   li{
     flex: 0 0 auto;
@@ -97,6 +100,6 @@
     flex-direction: column;
 }
 */
-.is-gapless .nav-item{
-	padding: 0;
+.no-padding{
+  padding: 0;
 }

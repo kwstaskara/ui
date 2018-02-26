@@ -1,25 +1,74 @@
-.flex-navbar-mobile,
-.navbar-mobile
-{
+.mobile-nav{
     display: none;
 }
 
+
+.navbar-mobile{
+    display: none;
+}
+
+.desktop-nav{
+    display: flex;
+}
+
+.flex-nav .navbar-logo{
+    display: flex;
+    align-self: center
+}
+
 @include breakpoint(xs){
-    .flex-nav{
-        display: none;
-    &.is-vertical{
+    .nav{
+        overflow-y: auto;
+        max-height:100%;
         ul{
-          flex-direction: column;
-          align-items: flex-start;
+            overflow-x: auto;
         }
-      }
     }
-    .flex-navbar-mobile{
+    .is-vertical.dropdown{
+        display: block;
+        position: relative;
+        background-color: transparent;
+        text-align: inherit;
+    }
+    
+
+    .navbar-desktop{
+        display:none;
+    }
+
+    .desktop-nav{
+        display: none;
+    }
+    .flex-nav{
+flex-direction: column;
+    }
+
+    .flex-nav{
+        &.is-vertical{
+            .desktop-nav{
+              flex-direction: column;
+              align-items: flex-start;
+            }
+          }
+        }
+
+
+    .nav.is-vertical li{
+        display: block;
+      
+      }
+
+      .navbar-desktop.is-vertical li{
+          display: block;
+      }
+
+    
+    .mobile-nav{
         display: flex;
         align-items: center;
         height: auto;
         @include rem(font-size, 15.5px);
-        @include rem(padding-right,15px);
+        @include rem(padding-right,12px);
         
         & a,
         :hover{
@@ -36,7 +85,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            @include rem(padding-left, 70px);
+            @include rem(padding-right, 65px);
     
           }
           .section-3 {
@@ -76,10 +125,10 @@
             display:inline-block;
             *display:inline; /*IE7*/
             *zoom:1; /*IE7*/
-             padding-top: 17px;
+            @include rem(padding-top, 17px);
         }
         .navbar-logo{
-            padding-top: 7px;
+            @include rem(padding-top, 7px);
         }
 
      }
@@ -102,6 +151,6 @@
 }
 
 .toggle-nav{
-    display: block;
+    display: block!important;
     animation: fadeIn 1s;
 }

@@ -4,4 +4,28 @@
 }
 .fadeIn{
   animation: fadeIn 1s;
+  will-change: opacity;
 }
+
+
+@keyframes pulse {
+  0% {
+    color:rgb(255, 230, 0);
+  text-shadow: 0 0 0px rgb(255, 230, 0);
+  }
+  50% {
+    color:rgb(255, 230, 0);
+    text-shadow: 0 0 50px rgb(255, 230, 0);
+  }
+  100% {
+    color:rgb(255, 230, 0);
+    text-shadow: 0 0 60px rgb(255, 230, 0);
+  }
+  
+  
+}
+
+.pulse{
+  animation: pulse 5s infinite;
+}
+
