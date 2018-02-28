@@ -10,7 +10,6 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 body {
-  height: 100%;
   margin: 0;
   font-family: $core-font;
   font-size: $rem-baseline;
@@ -44,6 +43,7 @@ a {
   }
 
 }
+
 
 @media print {
   *,
