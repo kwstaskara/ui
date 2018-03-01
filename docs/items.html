@@ -268,15 +268,12 @@
             <h2 class="pt-20">Dropdowns</h2>
             <hr class="mtn-20" />
             <p>Dropdowns on hover</p>
-            <blockquote>
-                <p>heyy</p>
-            </blockquote>
-            <nav class="nav">
+            <nav class="nav is-vertical is-deep-blue">
                 <ul>
                     <li><a class="nav-item">Home</a></li>
                     <li><a class="nav-item">Shop</a></li>
                     <li class="has-dropdown"><a class="btn is-primary">Dropdown</a>
-                    <ul class="dropdown is-fancy">
+                    <ul class="dropdown is-vertical  is-fancy">
                         <li>
                             <a class="text-white"> Testimonials</a>
                         </li>
@@ -286,7 +283,7 @@
                     </ul>
                     </li>
                     <li class="has-dropdown"><a class="btn is-primary">Dropdown right</a>
-                        <ul class="dropdown dropdown-right is-dark">
+                        <ul class="dropdown is-vertical  dropdown-right is-dark">
                             <li>
                                 <a class="text-white"> Testimonials</a>
                             </li>
@@ -297,23 +294,24 @@
                         </li>
                 </ul>
             </nav>
+            <p class="text-error">On mobile hover dropdowns are collapsed by default if the parents has .nav class and .is-vertical class is used.</p>
             <pre class="is-light pl-10">
                 <small>Html</small>
                 <code class="pb-20 pt-20">
-                        &lt;<span class="text-primary">nav</span> <span class="text-warning">class</span>="<span class="text-fancy">nav</span>"&gt;
+                        &lt;<span class="text-primary">nav</span> <span class="text-warning">class</span>="<span class="text-fancy">nav is-vertical</span>"&gt;
                         &lt;<span class="text-primary">ul</span>&gt;
                         &lt;<span class="text-primary">li</span>&gt;&lt;<span class="text-primary">a href="#"  </span>&gt;Home&lt;/<span class="text-primary">a</span>&gt;&lt;/<span class="text-primary">li</span>&gt;
                         &lt;<span class="text-primary">li</span>&gt; &lt;<span class="text-primary">a href="#"  </span>&gt;Shop&lt;/<span class="text-primary">a</span>&gt;&lt;/<span class="text-primary">li</span>&gt;
                         &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">has-dropdown</span>"&gt;
                         &lt;<span class="text-primary">a href="#" <span class="text-warning">class</span>="<span class="text-fancy">btn is-primary</span>" </span>&gt;Dropdown&lt;/<span class="text-primary">a</span>&gt;
-                        &lt;<span class="text-primary">ul <span class="text-warning">class</span>="<span class="text-fancy">dropdown is-fancy</span>"</span>&gt;
+                        &lt;<span class="text-primary">ul <span class="text-warning">class</span>="<span class="text-fancy">dropdown is-vertical is-fancy</span>"</span>&gt;
                         &lt;<span class="text-primary">li</span>&gt; &lt;<span class="text-primary">a href="#"  </span>&gt;Testimonials&lt;/<span class="text-primary">a</span>&gt;&lt;/<span class="text-primary">li</span>&gt;
                         &lt;<span class="text-primary">li</span>&gt;&lt;<span class="text-primary">a href="#"  </span>&gt;Contact&lt;/<span class="text-primary">a</span>&gt;&lt;/<span class="text-primary">li</span>&gt;
                         &lt;/<span class="text-primary">ul</span>&gt;
                         &lt;/<span class="text-primary">li</span>&gt;
                         &lt;<span class="text-primary">li</span> <span class="text-warning">class</span>="<span class="text-fancy">has-dropdown</span>"&gt;
                         &lt;<span class="text-primary">a href="#" <span class="text-warning">class</span>="<span class="text-fancy">btn is-primary</span>" </span>&gt;Dropdown&lt;/<span class="text-primary">a</span>&gt;
-                        &lt;<span class="text-primary">ul <span class="text-warning">class</span>="<span class="text-fancy">dropdown dropdown-right is-dark</span>"</span>&gt;
+                        &lt;<span class="text-primary">ul <span class="text-warning">class</span>="<span class="text-fancy">dropdown is-vertical dropdown-right is-dark</span>"</span>&gt;
                         &lt;<span class="text-primary">li</span>&gt;&lt;<span class="text-primary">a href="#"  </span>&gt;Testimonials&lt;/<span class="text-primary">a</span>&gt;&lt;/<span class="text-primary">li</span>&gt;
                         &lt;<span class="text-primary">li</span>&gt;&lt;<span class="text-primary">a href="#"  </span>&gt;Contact&lt;/<span class="text-primary">a</span>&gt;&lt;/<span class="text-primary">li</span>&gt;
                         &lt;/<span class="text-primary">ul</span>&gt;

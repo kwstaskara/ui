@@ -608,6 +608,9 @@ video {
   height: auto;
   max-width: 100%; }
 
+.no-responsive img {
+  max-width: initial; }
+
 a {
   outline: none;
   text-decoration: none;
@@ -1536,6 +1539,38 @@ textarea.form-warning {
      -moz-animation: pulse 5s infinite;
           animation: pulse 5s infinite; }
 
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-moz-keyframes rotating {
+  from {
+    -moz-transform: rotate(0deg);
+         transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg);
+         transform: rotate(360deg); } }
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+.is-rotating {
+  -webkit-animation: rotating 40s linear infinite;
+     -moz-animation: rotating 40s linear infinite;
+          animation: rotating 40s linear infinite;
+  will-change: transform; }
+
 .nav {
   list-style: none;
   margin: 0;
@@ -1673,16 +1708,14 @@ textarea.form-warning {
           align-self: center; }
 
 @media (max-width: 767px) {
-  .nav {
-    overflow-y: auto;
-    max-height: 100%; }
-    .nav ul {
-      overflow-x: auto; }
+  .nav ul {
+    overflow-x: auto; }
   .is-vertical.dropdown {
     display: block;
     position: relative;
-    background-color: transparent;
-    text-align: inherit; }
+    background-color: inherit;
+    text-align: inherit;
+    z-index: 0; }
   .navbar-desktop {
     display: none; }
   .desktop-nav {

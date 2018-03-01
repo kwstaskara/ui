@@ -18,8 +18,7 @@
 
 @include breakpoint(xs){
     .nav{
-        overflow-y: auto;
-        max-height:100%;
+
         ul{
             overflow-x: auto;
         }
@@ -27,8 +26,9 @@
     .is-vertical.dropdown{
         display: block;
         position: relative;
-        background-color: transparent;
+        background-color: inherit;
         text-align: inherit;
+        z-index: 0;
     }
     
 

@@ -128,7 +128,7 @@
     <p>yarn add pyramid.ui</p>
     <h4 class="pt-20"><strong>Using cdn</strong></h4>
     <pre>
-    <p>&lt;link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/pyramid.ui@0.0.2/dist/pyramid.min.css"&gt;</p>
+    <p>&lt;link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/pyramid.ui@<span id="result"></span>/dist/pyramid.min.css"&gt;</p>
 </pre>
     <h2 class="pt-20">Explore pyramid</h2>
     <p>
@@ -164,9 +164,19 @@
 </div>
 </div>
 -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+  <script src="https://rawgit.com/hippich/bower-semver/master/semver.min.js"></script>
 <script>
+var gitHubPath = 'kwstaskara/pyramid';  // example repo
+var url = 'https://api.github.com/repos/' + gitHubPath + '/tags';
+
+$.get(url).done(function (data) {
+var versions = data.sort(function (v1, v2) {
+  return semver.compare(v2.name, v1.name)
+});
+$('#result').html(versions[0].name);
+});
 $(function () {
     $(".nav-open2").click(function () { //use a class, since your ID gets mangled
         $(".pyramid-nav").toggleClass("toggle-nav"); //add the class to the clicked element

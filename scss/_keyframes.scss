@@ -29,3 +29,18 @@
   animation: pulse 5s infinite;
 }
 
+@keyframes rotating{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+  
+}
+
+.is-rotating{
+  animation: rotating 40s linear infinite;
+  will-change: transform;
+}

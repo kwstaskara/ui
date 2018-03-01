@@ -30,6 +30,12 @@ video {
   max-width: 100%;
 }
 
+.no-responsive{
+  img{
+    max-width:initial;
+  }
+}
+
 a {
   outline: none;
   text-decoration: none;
