@@ -18,7 +18,8 @@
 
 @include breakpoint(xs){
     .nav{
-
+        overflow-y: auto;
+        max-height:100%;
         ul{
             overflow-x: auto;
         }

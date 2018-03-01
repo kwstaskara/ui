@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="dist/pyramid.min.css">
+    <link rel="stylesheet" type="text/css" href="ionicons.min.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pyramid Ui</title>
     <!-- Google Analytics -->
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -19,6 +20,40 @@
     <!-- End Google Analytics -->
 </head>
 <body>
-    
+    <nav class="nav is-gradient-rose is-fixed">
+        <div class="container-1">
+               
+                <ul class="text-right navbar-mobile">
+                        <img class="navbar-logo float-left" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
+                        <li><a class="nav-item text-white nav-open3"> Menu</a></li>
+                    <li><a href="https://github.com/kwstaskara/pyramid" class="nav-item text-white "><i class="ion-social-github"></i> Github</a></li>
+                    
+                    </ul>
+        <img class="navbar-logo float-left hide-xs" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
+        <ul class="text-right text-left-xs navbar-desktop   pyramid-nav">
+                <li><a href="https://ui.redpyramids.com/" class="nav-item text-white">Home</a></li>
+            <li><a href="docs" class="nav-item text-white ">Install</a>
+            </li>
+            <li class="has-dropdown"><a href="docs" class="nav-item text-white ">Documentation</a>
+            </li>
+                <li><a href="https://github.com/kwstaskara/pyramid" class="nav-item text-white "><i class="ion-social-github"></i> Github</a></li>
+            </ul>
+        </div>
+          
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+<script>
+      $(function () {
+            $(".nav-open3").click(function () { //use a class, since your ID gets mangled
+                $(".pyramid-nav").toggleClass("toggle-nav"); //add the class to the clicked element
+            });
+        });
+      $(function () {
+            $(".dropdown a").click(function () { //use a class, since your ID gets mangled
+                $(".pyramid-nav").removeClass("toggle-nav"); //add the class to the clicked element
+            });
+        });
+</script>
 </body>
 </html>

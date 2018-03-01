@@ -1185,6 +1185,30 @@ textarea.form-warning {
   margin-bottom: -30px;
   margin-bottom: -1.875rem; }
 
+.mln-10 {
+  margin-left: -10px;
+  margin-left: -0.625rem; }
+
+.mln-20 {
+  margin-left: -20px;
+  margin-left: -1.25rem; }
+
+.mln-30 {
+  margin-left: -30px;
+  margin-left: -1.875rem; }
+
+.mrn-10 {
+  margin-right: -10px;
+  margin-right: -0.625rem; }
+
+.mrn-20 {
+  margin-right: -20px;
+  margin-right: -1.25rem; }
+
+.mrn-30 {
+  margin-right: -30px;
+  margin-right: -1.875rem; }
+
 .container {
   padding-right: 12px;
   padding-right: 0.75rem;
@@ -1708,8 +1732,11 @@ textarea.form-warning {
           align-self: center; }
 
 @media (max-width: 767px) {
-  .nav ul {
-    overflow-x: auto; }
+  .nav {
+    overflow-y: auto;
+    max-height: 100%; }
+    .nav ul {
+      overflow-x: auto; }
   .is-vertical.dropdown {
     display: block;
     position: relative;

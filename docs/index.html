@@ -39,20 +39,31 @@
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
     <section id="header" class="is-gradient-blue dimmed pb-30">
+            <ul class="absol-left pl-30  pb-30 mb-30">
+            <li class="btn is-link text-white absol-left has-dropdown mtn-20 mln-30">Languages <i class="ion-arrow-down-b"></i>
+            <ul class="dropdown is-white-shadowed is-rounded">
+                <li class="text-fancy">Coming soon!</li>
+            </ul>
+            
+            </li>
+            </ul>
             <a class="btn is-link text-white absol-right " href="https://github.com/kwstaskara/pyramid" target="_blank"><i class="ion-social-github"></i> Github</a>
     <div>
 <div class="text-center">
 
 <a class="img-centered" href="https://ui.redpyramids.com/">
-    <img  src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width=250 height=250>
+    <img  src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="250" height="250">
   </a>
 <h3 class="text-white text-center mtn-30">Pyramid <span class="pulse">Ui</span> <div class="text-center pb-20">
-<small class="text-white h6">Version <span id="result"></span></small>
+<small class="text-white h6">Version <span id="result"></span> / </small>
+<small class="text-white h6"><span id="result2"></span> mb minified </small>
+
 </div></h3>
 
         <button class="btn is-secondary is-rounded open-modal"><i class="ion-ios-paper"></i> News</button>
     <a class="btn is-flat is-rounded" href="docs"><i class="ion-ios-book"></i> Documentation</a>
     <a class="btn is-fancy is-rounded" href="https://blog.redpyramids.com" target="_blank"><i class="ion-ios-glasses"></i> Blog</a>
+
 </div>
 </div>
 </section>
@@ -156,14 +167,21 @@
   </script>
     <script src="https://rawgit.com/hippich/bower-semver/master/semver.min.js"></script>
   <script>
-var gitHubPath = 'kwstaskara/pyramid';  // example repo
+var gitHubPath = 'kwstaskara/pyramid'; 
+var gitHubPath2 = 'kwstaskara/pyramid/contents/dist'; // example repo
 var url = 'https://api.github.com/repos/' + gitHubPath + '/tags';
+var url2 = 'https://api.github.com/repos/' + gitHubPath2 + '/pyramid.min.css';
 
 $.get(url).done(function (data) {
   var versions = data.sort(function (v1, v2) {
     return semver.compare(v2.name, v1.name)
   });
   $('#result').html(versions[0].name);
+});
+var size;
+$.get(url2).done(function (data){
+    var sizeResult = data.size / 1000;
+  $('#result2').html(sizeResult.toFixed(1))
 });
       
 $(function() {                       //run when the DOM is ready
