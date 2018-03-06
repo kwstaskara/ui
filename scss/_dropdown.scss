@@ -1,19 +1,40 @@
+.has-dropdown-click,
 .has-dropdown{
+    display: inline-block;
     position: relative;
+    outline: none;
 }
 
 
-.has-dropdown:hover > .dropdown{
+
+
+.has-dropdown-click:focus > .dropdown{
+    display: block;
+}
+
+
+.has-dropdown:hover > .dropdown,
+.has-dropdown:hover + .dropdown,
+.dropdown:hover
+{
     display: block;
 
     }
     
     
     .dropdown{
+        &.is-active{
+            display: block;
+        }
+        margin: 0;
+        list-style: none;
         display: none;
         position:absolute;
         padding:6px;
         z-index: 10;
+        left: 0;
+        max-height: 50vh;
+        overflow-y: auto;
         width: auto;
         text-align: left;
         li{

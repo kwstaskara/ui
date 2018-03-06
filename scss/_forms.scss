@@ -16,7 +16,6 @@
        -moz-appearance: none;
        appearance: none;
        @include rem(border, 1px solid #ccc);
-      @include rem(border-radius, 4px);
        box-shadow: none;
        box-sizing: inherit;
        padding: .6rem 1.0rem;
