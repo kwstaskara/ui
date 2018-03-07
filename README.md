@@ -50,12 +50,15 @@ Built with Normalizer
 ### Layout
 - [Grid](https://ui.redpyramids.com/layout#Grid) 
 - [Responsiveness](https://ui.redpyramids.com/layout#Responsive)
+- [Containers](https://ui.redpyramids.com/layout#Containers)
 - [Utilities](https://ui.redpyramids.com/layout#Utilities)
+- [Controllers](https://ui.redpyramids.com/layout#Controllers)
 
 ### Items
 - [Accordions](https://ui.redpyramids.com/items#Accordions)
 - [Buttons](https://ui.redpyramids.com/items#Buttons)
 - [Breadcrumbs](https://ui.redpyramids.com/items#Breadcrumbs)
+- [Cards](https://ui.redpyramids.com/items#Cards)
 - [Dropdowns](https://ui.redpyramids.com/items#Dropdowns)
 - [Labels](https://ui.redpyramids.com/items#Labels)
 - [Modals](https://ui.redpyramids.com/items#Modals)
