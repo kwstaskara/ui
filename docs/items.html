@@ -92,6 +92,9 @@
                                         <a href="items#Breadcrumbs" class="text-white"> Breadcrumbs</a>
                                     </li>
                                     <li>
+                                        <a href="items#Cards" class="text-white"> Cards</a>
+                                    </li>
+                                    <li>
                                         <a href="items#Dropdowns" class="text-white"> Dropdowns</a>
                                     </li>
                                     <li>
@@ -121,7 +124,7 @@
     
     <section class="container-center pt-30">
         <h2 class="pt-30">Accordions</h2>
-        <hr class="mtn-20" />
+        <hr class="mtn-10" />
         <section id="Accordions">
             <div class="accordion is-success col-lg-5 mt-30">
                 <input id="tab-one" type="checkbox" name="tabs">
@@ -145,7 +148,7 @@
         </section>
         <section id="Buttons">
             <h2 class="pt-20">Buttons</h2>
-            <hr class="mtn-20" />
+            <hr class="mtn-10" />
             <button class="btn is-primary mt-10">Button</button>
             <button class="btn is-secondary mt-10">Button</button>
             <button class="btn is-grey mt-10">Button</button>
@@ -206,7 +209,7 @@
         </section>
         <section id="Breadcrumbs">
             <h2 class="pt-20">Breadcrumbs</h2>
-            <hr class="mtn-20" />
+            <hr class="mtn-10" />
             <p>Normal breadcrumb</p>
             <ul class="breadcrumb">
                 <li class="breadcrumb-item">
@@ -264,9 +267,191 @@
               </code>
         </pre>
         </section>
+
+        <section id="Cards">
+            <h2 class="pt-20">Cards</h2>
+            <hr class="mtn-10" />
+            <h4>.flex-card / .card</h4>
+            <h4>Flexbox cards</h4>
+            <div class="row has-gutters">
+                <div class="col col-lg-4 mt-20">
+            <div class="flex-card is-white is-rounded">
+                    <img src="https://ui.redpyramids.com/media/robert.jpg" alt="chicago">
+                    <div class="card-content">
+                            <button class="btn is-slateblue is-small float-right">Visit now</button>
+                        <h5>Chicago / United States</h5>
+                        <p class="h6">A great palce to visit and third-most populous city in the United States</p>
+                    </div>
+            </div>
+        </div>
+        <div class="col col-lg-4 mt-10">
+                <div class="flex-card is-white is-rounded">
+                        <img src="https://ui.redpyramids.com/media/robert.jpg" alt="chicago">
+                        <div class="card-content">
+                              
+                            <h5>Chicago</h5>
+                            <p>A great palce to visit and third-most populous city in the United States</p>
+                            <button class="btn is-flat ">Tickets</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <pre class="is-light pl-10">
+                <small>Html</small>
+                <code class="pb-20 pt-20">
+                        &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-card is-white is-rounded</span>"&gt;
+                        &lt;<span class="text-primary">img</span>  <span class="text-primary">src="https://ui.redpyramids.com/media/chicago.jpg" alt="chicago"</span>&gt; 
+                        &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">card-content</span>"&gt;
+                        &lt;<span class="text-primary">button</span> <span class="text-warning">class</span>="<span class="text-fancy">btn is-slateblue is-small float-right</span>"&gt;Visit now&lt;/<span class="text-primary">button</span>&gt;
+                        &lt;<span class="text-primary">h5</span>&gt;Chigago / United States &lt;<span class="text-primary">/h5</span>&gt;
+                        &lt;<span class="text-primary">p</span>&gt;A great palce to visit and third-most populous city in the United States &lt;<span class="text-primary">/p</span>&gt;
+                        &lt;/<span class="text-primary">div</span>&gt;
+                        &lt;/<span class="text-primary">div</span>&gt;
+
+                        &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-card is-white is-rounded</span>"&gt;
+                        &lt;<span class="text-primary">img</span>  <span class="text-primary">src="https://ui.redpyramids.com/media/chicago.jpg" alt="chicago"</span>&gt; 
+                        &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">card-content</span>"&gt;
+                        &lt;<span class="text-primary">h5</span>&gt;Chigago &lt;<span class="text-primary">/h5</span>&gt;
+                        &lt;<span class="text-primary">p</span>&gt;A great palce to visit and third-most populous city in the United States &lt;<span class="text-primary">/p</span>&gt;
+                        &lt;<span class="text-primary">button</span> <span class="text-warning">class</span>="<span class="text-fancy">btn is-dark</span>"&gt;Tickets&lt;/<span class="text-primary">button</span>&gt;
+                        &lt;/<span class="text-primary">div</span>&gt;
+                        &lt;/<span class="text-primary">div</span>&gt;
+                    </code>
+                    </pre>
+
+        <div class="row has-gutters mt-20">
+       <div class="col col-lg-4 mt-10">
+                <div class="flex-card is-white  is-rounded">
+                       <h4 class="text-center is-primary">Basic</h4>
+                        <div class="card-content">
+                            <div class="text-center">
+                               <p>Support</p>
+                               <p>Free deploy</p>
+                               <p>Linux support</p>
+                               <p>Lifetime updates</p>
+                               <p>Easy to use</p>
+                               <button class="btn is-primary is-rounded">Buy now</button>
+                            </div>
+                        </div>
+                </div>
+        </div>
+       <div class="col col-lg-4 mt-10">
+                <div class="flex-card is-white  is-rounded">
+                       <h4 class="text-center is-seagreen">Popular</h4>
+                        <div class="card-content">
+                            <div class="text-center">
+                               <p>Support</p>
+                               <p>Free deploy</p>
+                               <p>Linux support</p>
+                               <p>Lifetime updates</p>
+                               <p>Easy to use</p>
+                               <button class="btn is-seagreen is-rounded">Buy now</button>
+                            </div>
+                        </div>
+                </div>
+        </div>
+          <div class="col col-lg-4 mt-10">
+                <div class="flex-card is-white is-rounded">
+                       <h4 class="text-center is-crimson">Proffesional</h4>
+                        <div class="card-content">
+                            <div class="text-center">
+                               <p>Support</p>
+                               <p>Free deploy</p>
+                               <p>Linux support</p>
+                               <p>Lifetime updates</p>
+                               <p>Easy to use</p>
+                               <button class="btn is-crimson is-rounded">Buy now</button>
+                            </div>
+                        </div>
+                </div>
+        </div>
+    </div>
+    <pre class="is-light pl-10">
+            <small>Html</small>
+            <code class="pb-20 pt-20">
+                    &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">flex-card is-white is-rounded</span>"&gt;
+                    &lt;<span class="text-primary">h4</span> <span class="text-warning">class</span>="<span class="text-fancy">text-center is-primary</span>"&gt;Basic &lt;<span class="text-primary">/h4</span>&gt;
+                    &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">card-content</span>"&gt;
+                    &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">text-center</span>"&gt;
+                    &lt;<span class="text-primary">p</span>&gt;Support &lt;<span class="text-primary">/p</span>&gt;
+                    &lt;<span class="text-primary">p</span>&gt;Free deploy &lt;<span class="text-primary">/p</span>&gt;
+                    &lt;<span class="text-primary">p</span>&gt;Linux support &lt;<span class="text-primary">/p</span>&gt;
+                    &lt;<span class="text-primary">p</span>&gt;Easy to use &lt;<span class="text-primary">/p</span>&gt;
+                    &lt;<span class="text-primary">button</span> <span class="text-warning">class</span>="<span class="text-fancy">btn is-primary</span>"&gt;Buy now&lt;/<span class="text-primary">button</span>&gt;
+                    &lt;/<span class="text-primary">div</span>&gt;
+                    &lt;/<span class="text-primary">div</span>&gt;
+                    &lt;/<span class="text-primary">div</span>&gt;
+                </code>
+                </pre>
+    <h4>Normal cards</h4>
+    <div class="row has-gutters mt-20">
+            <div class="col col-lg-4 mt-10">
+                     <div class="card is-white  is-rounded">
+                            <h4 class="text-center is-primary">Basic</h4>
+                             <div class="card-content">
+                                 <div class="text-center">
+                                    <p>Support</p>
+                                    <p>Free deploy</p>
+                                    <p>Linux support</p>
+                                    <p>Lifetime updates</p>
+                                    <p>Easy to use</p>
+                                    <button class="btn is-primary is-rounded">Buy now</button>
+                                 </div>
+                             </div>
+                     </div>
+             </div>
+            <div class="col col-lg-4 mt-10">
+                     <div class="card is-white  is-rounded">
+                            <h4 class="text-center is-seagreen">Popular</h4>
+                             <div class="card-content">
+                                 <div class="text-center">
+                                    <p>Support</p>
+                                    <p>Free deploy</p>
+                                    <p>Linux support</p>
+                                    <p>Lifetime updates</p>
+                                    <p>Easy to use</p>
+                                    <button class="btn is-seagreen is-rounded">Buy now</button>
+                                 </div>
+                             </div>
+                     </div>
+             </div>
+               <div class="col col-lg-4 mt-10">
+                     <div class="card is-white is-rounded">
+                            <h4 class="text-center is-crimson">Proffesional</h4>
+                             <div class="card-content">
+                                 <div class="text-center">
+                                    <p>Support</p>
+                                    <p>Free deploy</p>
+                                    <p>Linux support</p>
+                                    <p>Lifetime updates</p>
+                                    <p>Easy to use</p>
+                                    <button class="btn is-crimson is-rounded">Buy now</button>
+                                 </div>
+                             </div>
+                     </div>
+             </div>
+         </div>
+         <pre class="is-light pl-10">
+                <small>Html</small>
+                <code class="pb-20 pt-20">
+                        &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">card is-white is-rounded</span>"&gt;
+                        &lt;<span class="text-primary">h4</span> <span class="text-warning">class</span>="<span class="text-fancy">text-center is-primary</span>"&gt;Basic &lt;<span class="text-primary">/h4</span>&gt;
+                        &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">card-content</span>"&gt;
+                        &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">text-center</span>"&gt;
+                        &lt;<span class="text-primary">p</span>&gt;Support &lt;<span class="text-primary">/p</span>&gt;
+                        &lt;<span class="text-primary">p</span>&gt;Free deploy &lt;<span class="text-primary">/p</span>&gt;
+                        &lt;<span class="text-primary">p</span>&gt;Linux support &lt;<span class="text-primary">/p</span>&gt;
+                        &lt;<span class="text-primary">p</span>&gt;Easy to use &lt;<span class="text-primary">/p</span>&gt;
+                        &lt;<span class="text-primary">button</span> <span class="text-warning">class</span>="<span class="text-fancy">btn is-primary</span>"&gt;Buy now&lt;/<span class="text-primary">button</span>&gt;
+                        &lt;/<span class="text-primary">div</span>&gt;
+                        &lt;/<span class="text-primary">div</span>&gt;
+                        &lt;/<span class="text-primary">div</span>&gt;
+                    </code>
+                    </pre>
+        </section>
         <section id="Dropdowns">
             <h2 class="pt-20">Dropdowns</h2>
-            <hr class="mtn-20" />
+            <hr class="mtn-10" />
             <p>Dropdowns on hover</p>
             <nav class="nav is-vertical is-deep-blue">
                 <ul>
@@ -368,7 +553,7 @@
             </section>
         <section id="Labels">
             <h2 class="pt-20">Labels</h2>
-            <hr class="mtn-20" />
+            <hr class="mtn-10" />
             <span class="label is-primary">Primary label </span>
             <span class="label is-secondary">Secondary label </span>
             <span class="label is-error">Error label </span>
@@ -421,7 +606,7 @@
         </section>
         <section id="Modals">
             <h2 class="pt-20">Modal</h2>
-            <hr class="mtn-20" />
+            <hr class="mtn-10" />
             <pre>A modal is a dialog box/popup window
             Pyramid allows you to customize modal whatever you want.
             Modals can contain any element.<strong>You need to implement your own js
@@ -500,7 +685,7 @@
         </section>
         <section id="Navbars">
             <h2 class="pt-20">Navbars</h2>
-            <hr class="mtn-20" />
+            <hr class="mtn-10" />
             <h3 class="pt-20">Flexbox</h3>
             <p>Navbars are made to be modular so mobile navbars are seperated from desktop navbars.Resize window to see mobile-nav</p>
             <p>Flexbox mobile navbars are sepereted in 3 sections to be easier to customize and they are visible only in small screens</p>

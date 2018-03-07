@@ -1,0 +1,22 @@
+.card{
+    display: block;
+    @include rem(border, 1px solid $muted-grey);
+}
+
+.flex-card {
+    display: flex;
+    flex-direction: column;
+    @include rem(border, 1px solid $muted-grey);
+}
+.card-content{
+    @include rem(padding-top, 4px);
+    @include rem(padding-bottom, 4px);
+    @include rem(padding-left, 9px);
+    @include rem(padding-right, 9px);
+
+}
+
+    .card-content img{
+        @include rem(padding-left, 0);
+        @include rem(padding-right, 0);
+    }

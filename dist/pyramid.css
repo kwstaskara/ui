@@ -651,7 +651,8 @@ h5,
 h6 {
   color: inherit;
   font-weight: 500;
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 0; }
 
 .h1,
 .h2,
@@ -1220,6 +1221,9 @@ textarea.form-warning {
 .mrn-30 {
   margin-right: -30px;
   margin-right: -1.875rem; }
+
+.is-marginless {
+  margin: 0; }
 
 .container {
   padding-right: 12px;
@@ -1992,6 +1996,43 @@ a.label {
     color: #bcbcbc;
     pointer-events: none;
     cursor: default; }
+
+.card {
+  display: block;
+  border: 1px solid #bcbcbc;
+  border: 0.0625rem solid #bcbcbc; }
+
+.flex-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #bcbcbc;
+  border: 0.0625rem solid #bcbcbc; }
+
+.card-content {
+  padding-top: 4px;
+  padding-top: 0.25rem;
+  padding-bottom: 4px;
+  padding-bottom: 0.25rem;
+  padding-left: 9px;
+  padding-left: 0.5625rem;
+  padding-right: 9px;
+  padding-right: 0.5625rem; }
+
+.card-content img {
+  padding-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-right: 0; }
 
 .has-dropdown-click,
 .has-dropdown {
