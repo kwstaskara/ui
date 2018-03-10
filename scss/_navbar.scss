@@ -99,7 +99,7 @@ flex-direction: column;
     }
     .nav-item{
         text-decoration: none;
-        @include rem(padding, 0px 8px);
+        @include rem(padding, 0px 4px);
         &:hover,
         &:focus{
           @include Opacity(0.90);

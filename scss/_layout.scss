@@ -361,6 +361,10 @@
     margin: 0;
 }
 
+.border-left{
+    @include rem(border-left, 1px solid $muted-grey);
+}
+
 //containers
 .container {
     @include rem(padding-right, 12px);

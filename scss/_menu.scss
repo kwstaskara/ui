@@ -1,0 +1,12 @@
+.menu {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+   
+    list-style: none;
+    margin: 0;
+    @include rem(padding, 6px);
+    .nav-item{
+        @include rem(padding-top, 4px);
+    }
+}
