@@ -2,6 +2,7 @@
 <html>
 <head>
         <link rel="stylesheet" type="text/css" href="dist/pyramid.min.css">
+<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 <link rel="stylesheet" type="text/css" href="ionicons.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,24 +24,28 @@
     <!-- End Google Analytics -->
 </head>
 <body>
-        <nav class="nav is-fixed is-gradient-blue">
-
-                       
-        
-                <ul class="pyramid-nav text-center">
-                        <li><a href="docs" class="nav-item text-white "><i class="ion-android-archive"></i> Install</a> </li>
-                       <li><a href="docs" class="nav-item text-white "><i class="ion-ios-bookmarks"></i> Documentation</a>
-                   
-                     <li><a href="templates" class="nav-item text-white"><i class="ion-android-list"></i> Themes</a></li>
-                    </li>
-                        <li><a href="https://github.com/kwstaskara/pyramid" class="nav-item text-white "><i class="ion-social-github"></i> Github</a></li>
-                        <li><a class="nav-item text-white open-modal "><i class="ion-ios-paper"></i> News</a></li>
-                        <li><a href="https://blog.redpyramids.com" class="nav-item text-white "><i class="ion-ios-glasses"></i> Blog</a></li>
-                    </ul>
+        <nav class="nav is-gradient-blue is-fixed" >
+                
                     
-                  
-            </nav>
-    
+                <ul class="text-right navbar-mobile">
+                        <h3 class="navbar-logo float-left text-white nav-item">Pyramid UI</h3>
+                    <li> <a class="nav-item text-white mtn-10 menu-toggle" ><i class="ion-navicon-round h3"></i></a>  </li>
+                </ul>
+                <div class="container-1" >
+                <h3 class="navbar-logo float-left text-white nav-item  hide-xs">Pyramid UI</h3>
+                <ul class="text-right navbar-desktop ">
+                        <li><a href="docs" class="nav-item text-white mr-20"><i class="ion-android-archive"></i> Install</a> </li>
+                        <li><a href="docs" class="nav-item text-white mr-20"><i class="ion-ios-bookmarks"></i> Documentation</a>
+                    
+                      <li><a href="templates" class="nav-item text-white mr-20"><i class="ion-android-list"></i> Themes</a></li>
+                     </li>
+                         <li><a href="https://github.com/kwstaskara/pyramid " class="nav-item text-white mr-20 "><i class="ion-social-github"></i> Github</a></li>
+                         <li><a class="nav-item text-white open-modal mr-20"><i class="ion-ios-paper"></i> News</a></li>
+                         <li><a href="https://blog.redpyramids.com " class="nav-item text-white mr-20 "><i class="ion-ios-glasses"></i> Blog</a></li>
+                </ul>
+                </div>
+                </nav > 
+      
         <div class="modal">
                 <div class="modal-overlay"></div>
                 <div class="modal-content is-light is-rounded text-grey pl-20 col-lg-4  col-md-5 col-sm-5 col-xs-11">
@@ -58,51 +63,80 @@
 <![endif]-->
     <section id="header" class="is-gradient-blue dimmed pb-30 pt-30">
         
-    <div class="pt-30">
-<div class="text-center">
+    <div class="row has-gutters pt-30">
+<div class="container-1 pt-30">
+<div class="col pt-30 pb-30">
 
-<a class="img-centered" href="https://ui.redpyramids.com/">
-    <img  src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="250" height="250">
+  <h3 class="text-white ">Pyramid <span class="pulse">UI</span> 
+                <small class="text-white h6">Version <span id="result"></span> / </small>
+                <small class="text-white h6"><span id="result2"></span> mb minified </small> 
+            </h3>
+            <p class="text-white">CSS framework to build beutiful interfaces</p>
+</div>
+
+<div class="col pl-30">
+      <a class="hide-xs" href="https://ui.redpyramids.com/">
+        <img style="vertical-align:middle" class="text-center"  src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="250" height="250">
   </a>
-<h3 class="text-white text-center mtn-30">Pyramid <span class="pulse">Ui</span> <div class="text-center pb-20">
-<small class="text-white h6">Version <span id="result"></span> / </small>
-<small class="text-white h6"><span id="result2"></span> mb minified </small>
-
-</div></h3>
-
-
 </div>
 </div>
+</div>
+
+
+
 </section>
-<div class="is-ios pb-30" >
+<div class="is-white pt-30 pb-30" >
    
-    <div class="row pt-30 has-gutters container-2">
-        <div class="mt-30 col  col-xs-12 col-sm-5 col-md-5">
-            <h4 class="text-dark text-center"><i class="ion-social-css3-outline text-primary"></i> Css only</h4>
-            <h5 class="text-grey text-center pl-10 pr-10">Pyramid is an css only framework Javascript is not required, this result in fewer requests and faster page response. </h5>
+    <div class="row pt-30 pb-30 has-gutters container-1">
+        <div class="mt-30 col is-white-shadowed is-rounded pb-30  col-xs-12 col-sm-5 col-md-4">
+            <div class="text-center">
+                <i class=" ion-social-css3-outline h1 text-primary"></i>
+            <h4 class="text-dark "> Css only</h4>
+            <h5 class="text-grey pl-10 pr-10">Pyramid is an css only framework Javascript is not required, this result in fewer requests and faster page response. </h5>
         </div>
-            <div class="mt-30 col is-transparent col-xs-12 col-sm-5 col-md-5 ">
-            <h4 class="text-dark text-center "><i class="ion-checkmark-round text-success"></i> Not biased</h4>
-            <h5 class="text-grey text-center pl-10 pr-10">Pyramid is not biased with any css feature, allowing users to choose between multiple css features depending in browser compatibility.  </h5>
+        
         </div>
-            <div class="mt-30 col is-transparent col-xs-12 col-sm-5 col-md-5 ">
-            <h4 class="text-dark text-center"><i class="ion-arrow-resize text-error"></i>  Responsive</h4>
-            <h5 class=" text-grey text-center pl-10 pr-10">Pyramid css is mobile friendly and responsive, providing great experience across different screen sizes. </h5>
-        </div>
-                <div class="mt-30 col is-transparent col-xs-12 col-sm-5 col-md-5 ">
-            <h4 class="text-dark text-center"><i class="ion-social-tux text-dark"></i>  Open source</h4>
-            <h5 class="text-grey text-center pl-10 pr-10">Pyramid is open source tool to develop websites, ui, and apps at no cost.</h5>
-        </div>
+        <div class="mt-30 col is-white-shadowed is-rounded pb-30  col-xs-12 col-sm-5 col-md-4">
+                <div class="text-center">
+                        <i class="ion-checkmark-round text-success h1"></i>
+                <h4 class="text-dark "> Not Biased</h4>
+                <h5 class="text-grey pl-10 pr-10">Pyramid is not biased with any css feature, allowing users to choose between multiple css features depending in browser compatibility.  </h5>
+            </div>
+            
+            </div>
+          
+               
     </div>
+    <div class="row container-1 has-gutters pt-30 pb-30">
+    <div class="col is-white-shadowed is-rounded pb-30  col-xs-12 col-sm-5 col-md-5">
+            <div class="text-center">
+                    <i class="ion-arrow-resize text-error h1"></i> 
+            <h4 class="text-dark "> Responsive</h4>
+            <h5 class="text-grey pl-10 pr-10">Pyramid css is mobile friendly and responsive, providing great experience across different screen sizes. </h5>
+        </div>
+        
+        </div>
+        <div class="mt-30 col is-white-shadowed is-rounded pb-30  col-xs-12 col-sm-5 col-md-5">
+                <div class="text-center">
+                        <i class="ion-social-tux text-dark h1"></i>
+                <h4 class="text-dark "> Open source</h4>
+                <h5 class="text-grey pl-10 pr-10">Pyramid is open source tool to develop websites, ui, and apps at no cost.</h5>
+            </div>
+            
+            </div>
                 </div>
-    <section class="pb-30 border-top is-dark">
-        <div class="container-2">
+                </div>
+    <section class="pb-30 border-top is-dark ">
+        <div class="container-2" >
             <h3 class="text-center pt-30">Why pyramid <i class="ion-help"></i></h3>
             <p class="text-left  h5 col-lg-11">Pyramid is a new responsive css framework that aims in better browser compatibility. Pyramid is based on rem unit built upon <i class="ion-social-sass text-error"></i> sass preprocessor providing fallbacks for better browser support. Yes pyramid is not based on any css feature and is not obsessed with specific color values instead it provides multiple ways of doing things depending the user preference in theming and browser support. Multiple features ready such as flexbox, tables and many more!</p>
 <h3 class="text-center">Get started <span class="text-error">&hearts;</span></h3>
             <div class="text-center">
             <a class="btn is-primary is-rounded  mb-20" href="https://github.com/kwstaskara/pyramid/releases" target="_blank"><i class="ion-android-download"></i> Download pyramid css</a>
                 </div>
+
+
+                
         </div>
 
     </section>
@@ -123,7 +157,22 @@
       
     </section>
   
-    <section class="is-light pb-30 pt-30">
+      <section class="is-material pb-30 pt-30">
+
+            <div class="container-2">
+                <h3 class="text-center">Support pyramid ui</h3>
+            <div class="text-center">
+                <p class="h5">Do you find pyramid ui interesting ? Are you making money using it ? Donate now and help pyramid grow.</p>
+                <a href="https://paypal.me/redpyramids" class=" btn is-primary">Donate</a>
+                    
+   
+            </div>
+    
+            </div>
+           
+        </section>
+    
+  <section class="is-light pb-30 pt-30">
 
         <div class="container-2">
             <h3 class="text-center text-fancy">Templates</h3>
@@ -142,21 +191,6 @@
                 </div>
             </div>
     </section>
-    
-    <section class="is-material pb-30 pt-30">
-
-            <div class="container-2">
-                <h3 class="text-center">Support pyramid ui</h3>
-            <div class="text-center">
-                <p class="h5">Do you find pyramid ui intresting ? Are you making money using it ? Donate now and help pyramid grow.</p>
-                <a href="https://paypal.me/redpyramids" class=" btn is-primary">Donate</a>
-                    
-   
-            </div>
-    
-            </div>
-           
-        </section>
         
 
 
@@ -188,7 +222,7 @@ $.get(url).done(function (data) {
 var size;
 $.get(url2).done(function (data){
     var sizeResult = data.size / 1000;
-  $('#result2').html(sizeResult.toFixed(1))
+  $('#result2').html(sizeResult.toFixed(1));
 });
       
 $(function() {                       //run when the DOM is ready
@@ -196,7 +230,11 @@ $(function() {                       //run when the DOM is ready
       $(".modal").addClass("is-active");      //add the class to the clicked element
     });
   });
-
+$(function(){
+$(".menu-toggle").click(function(){
+$(".navbar-desktop").toggleClass("toggle-nav");
+});
+});
   $(function() {                      
     $(".close-modal").click(function() { 
       $(".modal").removeClass("is-active");   
