@@ -62,5 +62,6 @@ Built with Normalizer
 - [Dropdowns](https://ui.redpyramids.com/items#Dropdowns)
 - [Labels](https://ui.redpyramids.com/items#Labels)
 - [Modals](https://ui.redpyramids.com/items#Modals)
+- [Menus](https://ui.redpyramids.com/items#Menus)
 - [Navbars](https://ui.redpyramids.com/items#Navbars)
 
