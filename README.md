@@ -9,8 +9,7 @@
    Pyramid Ui is a web front-end framework based in multiple css features.
 <br>
  <a href="https://ui.redpyramids.com/docs">Documentation</a>
-    ·
-    <a href="https://blog.redpyramids.com/">Blog</a>
+    
 </p>
 
 
@@ -39,7 +38,7 @@ Pyramid ui contains new css ruls but old features as well. Developers can choose
 Built with Normalizer 
 
 ### Using from CDN
-.
+
 
 `<link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/pyramid.ui@latest/dist/pyramid.min.css">`
 
