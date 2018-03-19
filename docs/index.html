@@ -16,17 +16,7 @@
    img{pointer-events: none !important;} 
 </style>
 <!-- Google Analytics -->
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-    ga('create', 'UA-114329903-1', 'auto');  // Replace with your property ID.
-    ga('send', 'pageview');
-    
-    </script>
-    <!-- End Google Analytics -->
+
 </head>
 <body>
         <nav class="nav is-gradient-blue is-fixed" >
@@ -46,7 +36,7 @@
                      </li>
                          <li><a href="https://github.com/kwstaskara/pyramid " class="nav-item text-white mr-20 "><i class="ion-social-github"></i> Github</a></li>
                          <li><a class="nav-item text-white open-modal mr-20"><i class="ion-ios-paper"></i> News</a></li>
-                         <li><a href="https://blog.redpyramids.com " class="nav-item text-white mr-20 "><i class="ion-ios-glasses"></i> Blog</a></li>
+                        
                 </ul>
                 </div>
                 </nav > 
@@ -61,6 +51,7 @@
                     <hr />
                      <small>February 6 2018</small>
                     <p>First release of pyramid framework coming soon!</p>
+                 
                 </div>
             </div>
 <!--[if lt IE 8]>
@@ -69,14 +60,15 @@
     <section id="header" class="is-gradient-blue dimmed pb-30 pt-30 ">
         
     <div class="row has-gutters pt-30">
-<div class="container-1 pt-30">
+<div class="container-1 pt-30 pb-30">
 <div class="col pt-30 pb-30">
 
   <h3 class="text-white ">Pyramid <span class="pulse">UI</span> 
                 <small class="text-white h6">Version <span id="result"></span> / </small>
                 <small class="text-white h6"><span id="result2"></span> mb minified </small> 
             </h3>
-            <p class="text-white">CSS framework to build beutiful interfaces</p>
+            <p class="text-white">CSS framework to build beautiful user interfaces</p>
+            <a href="docs" class="btn is-large is-deep-purple is-rounded">Get started</a>
 </div>
 
 <div class="col pl-30">
@@ -92,28 +84,37 @@
 </section>
 <div class="is-white pt-30 pb-30" >
    
-    <div class="row pt-30 pb-30 has-gutters container-1">
-        <div class="mt-30 col is-white-shadowed is-rounded pb-30  col-xs-12 col-sm-5 col-md-4">
+    <div class="row-sm pt-30 pb-30 has-gutters container-3">
+        <div class="mt-30 col-sm is-white-shadowed is-rounded pb-30  col-md-4">
             <div class="text-center">
                 <i class=" ion-social-css3-outline h1 text-primary"></i>
-            <h4 class="text-dark "> Css only</h4>
+            <h4 class="text-dark "> CSS only</h4>
             <h5 class="text-grey pl-10 pr-10">Pyramid is an css only framework Javascript is not required, this result in fewer requests and faster page response. </h5>
         </div>
         
         </div>
-        <div class="mt-30 col is-white-shadowed is-rounded pb-30  col-xs-12 col-sm-5 col-md-4">
+        <div class="mt-30 col-sm is-white-shadowed is-rounded pb-30 col-md-4">
                 <div class="text-center">
                         <i class="ion-checkmark-round text-success h1"></i>
                 <h4 class="text-dark "> Not Biased</h4>
-                <h5 class="text-grey pl-10 pr-10">Pyramid is not biased with any css feature, allowing users to choose between multiple css features depending in browser compatibility.  </h5>
+                <h5 class="text-grey pl-10 pr-10">Pyramid is not biased with any css feature, allowing users to choose between multiple css features depending in browser compatibility. </h5>
             </div>
             
+            
             </div>
-          
+            <div class="mt-30 col-sm is-white-shadowed is-rounded pb-30 col-md-4">
+                <div class="text-center">
+                        <i class="ion-ios-albums text-warning h1"></i>
+                <h4 class="text-dark "> Multiple Components</h4>
+                <h5 class="text-grey pl-10 pr-10">Pyramid UI comes with many ready to use components built in such as navbars menus cards and many more.</h5>
+            </div>
+            
+            
+            </div>
                
     </div>
-    <div class="row container-1 has-gutters pt-30 pb-30">
-    <div class="col is-white-shadowed is-rounded pb-30  col-xs-12 col-sm-5 col-md-5">
+    <div class="row-sm container-3 collapse-sm has-gutters pt-30 pb-30">
+    <div class="col-sm is-white-shadowed is-rounded pb-30   ">
             <div class="text-center">
                     <i class="ion-arrow-resize text-error h1"></i> 
             <h4 class="text-dark "> Responsive</h4>
@@ -121,7 +122,15 @@
         </div>
         
         </div>
-        <div class="mt-30 col is-white-shadowed is-rounded pb-30  col-xs-12 col-sm-5 col-md-5">
+        <div class="mt-30 col-sm is-white-shadowed is-rounded pb-30">
+                <div class="text-center">
+                        <i class="ion-ios-timer text-brown h1"></i>
+                <h4 class="text-dark "> Up to date</h4>
+                <h5 class="text-grey pl-10 pr-10">Coded in <strong>SASS</strong> preprocessor,compiled with <strong>Gulp</strong> task-runner,minified with <strong>CSS NANO</strong>,autoprefixed with <strong></strong> autoprefixer,normalized with <strong>Normalizer.css</strong></h5>
+            </div>
+            
+            </div>
+            <div class="mt-30 col-sm is-white-shadowed is-rounded pb-30">
                 <div class="text-center">
                         <i class="ion-social-tux text-dark h1"></i>
                 <h4 class="text-dark "> Open source</h4>
@@ -131,81 +140,113 @@
             </div>
                 </div>
                 </div>
-    <section class="pb-30 border-top is-dark ">
-        <div class="container-2" >
-            <h3 class="text-center pt-30">Why pyramid <i class="ion-help"></i></h3>
-            <p class="text-left  h5 col-lg-11">Pyramid is a new responsive css framework that aims in better browser compatibility. Pyramid is based on rem unit built upon <i class="ion-social-sass text-error"></i> sass preprocessor providing fallbacks for better browser support. Yes pyramid is not based on any css feature and is not obsessed with specific color values instead it provides multiple ways of doing things depending the user preference in theming and browser support. Multiple features ready such as flexbox, tables and many more!</p>
-<h3 class="text-center">Get started <span class="text-error">&hearts;</span></h3>
-            <div class="text-center">
-            <a class="btn is-primary is-rounded  mb-20" href="https://github.com/kwstaskara/pyramid/releases" target="_blank"><i class="ion-android-download"></i> Download pyramid css</a>
-                </div>
-
-
+    <section class="pb-30 mt-30 pt-30">
+            <div class="container-3" >
+        <div class="row-sm has-gutters collapse-sm">
+    <div class="col-sm text-center">
+        <img src="https://ui.redpyramids.com/media/csstech.png" style="vertical-align:middle" width="450" height="550">
+        </div>
+        <div class="col-sm mt-30" style="vertical-align:middle">
+            <h3>Everything you need.</h3>
+            <p class="h5 text-dark">Pyramid UI provides everything you need to start developing web-pages and web-apps, but also it gives you the freedom you need to apply you custom color theming. Pyramid UI does not apply default colors to components as a result web-pages and apps made with the framework are not looking the same. Custom CSS may not needed.</p>
+            </div>
                 
         </div>
-
+    </div>
     </section>
-  
-    <section class="is-flat pb-30 pt-30">
-
-        <div class=" container-2">
+    <section class="pb-30 mt-30 pt-30 is-white-shadowed">
+        <div class="container-2" >
+    <div class="row-sm has-gutters collapse-sm">
+ <div class="col-sm mt-30" style="vertical-align:middle">
+        <h3>Feature rich all in one tool</h3>
+        <p class="h5 text-dark">Pyramid UI is based on multiple CSS features not just flexbox but also tables and CSS grid allowing users pick the CSS rules they desire. For this reason components are built with multiple CSS rules.</p>
+        </div>
+   <div class="col-sm pb-30 text-center">
+    <img src="https://ui.redpyramids.com/media/css.png" style="vertical-align:middle" width="460" height="450">
+    </div>
+            
+    </div>
+</div>
+</section>
+<section class="is-white-shadowed pb-30 pt-30">
+<div class="row-sm">
+    <div class="container-3">
+ <div class="col-sm col-sm-6 pb-30 text-center">
+            <img src="https://ui.redpyramids.com/media/responsive.png" style="vertical-align:middle" width="550" height="550">
+            </div>
+           <div class="col-sm col-md-6" style="vertical-align: middle">
+        <h3 class="text-center text-fancy">Responsive Templates</h3>
+    <div class="text-center">
+        <p class="h5">Here you can find templates that are built with Pyramid framework but also you can download the starter template to get started easily with the framework. </p>
+         <a href="https://ui.redpyramids.com/media/starter.html" class="btn is-deep-blue is-rounded  text-center mb-10" download><i class="ion-ios-list"></i> Starter template</a>
+         <a href="templates" class="btn is-fancy is-rounded  text-center mb-10" ><i class="ion-ios-more-outline"></i> More templates</a>
+        </div>
+        
+    </div>
+</div>
+    </div>
+    
+</section>
+    <!--
+       -->
+    <section class="is-deep-purple pb-30 pt-30">
+            <div class=" container-2">
+        <div class="row-sm">
+ 
+            <div class="col-sm">
             <h3 class="text-center">Help us improve!</h3>
             <p class="text-left h5">Do not hesitate to tell us your opinion about new features and improvements,also if you have found any bug or inconsistencies please consider posting them in the issues section in our github page. We like to hear people opinions to improve pyramid constantly in order to provide a better polished framework.</p>
             <p class="text-center"> You can post your issues or improvements here:
         
         </p>
         <div class="text-center">
-             <a class="btn is-error is-rounded  text-center mb-20" href="https://github.com/kwstaskara/pyramid/issues" target="_blank"><i class="ion-information-circled"></i> Issues page</a>
-        </div>
+                <a class="btn is-crimson is-rounded  text-center mb-20" href="https://github.com/kwstaskara/pyramid/issues" target="_blank"><i class="ion-information-circled"></i> Issues page</a>
+           </div>
+    </div>
+       
+<div class="col-sm col-md-1 col-xs-1 col-sm-1">
 
-        </div>
-      
+</div>
+        
+        <div class="col-sm">
+                <h3 class="text-center">Support pyramid ui</h3>
+                <div class="text-center">
+                    <p class="h5 text-left">Do you find pyramid ui interesting ? Are you making money using it ? Donate now and help pyramid grow.</p>
+                    <a href="https://paypal.me/redpyramids" class=" btn is-secondary">Donate</a>
+                        
+       
+                </div>
+        </div>  
+    </div>
+    </div>    
     </section>
   
-      <section class="is-material pb-30 pt-30">
+      <section class="is-deep-purple ">
 
             <div class="container-2">
-                <h3 class="text-center">Support pyramid ui</h3>
-            <div class="text-center">
-                <p class="h5">Do you find pyramid ui interesting ? Are you making money using it ? Donate now and help pyramid grow.</p>
-                <a href="https://paypal.me/redpyramids" class=" btn is-primary">Donate</a>
-                    
-   
-            </div>
+                    <div>
+                            <h3 class="text-center">Find us on social media <i class="ion-android-happy text-white"></i></h3>
+                                <div class="text-center">
+                                     <a class="btn text-white   text-center mb-20" href="https://www.facebook.com/redpyramids/" target="_blank"><i class="ion-social-facebook h2"></i> </a>
+                                     <a class="btn text-white text-center mb-20" href="https://github.com/kwstaskara/pyramid" target="_blank"><i class="ion-social-github h2"></i></a>
+                                     <a class="btn text-white text-center mb-20" href="https://twitter.com/Red_Pyramids" target="_blank"><i class="ion-social-twitter h2"></i></a>
+                                </div>
+                            </div>
     
             </div>
            
         </section>
     
-  <section class="is-light pb-30 pt-30">
-
-        <div class="container-2">
-            <h3 class="text-center text-fancy">Templates</h3>
-        <div class="text-center">
-            <p class="h5">Here you can find templates that are built with pyramid ui but also you can download the starter template to get started easily with the framework. </p>
-             <a href="https://ui.redpyramids.com/media/starter.html" class="btn is-deep-blue is-rounded  text-center mb-10" download><i class="ion-ios-list"></i> Starter template</a>
-             <a href="templates" class="btn is-fancy is-rounded  text-center mb-10" ><i class="ion-ios-more-outline"></i> More templates</a>
-        </div>
-
-        </div>
-        <div class="mt-30">
-            <h3 class="text-center">Find us on social media <i class="ion-android-happy text-dark"></i></h3>
-                <div class="text-center">
-                     <a class="btn is-secondary is-rounded  text-center mb-20" href="https://www.facebook.com/redpyramids/" target="_blank"><i class="ion-social-facebook"></i> Facebook</a>
-                     <a class="btn is-dark is-rounded  text-center mb-20" href="https://github.com/kwstaskara/pyramid" target="_blank"><i class="ion-social-github"></i> Github</a>
-                </div>
-            </div>
-    </section>
-        
+  
 
 
-    <section class="row is-light mt-20 ">
-        <p class="text-center"><a href="#header" class="btn is-link is-large"> <i class="text-dark ion-android-arrow-dropup-circle"></i></a></p>
-        <p class="text-center text-dark ">Made with <span class="text-error">&hearts;</span> by  <a href="https://github.com/kwstaskara" class="text-grey">Konstantinos Karagiorgos</a> <i class="ion-social-tux"></i> <i class="ion-social-sass text-error"></i> <i class="ion-social-css3 text-dark"></i> <i class="ion-social-html5-outline"></i></p>
-           <small> <a class="text-dark" href="https://github.com/kwstaskara/pyramid" target="_blank">Github |</a>
-            <a class="text-dark" href="docs"> Documentation</a></small>
+    <section class="row is-deep-purple  ">
+        <p class="text-center"><a href="#header" class="btn is-link is-large"> <i class="text-white ion-android-arrow-dropup-circle h1"></i></a></p>
+        <p class="text-center text-white ">Made with <span class="text-error">&hearts;</span> by  <a href="https://github.com/kwstaskara" class="text-white">Konstantinos Karagiorgos</a> <i class="ion-social-tux"></i> <i class="ion-social-sass text-error"></i> <i class="ion-social-css3 text-white"></i> <i class="ion-social-html5-outline"></i></p>
+           <small> <a class="text-white" href="https://github.com/kwstaskara/pyramid" target="_blank">Github |</a>
+            <a class="text-white" href="docs"> Documentation</a></small>
 
-          <small> / Licensed under the <a class="text-dark" href="https://github.com/kwstaskara/pyramid/blob/master/LICENSE">MIT License </a></small>
+          <small> / Licensed under the <a class="text-white" href="https://github.com/kwstaskara/pyramid/blob/master/LICENSE">MIT License </a></small>
           
     </section>
   
@@ -246,5 +287,16 @@ $(".navbar-desktop").toggleClass("toggle-nav");
     });
   });
     </script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+    ga('create', 'UA-114329903-1', 'auto');  // Replace with your property ID.
+    ga('send', 'pageview');
+    
+    </script>
+    <!-- End Google Analytics -->   
 </body>
 </html>

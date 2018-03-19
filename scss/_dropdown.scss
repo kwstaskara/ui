@@ -40,6 +40,10 @@
         li{
             padding: 5px;
         }
+        a:hover{
+            text-decoration: none;
+            @include Opacity(0.90);
+        }
     }
 .dropdown-right{
     left: auto;

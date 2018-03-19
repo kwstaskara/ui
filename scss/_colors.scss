@@ -81,6 +81,7 @@
   color: white
 }
 
+
 .is-crimson{
   background-color: crimson;
   color: white;
@@ -96,6 +97,10 @@
   color:white;
 }
 
+.is-deep-purple{
+  background-color: #220833;
+  color:white;
+}
 
 .is-link{
 background-color: transparent;
@@ -144,6 +149,17 @@ background-color: transparent;
 }
 
 //Everyone likes gradients
+.is-gradient-green{
+  background:linear-gradient(135deg, #81fbb8 0%,#28c76f 100%);
+  color: white;
+}
+
+
+.is-gradient-orange{
+  background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+
+}
+
 .is-gradient-rose{
   background: #5f2c82; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #5f2c82, #49a09d); /* Chrome 10-25, Safari 5.1-6 */
@@ -169,4 +185,9 @@ background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, F
 background: -webkit-linear-gradient(to right, #BFE6BA, #D3959B);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #BFE6BA, #D3959B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+
+.has-shadows{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }

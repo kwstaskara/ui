@@ -365,6 +365,10 @@
     @include rem(border-left, 1px solid $muted-grey);
 }
 
+.border-right{
+    @include rem(border-right, 1px solid $muted-grey);
+}
+
 //containers
 .container {
     @include rem(padding-right, 12px);
@@ -478,6 +482,13 @@
     z-index: 1;
 }
 
+.is-fixed-bottom {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+}
+
+
 .absol-right {
     position: absolute;
     right: 0;
@@ -564,3 +575,5 @@
 .border-bottom {
     @include rem(border-bottom, 1px solid $grey-color);
 }
+
+
