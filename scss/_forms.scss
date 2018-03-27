@@ -11,6 +11,7 @@
    & input:not([type]),
    & textarea,
     select {
+        border: none;
         display: block;
        -webkit-appearance: none;
        -moz-appearance: none;
