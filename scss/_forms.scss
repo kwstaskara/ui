@@ -17,7 +17,6 @@
        -moz-appearance: none;
        appearance: none;
        @include rem(border, 1px solid #ccc);
-       box-shadow: none;
        box-sizing: inherit;
        padding: .6rem 1.0rem;
        &:focus {
@@ -66,13 +65,10 @@
    // width: 140px;
         }
     }
-.is-centered{
-    text-align: center;
    & label{
        margin-right:160px;
    }
 
-}
 
 input,
 textarea

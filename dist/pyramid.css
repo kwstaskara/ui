@@ -1701,8 +1701,7 @@ textarea.form-warning {
   text-align: justify; }
 
 .is-centered {
-  margin: 0 auto;
-  text-align: center; }
+  margin: 0 auto; }
 
 .fixed-centered {
   position: fixed;
