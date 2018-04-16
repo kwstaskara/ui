@@ -1,86 +1,109 @@
+.form-input {
+    appearance: none;
+    width: 100%;
+    display: block;
+    @include rem(border, 1px solid #ccc);
+    position: relative;
+    @include rem(padding, 8px 4px 8px 10px);
+    max-width: 100%;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    background-image: none;
 
-
-.form {
-   & input[type='email'],
-   & input[type='number'],
-   & input[type='password'],
-   & input[type='search'],
-   & input[type='tel'],
-   & input[type='text'],
-   & input[type='url'],
-   & input:not([type]),
-   & textarea,
-    select {
-        border: none;
-        display: block;
-       -webkit-appearance: none;
-       -moz-appearance: none;
-       appearance: none;
-       @include rem(border, 1px solid #ccc);
-       box-sizing: inherit;
-       padding: .6rem 1.0rem;
-       &:focus {
-            border-color: $primary-color;
-            outline: 0;
-        }
-   }
-
-        select {
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="%23d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
-            @include rem(padding-right, 83px);
-
-            &:focus {
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="%233cccccc" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
-        }
-        }
-
-        textarea {
-
-            min-height: 6.5rem;
-        }
-        label,
-        legend {
-            display: block;
-            font-size: 1rem;
-            margin-bottom: .5rem;
-          font-weight: 700;
-
-        }
-        fieldset {
-
-            border-width: 0;
-            padding: 0;
-        }
-        input[type='checkbox'],
-        input[type='radio'] {
-            display: inline;
-        }
-        .label-inline {
- display:inline-block;
-    *display: inline;
-    zoom:1;
-    float: left;
-    padding-top: 5px;
-    text-align: right;
-   // width: 140px;
+    &:focus{
+        border-color: $muted-grey;
+        outline-color: transparent;
+        &.is-circled{
+            outline: none;
         }
     }
-   & label{
-       margin-right:160px;
-   }
+    
+}
 
+label,
+legend {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    font-weight: 700;
+}
+
+fieldset {
+    border-width: 0;
+    padding: 0;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+    display: inline;
+}
+
+.label-inline {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    float: left;
+    padding-top: 5px;
+    text-align: right; // width: 140px;
+    label {
+        margin-right: 160px;
+    }
+}
 
 input,
-textarea
-{
-    &.form-error{
-    border-color: $error-color!important;
-  }
+textarea {
+    &.form-error {
+        border-color: $error-color !important;
+        &:focus{
+            outline-color: $error-color;
+        }
+    }
+    &.form-success {
+        border-color: $success-color !important;
+        &:focus{
+            outline-color: $success-color;
+        }
+    }
+    &.form-warning {
+        border-color: $warning-color !important;
+        &:focus{
+            outline-color: $warning-color;
+        }
+    }
+}
 
-  &.form-success{
-    border-color: $success-color!important;
-  }
-  &.form-warning {
-    border-color: $warning-color!important;
-  }
+.has-icon-left,
+.has-icon-right {
+    position: relative;
+    .form-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        @include rem(font-size, 25px);
+    }
+}
+
+.has-icon-right .form-icon {
+    @include rem(right, 13px);
+}
+
+.has-icon-left {
+    .form-icon {
+        @include rem(left, 13px);
+    }
+    .form-input {
+        @include rem(padding-left, 48px);
+    }
+}
+
+.is-lined{
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    &:focus{
+        outline: none;
+        border-color: $muted-grey;
+    }
 }

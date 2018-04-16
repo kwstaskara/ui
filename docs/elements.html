@@ -1,90 +1,107 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-        <link rel="stylesheet" type="text/css" href="dist/pyramid.min.css">
-<link rel="stylesheet" type="text/css" href="ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/pyramid.min.css">
+    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Pyramid Ui</title>
-<!-- Google Analytics -->
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-    ga('create', 'UA-114329903-1', 'auto');  // Replace with your property ID.
-    ga('send', 'pageview');
-    
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-114329903-1', 'auto'); // Replace with your property ID.
+        ga('send', 'pageview');
     </script>
     <!-- End Google Analytics -->
 </head>
 
 
 <body class="text-grey">
-<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<nav class="nav is-gradient-blue is-fixed">
-    <div class="container-1">
-           
-            <ul class="text-right navbar-mobile">
-                    <img class="navbar-logo float-left" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
-                    <li><a class="nav-item text-white nav-open3"> Menu</a></li>
-                <li><a href="https://github.com/kwstaskara/pyramid" class="nav-item text-white "><i class="ion-social-github"></i> Github</a></li>
-                
-                </ul>
-    <img class="navbar-logo float-left hide-xs" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
-    <ul class="text-right text-left-xs navbar-desktop is-vertical   pyramid-nav">
-            <li><a href="https://ui.redpyramids.com/" class="nav-item text-white ">Home</a></li>
-        <li><a href="docs" class="nav-item text-white ">Install</a>
-        </li>
-        <li class="has-dropdown"><a href="elements" class="nav-item text-white ">Elements</a>
-            <ul class="nav is-vertical is-flat is-rounded dropdown ">
-                <li>
-                    <a href="elements#Typography" class="text-white"> Typography</a>
-                </li>
-                <li>
-                    <a href="elements#Colors" class="text-white"> Colors</a>
-                </li>
-                <li>
-                    <a href="elements#Forms" class="text-white"> Forms</a>
-                </li>
-                <li>
-                    <a href="elements#Tables" class="text-white"> Tables</a>
-                </li>
-                <li>
-                    <a href="elements#Media" class="text-white"> Media</a>
-                </li>
-            </ul>
-        </li>
+    <nav class="nav is-gradient-blue is-fixed">
+        <div class="container-1">
 
-        <li class="has-dropdown"><a href="layout" class="nav-item text-white">Layout</a>
-            
-            <ul class="nav is-vertical is-flat has-lines is-rounded dropdown">
-                    <li>
+            <ul class="text-right navbar-mobile">
+                <img class="navbar-logo float-left" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
+                <li>
+                    <a class="nav-item text-white nav-open3"> Menu</a>
+                </li>
+                <li>
+                    <a href="https://github.com/kwstaskara/pyramid" class="nav-item text-white ">
+                        <i class="ion-social-github"></i> Github</a>
+                </li>
+
+            </ul>
+            <img class="navbar-logo float-left hide-xs" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
+            <ul class="text-right text-left-xs navbar-desktop is-vertical   pyramid-nav">
+                <li>
+                    <a href="https://ui.redpyramids.com/" class="nav-item text-white mr-20 ">Home</a>
+                </li>
+                <li>
+                    <a href="docs" class="nav-item text-white mr-20">Install</a>
+                </li>
+                <li class="has-dropdown">
+                    <a href="elements" class="nav-item text-white mr-20 ">Elements</a>
+                    <ul class="nav is-vertical is-flat is-rounded dropdown ">
+                        <li>
+                            <a href="elements#Typography" class="text-white"> Typography</a>
+                        </li>
+                        <li>
+                            <a href="elements#Colors" class="text-white"> Colors</a>
+                        </li>
+                        <li>
+                            <a href="elements#Forms" class="text-white"> Forms</a>
+                        </li>
+                        <li>
+                            <a href="elements#Tables" class="text-white"> Tables</a>
+                        </li>
+                        <li>
+                            <a href="elements#Media" class="text-white"> Media</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="has-dropdown">
+                    <a href="layout" class="nav-item text-white mr-20">Layout</a>
+
+                    <ul class="nav is-vertical is-flat has-lines is-rounded dropdown">
+                        <li>
                             <a href="layout#Grid" class="text-white"> Grid</a>
                         </li>
                         <li>
                             <a href="layout#Responsive" class="text-white"> Responsive</a>
                         </li>
                         <li>
-                                <a href="layout#Containers" class="text-white"> Containers</a>
-                            </li>
+                            <a href="layout#Containers" class="text-white"> Containers</a>
+                        </li>
                         <li>
                             <a href="layout#Utilities" class="text-white"> Utilities</a>
                         </li>
                         <li>
                             <a href="layout#Controllers" class="text-white"> Controllers</a>
                         </li>
-                </ul>
-        </li>
-        <li class="has-dropdown">
-            <a href="items" class="nav-item text-white">Items</a>
-            <ul class="nav is-vertical dropdown dropdown-right is-rounded is-flat">
-                   
-                    <li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="items" class="nav-item text-white mr-20">Items</a>
+                    <ul class="nav is-vertical dropdown dropdown-right is-rounded is-flat">
+
+                        <li>
                             <a href="items#Accordions" class="text-white"> Accordions</a>
                         </li>
                         <li>
@@ -114,50 +131,65 @@
                         <li>
                             <a href="items#Pagination" class="text-white"> Pagination</a>
                         </li>
-                
-                </ul>
-            </li>
-            <li><a href="https://github.com/kwstaskara/pyramid" class="nav-item text-white "><i class="ion-social-github"></i> Github</a></li>
-        </ul>
-    </div>
-      
-</nav>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://github.com/kwstaskara/pyramid" class="nav-item text-white ">
+                        <i class="ion-social-github"></i> Github</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
 
 
-<section class="container-2 pt-30">
-    <div id="Typography">
-          <h2 class="pt-30">Typography</h2>
-        <hr class="mtn-10" />
- <h3>Headings:</h3>
-            <h1>h1 Heading<small> 40px</small></h1>
-            <h2>h2 Heading <small> 36px</small></h2>
-            <h3>h3 Heading <small> 28px</small></h3>
-            <h4>h4 Heading <small> 24px</small></h4>
-            <h5>h5 Heading <small> 18px</small></h5>
-            <h6>h6 Heading <small> 16px</small></h6>
-    </div>
-  <pre class="is-light pl-10">
+    <section class="container-2 pt-30">
+        <div id="Typography">
+            <h2 class="pt-30">Typography</h2>
+            <hr class="mtn-10" />
+            <h3>Headings:</h3>
+            <h1>h1 Heading
+                <small> 40px</small>
+            </h1>
+            <h2>h2 Heading
+                <small> 36px</small>
+            </h2>
+            <h3>h3 Heading
+                <small> 28px</small>
+            </h3>
+            <h4>h4 Heading
+                <small> 24px</small>
+            </h4>
+            <h5>h5 Heading
+                <small> 18px</small>
+            </h5>
+            <h6>h6 Heading
+                <small> 16px</small>
+            </h6>
+        </div>
+        <pre class="is-light pl-10">
          <small>Html</small>
         <code>
             &lt;<span class="text-primary">h3</span>&gt;heading 3&lt;/<span class="text-primary">h3</span>&gt;
             &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">h3</span>"&gt;Paragraph as h3  &lt;/<span class="text-primary">p</span>&gt;
         </code>
     </pre>
-    <div id="Colors">
-       <h2 class="pt-20">Colors</h2>
-        <hr class="mtn-10" />
-    <p class="text-primary">Primary text color</p>
-    <p class="text-error">Error text color</p>
-    <p class="text-success">Success text color</p>
-    <p class="text-warning">Warning text color</p>
-    <p class="text-black">Black text color</p>
-    <p class="text-white is-dark col-lg-2">White text color</p>
-    <p class="text-grey">Grey text color</p>
-    <p class="text-dark">Dark text color</p>
-    <p class="text-fancy">Fancy text color</p>
-    <p class="text-brown">Brown text color</p>
-    <mark>Marked text</mark>
-    <pre class="is-light pl-10">
+        <div id="Colors">
+            <h2 class="pt-20">Colors</h2>
+            <hr class="mtn-10" />
+            <p class="text-primary">Primary text color</p>
+            <p class="text-error">Error text color</p>
+            <p class="text-success">Success text color</p>
+            <p class="text-warning">Warning text color</p>
+            <p class="text-black">Black text color</p>
+            <p class="text-white is-dark col-lg-2">White text color</p>
+            <p class="text-grey">Grey text color</p>
+            <p class="text-dark">Dark text color</p>
+            <p class="text-fancy">Fancy text color</p>
+            <p class="text-brown">Brown text color</p>
+            <mark>Marked text</mark>
+            <pre class="is-light pl-10">
            <small>Html</small>
         <code>
     &lt;<span class="text-primary">p</span> <span class="text-warning">class</span>="<span class="text-fancy">text-primary</span>"&gt;Primary text color&lt;/<span class="text-primary">p</span>&gt;
@@ -173,41 +205,41 @@
     &lt;<span class="text-primary">mark</span>&gt;Marked text&lt;/<span class="text-primary">mark</span>&gt;
         </code>
     </pre>
-        <h4>Backgrounds</h4>
-        <div class="row-xs has-gutters">
-            <div class="col-xs">
-        <div class="is-light col-lg-8 pb-30 pt-30 mt-10 pl-10" >Light background</div>
-        <div class="is-dark col-lg-8 pb-30 pt-30 mt-10 pl-10">Dark background</div>
-        <div class="is-grey col-lg-8 pb-30 pt-30 mt-10 pl-10">Grey background</div>
-        <div class="is-pink col-lg-8 pb-30 pt-30 mt-10 pl-10">Pink background</div>
-        <div class="is-slateblue col-lg-8 pb-30 pt-30 mt-10 pl-10">Slateblue background</div>
-            </div>
-            <div class="col-xs">
-        <div class="is-success col-lg-8 pb-30 pt-30 mt-10 pl-10">Success background</div>
-        <div class="is-warning col-lg-8 pb-30 pt-30 mt-10 pl-10">Warning background</div>
-        <div class="is-error col-lg-8 pb-30 pt-30 mt-10 pl-10">Error background</div>
-        <div class="is-brown col-lg-8 pb-30 pt-30 mt-10 pl-10">Brown background</div>
-        <div class="is-deep-purple col-lg-8 pb-30 pt-30 mt-10 pl-10">deep purple background color</div>
+            <h4>Backgrounds</h4>
+            <div class="row-xs has-gutters">
+                <div class="col-xs">
+                    <div class="is-light col-lg-8 pb-30 pt-30 mt-10 pl-10">Light background</div>
+                    <div class="is-dark col-lg-8 pb-30 pt-30 mt-10 pl-10">Dark background</div>
+                    <div class="is-grey col-lg-8 pb-30 pt-30 mt-10 pl-10">Grey background</div>
+                    <div class="is-pink col-lg-8 pb-30 pt-30 mt-10 pl-10">Pink background</div>
+                    <div class="is-slateblue col-lg-8 pb-30 pt-30 mt-10 pl-10">Slateblue background</div>
                 </div>
-<div class="col-xs">
-        <div class="is-primary col-lg-8 pb-30 pt-30 mt-10 pl-10">Primary background</div>
-        <div class="is-secondary col-lg-8 pb-30 pt-30 mt-10 pl-10">Secondary background</div>
-        <div class="is-fancy col-lg-8 pb-30 pt-30 mt-10 pl-10">Fancy background</div>
-        <div class="is-ios col-lg-8 pb-30 pt-30 mt-10 pl-10">Ios background color</div>
-        <div class="is-seagreen col-lg-8 pb-30 pt-30 mt-10 pl-10">Seagreen background color</div>
-        
+                <div class="col-xs">
+                    <div class="is-success col-lg-8 pb-30 pt-30 mt-10 pl-10">Success background</div>
+                    <div class="is-warning col-lg-8 pb-30 pt-30 mt-10 pl-10">Warning background</div>
+                    <div class="is-error col-lg-8 pb-30 pt-30 mt-10 pl-10">Error background</div>
+                    <div class="is-brown col-lg-8 pb-30 pt-30 mt-10 pl-10">Brown background</div>
+                    <div class="is-deep-purple col-lg-8 pb-30 pt-30 mt-10 pl-10">deep purple background color</div>
+                </div>
+                <div class="col-xs">
+                    <div class="is-primary col-lg-8 pb-30 pt-30 mt-10 pl-10">Primary background</div>
+                    <div class="is-secondary col-lg-8 pb-30 pt-30 mt-10 pl-10">Secondary background</div>
+                    <div class="is-fancy col-lg-8 pb-30 pt-30 mt-10 pl-10">Fancy background</div>
+                    <div class="is-ios col-lg-8 pb-30 pt-30 mt-10 pl-10">Ios background color</div>
+                    <div class="is-seagreen col-lg-8 pb-30 pt-30 mt-10 pl-10">Seagreen background color</div>
 
-    </div>
-            <div class="col-xs">
-        <div class="is-material col-lg-8 pb-30 pt-30 mt-10 pl-10">Material background</div>
-        <div class="is-flat col-lg-8 pb-30 pt-30 mt-10 pl-10">Flat background</div>
-        <div class="is-deep-blue col-lg-8 pb-30 pt-30 mt-10 pl-10">Deep blue background</div>
-        <div class="is-white-shadowed col-lg-8 pb-30 pt-30 mt-10 pl-10">White shadowed background</div>
-        <div class="is-crimson col-lg-8 pb-30 pt-30 mt-10 pl-10">Crimson background</div>
-        
-    </div>
-    </div>
-                   <pre class="is-light pl-10">
+
+                </div>
+                <div class="col-xs">
+                    <div class="is-material col-lg-8 pb-30 pt-30 mt-10 pl-10">Material background</div>
+                    <div class="is-flat col-lg-8 pb-30 pt-30 mt-10 pl-10">Flat background</div>
+                    <div class="is-deep-blue col-lg-8 pb-30 pt-30 mt-10 pl-10">Deep blue background</div>
+                    <div class="is-white-shadowed col-lg-8 pb-30 pt-30 mt-10 pl-10">White shadowed background</div>
+                    <div class="is-crimson col-lg-8 pb-30 pt-30 mt-10 pl-10">Crimson background</div>
+
+                </div>
+            </div>
+            <pre class="is-light pl-10">
            <small>Html</small>
         <code>
             &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">is-light</span>"&gt;Light background&lt;/<span class="text-primary">div</span>&gt;
@@ -233,47 +265,47 @@
         </code>
     </pre>
 
-        <h4 class="mt-20">Gradient backgrounds</h4>
-        <div class="row-xs has-gutters mt-20">
-            <div class="col-xs">
-                <div class="is-gradient-rose text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
-                    Gradient rose
-                </div>
+            <h4 class="mt-20">Gradient backgrounds</h4>
+            <div class="row-xs has-gutters mt-20">
+                <div class="col-xs">
+                    <div class="is-gradient-rose text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
+                        Gradient rose
+                    </div>
 
-            </div>
-             <div class="col-xs">
-                <div class="is-gradient-purple text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
-                    Gradient purple
                 </div>
+                <div class="col-xs">
+                    <div class="is-gradient-purple text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
+                        Gradient purple
+                    </div>
 
-            </div>
-              <div class="col-xs">
-                <div class="is-gradient-blue text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
-                    Gradient blue
                 </div>
+                <div class="col-xs">
+                    <div class="is-gradient-blue text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
+                        Gradient blue
+                    </div>
 
-            </div>
-               <div class="col-xs">
-                <div class="is-gradient-candy text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
-                    Gradient candy
                 </div>
+                <div class="col-xs">
+                    <div class="is-gradient-candy text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
+                        Gradient candy
+                    </div>
 
-            </div>
-            <div class="col-xs">
+                </div>
+                <div class="col-xs">
                     <div class="is-gradient-green text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
                         Gradient green
                     </div>
-    
+
                 </div>
                 <div class="col-xs">
-                        <div class="is-gradient-orange text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
-                            Gradient orange
-                        </div>
-        
+                    <div class="is-gradient-orange text-white col-lg-7 pb-30 pt-30 mt-10 pl-10">
+                        Gradient orange
                     </div>
 
-        </div>
-       <pre class="is-light pl-10">
+                </div>
+
+            </div>
+            <pre class="is-light pl-10">
            <small>Html</small>
         <code>
 
@@ -286,93 +318,142 @@
         </code>
     </pre>
         </div>
-<section id="Forms">
-    <h2 class="pt-20">Forms</h2>
-        <hr class="mtn-10" />
-    <form class="form">
+        <section id="Forms">
+            <h2 class="pt-20">Forms</h2>
+            <hr class="mtn-10" />
+            <form class="form">
 
-        <label for="name">Name</label>
-        <input class="col-lg-7" id="name" type="text">
-        <label for="select">Gender</label>
-          <select class="col-lg-7" id="select">
-    <option>Choose an option</option>
-    <option>Male</option>
-    <option>Female</option>
-    <option>Other</option>
-  </select>
-        <label for="surname">Email</label>
-        <input class="col-lg-7" id="surname" type="email">
-        <label for="message">Message</label>
-        <textarea class="col-lg-7" id="message"></textarea>
-        <h4>label inlined</h4>
- <label class="label-inline" for="inlined">Inlined: </label>
-        <input class="col-lg-7" id="inlined" type="email">
-    </form>
- <pre class="is-light pl-10">
+                <label for="name">Name</label>
+                <input class="form-input col-lg-5" id="name" type="text">
+                <label for="select">Gender</label>
+                <select class="form-input col-lg-5" id="select">
+                    <option>Choose an option</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+                <label for="surname">Email</label>
+                <input class="form-input col-lg-5" id="surname" type="email">
+                <label for="message">Message</label>
+                <textarea class="form-input col-lg-5" id="message"></textarea>
+                <h4>label inlined</h4>
+                <label class="label-inline" for="inlined">Inlined: </label>
+                <input class="form-input col-lg-5" id="inlined" type="email">
+                <label class="mt-20" for="lined">Single line input:</label>
+                <input type="text" id="lined" class="form-input is-lined col-lg-5" placeholder="Single line input">
+            </form>
+            
+            <pre class="is-light pl-10">
            <small>Html</small>
         <code>
-            <small> just use is-form class and all inputs will be formed</small>
-            &lt;<span class="text-primary">form</span> <span class="text-warning">class</span>="<span class="text-fancy">form</span>"&gt;&lt;/<span class="text-primary">form</span>&gt;
+            &lt;<span class="text-primary">form</span>&gt;
+            &lt;<span class="text-primary">label</span>&gt;Name&lt;/<span class="text-primary">label</span>&gt;
+            &lt;<span class="text-primary">input</span> type="text" <span class="text-warning">class</span>="<span class="text-fancy">form-input</span>"&gt;
+            &lt;/<span class="text-primary">form</span>&gt;
+            
             <small>inline label</small>
             &lt;<span class="text-primary">label</span> <span class="text-warning">class</span>="<span class="text-fancy">label-inline</span>"&gt;Inlined:&lt;/<span class="text-primary">label</span>&gt;
+            &lt;<span class="text-primary">input</span> type="text" <span class="text-warning">class</span>="<span class="text-fancy">form-input</span>"&gt;
+
+            &lt;<span class="text-primary">label</span>&gt;Single line input&lt;/<span class="text-primary">label</span>&gt;
+            &lt;<span class="text-primary">input</span> type="text" <span class="text-warning">class</span>="<span class="text-fancy">form-input is-lined</span>" placeholder="Single line input"&gt;
 
         </code>
     </pre>
-    <h4 class="pt-20">Form states</h4>
-    <form class="form">
+            <h4 class="pt-20">Form states</h4>
+            <form class="form">
                 <label for="Email">Success state</label>
-        <input class="col-lg-7 form-success" id="Email" type="email">
-                        <label for="error">Error state</label>
-        <input class="col-lg-7 form-error" id="error" type="email">
-                                <label for="warning">Warning state</label>
-        <input class="col-lg-7 form-warning" id="warning" type="email">
-    </form>
-<pre class="is-light pl-10">
+                <input class="form-input col-lg-5 form-success" id="Email" type="email" placeholder="Name">
+                <small class="text-success">Name is avaliable</small>
+                <label for="error">Error state</label>
+                <input class="form-input col-lg-5 form-error" id="error" type="email" placeholder="Email">
+                <small class="text-error">Email is alreay taken</small>
+                <label for="warning">Warning state</label>
+                <input class="form-input col-lg-5 form-warning" id="warning" type="email" placeholder="Password">
+                <small class="text-warning">Password is too weak</small>
+            </form>
+
+            <pre class="is-light pl-10">
            <small>Html</small>
         <code>
             <small></small>
-            &lt;<span class="text-primary">input</span> <span class="text-warning">class</span>="<span class="text-fancy">form-success</span>"&gt;
-            &lt;<span class="text-primary">input</span> <span class="text-warning">class</span>="<span class="text-fancy">form-error</span>"&gt;
-            &lt;<span class="text-primary">input</span> <span class="text-warning">class</span>="<span class="text-fancy">form-warning</span>"&gt;
+            &lt;<span class="text-primary">input</span> <span class="text-warning">class</span>="<span class="text-fancy">form-input form-success</span>"&gt;
+            &lt;<span class="text-primary">input</span> <span class="text-warning">class</span>="<span class="text-fancy">form-input form-error</span>"&gt;
+            &lt;<span class="text-primary">input</span> <span class="text-warning">class</span>="<span class="text-fancy">form-input form-warning</span>"&gt;
 
         </code>
     </pre>
-</section>
-    <section id="Tables">
-         <h2 class="pt-20">Tables</h2>
-        <hr class="mtn-10" />
-<table class="table is-responsive">
-          <thead>
-            <tr>
-              <th>Programming Language</th>
-              <th>Ratings</th>
-              <th>Change</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Java</td>
-              <td>14.215%</td>
-              <td>-3.06%</td>
-            </tr>
-            <tr>
-              <td>C</td>
-              <td>11.037%</td>
-              <td>+1.69%</td>
-            </tr>
-            <tr>
-              <td>C++</td>
-              <td>5.603%</td>
-              <td>-0.70%</td>
-            </tr>
-            <tr>
-              <td>Python</td>
-              <td>4.678%</td>
-              <td>+1.21%</td>
-            </tr>
-          </tbody>
-        </table>
-         <pre class="is-light pl-10">
+
+            <h4> Input icon</h4>
+            <form>
+                <div class="has-icon-right col-lg-4">
+                    <input class="form-input" type="search" placeholder="Search">
+                    <i class="form-icon ion-ios-search h3"></i>
+                </div>
+            </form>
+
+            <form>
+                <div class="has-icon-left col-lg-4">
+                    <input class="form-input mt-10 is-circled" type="search" placeholder="Search">
+                    <i class="form-icon ion-ios-search"></i>
+                </div>
+            </form>
+            <pre class="is-light pl-10">
+                <small>Html</small>
+             <code>
+                    &lt;<span class="text-primary">form</span>&gt;
+                    &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">has-icon-right</span>"&gt;
+                    &lt;<span class="text-primary">input</span> <span class="text-warning">class</span>="<span class="text-fancy">form-input</span>" type="search" placeholder="Search"&gt;
+                    &lt;<span class="text-primary">i</span>  <span class="text-warning">class</span>="<span class="text-fancy">form-icon ion-ios-search</span>"&gt;&lt;/<span class="text-primary">i</span>&gt;
+                    &lt;/<span class="text-primary">div</span>&gt;
+                    &lt;/<span class="text-primary">form</span>&gt;
+
+                    &lt;<span class="text-primary">form</span>&gt;
+                    &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">has-icon-left</span>"&gt;
+                    &lt;<span class="text-primary">input</span> <span class="text-warning">class</span>="<span class="text-fancy">form-input is-circled</span>" type="search" placeholder="Search"&gt;
+                    &lt;<span class="text-primary">i</span>  <span class="text-warning">class</span>="<span class="text-fancy">form-icon ion-ios-search</span>"&gt;&lt;/<span class="text-primary">i</span>&gt;
+                    &lt;/<span class="text-primary">div</span>&gt;
+                    &lt;/<span class="text-primary">form</span>&gt;
+                </code>
+                </pre>
+
+          
+        </section>
+        <section id="Tables">
+            <h2 class="pt-20">Tables</h2>
+            <hr class="mtn-10" />
+            <table class="table is-responsive">
+                <thead>
+                    <tr>
+                        <th>Programming Language</th>
+                        <th>Ratings</th>
+                        <th>Change</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Java</td>
+                        <td>14.215%</td>
+                        <td>-3.06%</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>11.037%</td>
+                        <td>+1.69%</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>5.603%</td>
+                        <td>-0.70%</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>4.678%</td>
+                        <td>+1.21%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <pre class="is-light pl-10">
            <small>Html</small>
         <code>
             <small> just use table class and all table elements will be formed</small>
@@ -382,31 +463,46 @@
 
         </code>
     </pre>
+        </section>
+        <section id="Media">
+            <h2 class="pt-20">Media</h2>
+            <hr class="mtn-10" />
+            <p>Media: images video iframes audio and objects are responsive by default</p>
+            <p>Resize the window or view the image from smaller screen</p>
+            <img src="https://ui.redpyramids.com/media/robert.jpg" alt="chicago">
+            <hr/>
+            <h5>End of Elements Section</h5>
+
+        </section>
     </section>
- <section id="Media">
-         <h2 class="pt-20">Media</h2>
-        <hr class="mtn-10" />
-     <p>Media: images video iframes audio and objects are responsive by default</p>
-        <p>Resize the window or view the image from smaller screen</p>
-     <img src="https://ui.redpyramids.com/media/robert.jpg" alt="chicago">
-     <hr/>
-<h5>End of Elements Section</h5>
+    <section class="row is-light mt-20 ">
+        <p class="text-center">
+            <a href="#header" class="btn is-link is-large">
+                <i class="text-dark ion-android-arrow-dropup-circle"></i>
+            </a>
+        </p>
+        <p class="text-center text-dark ">Made with
+            <span class="text-error">&hearts;</span> by
+            <a href="https://github.com/kwstaskara" class="text-grey">Konstantinos Karagiorgos</a>
+            <i class="ion-social-tux"></i>
+            <i class="ion-social-sass text-error"></i>
+            <i class="ion-social-css3 text-dark"></i>
+            <i class="ion-social-html5-outline"></i>
+        </p>
+        <small>
+            <a class="text-dark" href="https://github.com/kwstaskara/pyramid" target="_blank">Github |</a>
+            <a class="text-dark" href="#"> Documentation</a>
+        </small>
 
- </section>
-</section>
-<section class="row is-light mt-20 ">
-        <p class="text-center"><a href="#header" class="btn is-link is-large"> <i class="text-dark ion-android-arrow-dropup-circle"></i></a></p>
-        <p class="text-center text-dark ">Made with <span class="text-error">&hearts;</span> by <a href="https://github.com/kwstaskara" class="text-grey">Konstantinos Karagiorgos</a> <i class="ion-social-tux"></i> <i class="ion-social-sass text-error"></i> <i class="ion-social-css3 text-dark"></i> <i class="ion-social-html5-outline"></i></p>
-           <small> <a class="text-dark" href="https://github.com/kwstaskara/pyramid" target="_blank">Github |</a>
-            <a class="text-dark" href="#"> Documentation</a></small>
-
-          <small> / Licensed under the <a class="text-dark" href="https://github.com/kwstaskara/pyramid/blob/master/LICENSE">MIT License </a></small>
+        <small> / Licensed under the
+            <a class="text-dark" href="https://github.com/kwstaskara/pyramid/blob/master/LICENSE">MIT License </a>
+        </small>
 
     </section>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
         crossorigin="anonymous"></script>
     <script>
-         $(function () {
+        $(function () {
             $(".nav-open3").click(function () { //use a class, since your ID gets mangled
                 $(".pyramid-nav").toggleClass("toggle-nav"); //add the class to the clicked element
             });
@@ -416,6 +512,7 @@
                 $(".pyramid-nav").removeClass("toggle-nav"); //add the class to the clicked element
             });
         });
-        </script>
+    </script>
 </body>
+
 </html>
