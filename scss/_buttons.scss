@@ -9,7 +9,7 @@
   @include no-select();
   font-size: $core-font-size;
   line-height: 1.5;
-  @include rem(border, 1px solid transparent);
+  border: none;
   -webkit-backface-visibility: hidden;
   outline: none;
 

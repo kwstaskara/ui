@@ -552,7 +552,8 @@ template {
   background-image: -webkit-linear-gradient(315deg, #FEB692 10%, #EA5455 100%);
   background-image: -moz-linear-gradient(315deg, #FEB692 10%, #EA5455 100%);
   background-image: -o-linear-gradient(315deg, #FEB692 10%, #EA5455 100%);
-  background-image: linear-gradient(135deg, #FEB692 10%, #EA5455 100%); }
+  background-image: linear-gradient(135deg, #FEB692 10%, #EA5455 100%);
+  color: white; }
 
 .is-gradient-rose {
   background: #5f2c82;
@@ -571,7 +572,8 @@ template {
   background: -webkit-linear-gradient(113deg, #102378, #4a0073);
   background: -moz-linear-gradient(113deg, #102378, #4a0073);
   background: -o-linear-gradient(113deg, #102378, #4a0073);
-  background: linear-gradient(-23deg, #102378, #4a0073); }
+  background: linear-gradient(-23deg, #102378, #4a0073);
+  color: white; }
 
 .is-gradient-purple {
   background: #B993D6;
@@ -777,8 +779,7 @@ html { font-size: calc(1em + 1vw); }
   -webkit-tap-highlight-color: transparent;
   font-size: 1rem;
   line-height: 1.5;
-  border: 1px solid transparent;
-  border: 0.0625rem solid transparent;
+  border: none;
   -webkit-backface-visibility: hidden;
   outline: none; }
   .btn:focus, .btn:hover {
