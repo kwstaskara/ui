@@ -1,0 +1,21 @@
+$no-states-mode-on: false !default;
+
+
+@mixin state($component){
+ @if $no-states-mode-on == false {
+    @if $component == flex-modal {
+        display: none;
+    }
+    @else if $component == modal {
+        display: none;
+    }
+ } 
+ @else if $no-states-mode-on == true{
+    @if $component == flex-modal{
+        display: flex;
+    }
+    @else if $component == modal{
+        display: block;
+    }
+}
+}

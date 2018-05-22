@@ -24,7 +24,7 @@
     flex-direction: row;
   }
   .flex-col { 
-       flex: 0 1 0; 
+    flex:auto;
   }
 }
 
@@ -83,7 +83,7 @@
     word-wrap: break-word;
     hyphens: auto;
 
-  }
+  }/*
   .flex-row {  
     display: flex;
     flex-direction: row;
@@ -92,7 +92,7 @@
  .flex-col { 
    flex: 0 1 0; 
 
- }
+ }*/
  .has-gutters .flex-col{
    @include rem(border-left, 5px solid transparent);
    @include rem(border-right, 5px solid transparent);

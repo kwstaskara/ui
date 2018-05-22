@@ -4,6 +4,10 @@
     }
     .hide-xs {
         display: none!important;
+ 
+    }
+    .hide-image-xs{
+        background-image: none!important;
     }
     .container {
         overflow: hidden;
@@ -61,15 +65,11 @@
 }
 
 @include breakpoint(sm) {
-    .boxed-layout {
-        width: 100%;
-        @include rem(padding-right, 150px);
-        @include rem(padding-left, 150px);
-        margin-right: auto;
-        margin-left: auto;
-    }
     .hide-sm {
         display: none!important;
+    }
+    .hide-image-sm{
+        background-image: none!important;
     }
     .col-sm-12 {
         flex-basis: 100%;
@@ -125,6 +125,9 @@
     .hide-md {
         display: none!important;
     }
+    .hide-image-md{
+        background-image: none!important;
+    }
     .col-md-12 {
         flex-basis: 100%;
         width: 100%;
@@ -178,6 +181,9 @@
 @include breakpoint(lg) {
     .hide-lg {
         display: none!important;
+    }
+    .hide-image-lg{
+        background-image: none!important;
     }
     .col-lg-12 {
         flex-basis: 100%;

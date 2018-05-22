@@ -3,7 +3,7 @@
 
 <head>
         <link rel="stylesheet" type="text/css" href="dist/pyramid.min.css">
-    <link rel="stylesheet" type="text/css" href="ionicons.min.css">
+        <link href="https://unpkg.com/ionicons@4.1.1/dist/css/ionicons.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pyramid Ui</title>
@@ -23,22 +23,22 @@
 
 
 <body class="text-grey">
-        <nav class="nav is-gradient-blue is-fixed ">
+        <nav class="nav is-deep-purple is-fixed ">
                 <div class="container-1">
                        
                         <ul class="text-right navbar-mobile">
-                                <img class="navbar-logo float-left" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
-                                <li><a class="nav-item text-white nav-open3"> Menu</a></li>
-                            <li><a href="https://github.com/kwstaskara/pyramid" class="nav-item text-white "><i class="ion-social-github"></i> Github</a></li>
+                            <a href="index">  <h4 class="navbar-logo float-left text-white nav-item">Redpyramids <img style="vertical-align: middle" src="media/redpyramidsui.png" width="50px" height="40px"></h4></a>
+                            <li> <a class="nav-item text-white mtn-10 nav-open3" ><i class="icon ion-md-menu h3"></i></a>  </li>
+                          
                             
                             </ul>
-                <img class="navbar-logo float-left hide-xs" src="https://ui.redpyramids.com/media/pyramidlogo.svg" alt="" width="50" height="50">
+                            <a href="index"><h4 class="navbar-logo float-left text-white nav-item  hide-xs" style="margin-top: 2px;">Redpyramids <img style="vertical-align: middle" src="media/redpyramidsui.png" width="50px" height="40px"></h4></a>
                 <ul class="text-right text-left-xs navbar-desktop is-vertical  pyramid-nav">
                         <li><a href="https://ui.redpyramids.com/" class="nav-item text-white mr-20">Home</a></li>
                     <li><a href="docs" class="nav-item text-white mr-20 ">Install</a>
                     </li>
                     <li class="has-dropdown"><a href="elements" class="nav-item text-white mr-20 ">Elements</a>
-                        <ul class="nav is-vertical is-flat is-rounded dropdown ">
+                        <ul class="nav is-vertical is-deep-purple has-shadows is-rounded dropdown ">
                             <li>
                                 <a href="elements#Typography" class="text-white"> Typography</a>
                             </li>
@@ -80,7 +80,7 @@
                     <li class="has-dropdown">
                         <a href="items" class="nav-item text-white mr-20">Items</a>
                         
-                        <ul class="nav dropdown dropdown-right is-vertical is-rounded  is-flat">
+                        <ul class="nav dropdown dropdown-right is-vertical is-rounded  is-deep-purple has-shadows">
                                
                                 <li>
                                         <a href="items#Accordions" class="text-white"> Accordions</a>
@@ -128,7 +128,7 @@
 <![endif]-->
     
     
-    <section class="container-2 pt-30">
+    <section id="header" class="container-2 pt-30">
         <h2 class="pt-30">Accordions</h2>
         <hr class="mtn-10" />
         <section id="Accordions">
@@ -1086,31 +1086,37 @@
     </section>
 </section>
 
-    <section class="row is-light mt-20 ">
-        <p class="text-center">
-            <a href="#header" class="btn is-link is-large">
-                <i class="text-dark ion-android-arrow-dropup-circle"></i>
-            </a>
-        </p>
-        <p class="text-center text-dark ">Made with
-            <span class="text-error">&hearts;</span> by
-            <a href="https://github.com/kwstaskara" class="text-grey">Konstantinos Karagiorgos</a>
-            <i class="ion-social-tux"></i>
-            <i class="ion-social-sass text-error"></i>
-            <i class="ion-social-css3 text-dark"></i>
-            <i class="ion-social-html5-outline"></i>
-        </p>
-        <small>
-            <a class="text-dark" href="https://github.com/kwstaskara/pyramid" target="_blank">Github |</a>
-            <a class="text-dark" href="#"> Documentation</a>
-        </small>
-
-        <small> / Licensed under the
-            <a class="text-dark" href="https://github.com/kwstaskara/pyramid/blob/master/LICENSE">MIT License </a>
-        </small>
-    </section>
-
-
+<div class="is-light">
+    <div class="hide-image-xs" style="background-image: url('media/moon.svg') ; background-repeat: no-repeat; background-position: right center; background-size: 400px 350px;">
+                <div class="container-2">
+                        <div>
+                                <h3 class="text-center">Stay in contact <i class="icon ion-md-happy text-dark"></i></h3>
+                                    <div class="text-center">
+                                         <a class="btn text-dark   text-center mb-20" href="https://www.facebook.com/redpyramids/" target="_blank"><i class="icon ion-logo-facebook h2"></i> </a>
+                                         <a class="btn text-dark text-center mb-20" href="https://github.com/kwstaskara/pyramid" target="_blank"><i class="icon ion-logo-github h2"></i></a>
+                                         <a class="btn text-dark text-center mb-20" href="https://twitter.com/Red_Pyramids" target="_blank"><i class="icon ion-logo-twitter h2"></i></a>
+                                         <a class="btn text-dark text-center mb-20" href="mailto:info@redpyramids.com" title="Send Email to redpyramids"><i class="icon ion-md-mail h2"></i></a>
+                                    </div>
+                                </div>
+        
+                </div>
+               
+    
+        
+      
+    
+           
+            <p class="text-center"><a href="#header" class="btn is-link is-large"> <i class="text-dark icon ion-ios-arrow-dropup-circle h1"></i></a></p>
+            <p class="text-center text-dark ">Made with <span class="text-error">&hearts;</span> by  <a href="https://github.com/kwstaskara" class="text-dark">Konstantinos Karagiorgos</a> <i class="icon ion-logo-tux"></i> <i class="icon ion-logo-sass text-error"></i> <i class="icon ion-logo-css3 text-dark"></i> <i class="icon ion-logo-html5"></i></p>
+               <small> <a class="text-dark ml-10" href="https://github.com/kwstaskara/pyramid" target="_blank">Github |</a>
+                <a class="text-dark" href="docs"> Documentation</a>  <a href="https://paypal.me/redpyramids" class=" text-dark">| Donate</a></small>
+               
+    
+              <small> / Licensed under the <a class="text-dark" href="https://github.com/kwstaskara/pyramid/blob/master/LICENSE">MIT License </a></small>
+              
+               </div>
+            </div>
+      </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
         crossorigin="anonymous"></script>

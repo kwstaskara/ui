@@ -4,17 +4,21 @@ var sass = require('gulp-sass');
 
 var rename = require('gulp-rename');
 
-var cssnano = require('cssnano');
+var csso = require('gulp-csso');
 
 var postcss = require('gulp-postcss');
 
 var autoprefixer = require('autoprefixer');
+
+var header = require('gulp-header');
 
 var wait = require('gulp-wait2');
 
 var input = 'scss/pyramid.scss';
 
 var input2 = 'dist/pyramid.css';
+
+var input3 = 'dist/pyramid.min.css';
 
 var output = 'dist';
 
@@ -30,19 +34,19 @@ gulp.task('sass', function () {
     });
     gulp.task("default", ['sass'], function() {
     
-    gulp.watch(input, ['sass']);
-
     gulp.start('check');
 
    
     });
     
+    
 
     gulp.task('check', function () {
 
         if (fs.existsSync(input2)) {
+            gulp.start('minify-css');
             gulp.start('autoprefixer');
-            gulp.start('cssnano');
+            gulp.start('autoprefixer2');
           } else {
             console.log('FILE DOES NOT EXIST');
           }
@@ -58,12 +62,15 @@ gulp.task('autoprefixer', function () {
 });
 
 
-gulp.task('cssnano', function () {
-    var plugins = [
-        cssnano()
-    ];
-    return gulp.src(input2)
-        .pipe(postcss(plugins))
-        .pipe(rename("pyramid.min.css"))
+gulp.task('autoprefixer2',['autoprefixer'], function () {
+    return gulp.src(input3)
+        .pipe(postcss([ autoprefixer(['> 1%', 'last 10 versions', 'firefox >= 4', 'safari 7', 'safari 8', 'IE 8', 'IE 9', 'IE 10', 'IE 11']) ]))
         .pipe(gulp.dest(output));
 });
+
+gulp.task('minify-css', () => {
+    return gulp.src(input2)
+      .pipe(csso())
+      .pipe(rename("pyramid.min.css"))
+      .pipe(gulp.dest(output));
+  });

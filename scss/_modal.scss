@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     top: 0;
-    display: none;
+    @include state(flex-modal);
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -17,7 +17,7 @@
     left: 0;
     right: 0;
     top: 0;
-    display: none;
+    @include state(modal);
     position: fixed;
     z-index: 100;
     overflow: hidden;
