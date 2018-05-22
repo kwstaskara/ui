@@ -72,7 +72,6 @@
     width: 100%;
     display: table;
     table-layout: fixed;
-    *zoom:1;
     &.has-gutters{
      @include rem(border-spacing, 10px 0);
   }
