@@ -1648,10 +1648,9 @@ textarea.form-warning:focus {
   padding: 0.5rem 0 0.5rem 0.625rem; }
 
 .flex-mobile-nav li {
-  overflow-x: auto;
   padding-right: 9px;
   padding-right: 0.5625rem;
-  display: flex;
+  display: inline-block;
   text-decoration: none;
   list-style: none; }
 
@@ -1693,6 +1692,7 @@ textarea.form-warning:focus {
 
 @media (min-width: 768px) {
   .flex-navbar {
+    overflow-y: visible;
     justify-content: flex-start; }
   .flex-navbar.space-around {
     justify-content: space-around; }
@@ -1711,7 +1711,7 @@ textarea.form-warning:focus {
   .desktop-nav li {
     display: inline-block; }
   .flex-desktop-nav li {
-    display: flex; }
+    display: inline-block; }
   .is-vertical.dropdown {
     display: none;
     position: absolute; } }
@@ -1745,12 +1745,10 @@ textarea.form-warning:focus {
   align-items: center;
   flex-direction: row;
   white-space: nowrap;
-  overflow-x: auto;
   margin: 0;
   padding: 10px 0 13px; }
 
 .flex-desktop-nav li {
-  overflow-x: auto;
   padding-right: 9px;
   padding-right: 0.5625rem;
   text-decoration: none;
@@ -2049,6 +2047,18 @@ a.label:hover, a.label:focus {
 .dropdown-right {
   left: auto;
   right: 0; }
+
+@media (max-width: 576px) {
+  .dropdown {
+    position: static; } }
+
+@media (min-width: 576px) {
+  .dropdown {
+    position: static; } }
+
+@media (min-width: 768px) {
+  .dropdown {
+    position: absolute; } }
 
 .flex-modal {
   bottom: 0;

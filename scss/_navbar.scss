@@ -76,10 +76,10 @@
     margin: 0;
     @include rem(padding, 8px 0 8px 10px);
     li{
-        overflow-x: auto;
+
         @include rem(margin-left 8px);
         @include rem(padding-right, 9px);
-        display: flex;
+        display: inline-block;
         text-decoration: none;
         list-style: none;
         a{
@@ -143,7 +143,7 @@
 
 @include breakpoint(md){
     .flex-navbar  {
-       
+        overflow-y: visible;
         justify-content: flex-start;
     }
     .flex-navbar.space-around  {
@@ -175,7 +175,7 @@
     display: inline-block;
 }
 .flex-desktop-nav li {
-    display: flex;
+    display: inline-block;
 }
 .is-vertical.dropdown{
     display: none;
@@ -227,12 +227,10 @@
     align-items: center;
     flex-direction: row;
     white-space: nowrap;
-    overflow-x: auto;
     margin: 0;
     padding: 10px 0 13px;
     li{
-        
-        overflow-x: auto;
+
         @include rem(margin-left 8px);
         @include rem(padding-right, 9px);
 

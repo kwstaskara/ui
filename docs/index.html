@@ -231,7 +231,7 @@
                         <i class="h4 text-fancy icon ion-md-document"></i> Autoprefixed no px fallbacks. Minified version included.</p>
                     <p class="h5 text-dark">
                         <i class="h4 text-fancy icon ion-md-document"></i> All the above but javascript frameworks friendly.
-                        <span class="label is-fancy mb-10"> Coming soon</span>
+                        <span class="label is-deep-blue mb-10"> New</span>
                     </p>
                 </div>
 
@@ -240,15 +240,15 @@
     </div>
     <div class="is-white-shadowed  pt-30">
         <div class="row-sm">
-            <div class="container-3">
-                <div class="row-xs col-sm-8 pt-30 pb-30 is-centered has-gutters">
-                    <div class="col-xs ">
+            <div class="container">
+                <div class="row is-collapsible pt-30 pb-30 is-centered has-gutters">
+                    <div class="col col-sm-12 col-md-6 col-lg-6 mt-10 ">
                         <div class="card is-white is-rounded  is-rounded">
                             <h4 class="text-center is-rounded is-deep-purple">
                                 <i class="icon ion-md-cloud-download text-center text-white"></i> CDN </h4>
                             <div class="card-content">
                                 <div class="text-center">
-                                    <p>Usage through cdn</p>
+                                    <p><strong>Normal version</strong></p>
                                     <p>
                                         <small style="word-break: break-all;" class="is-light">&lt;link&nbsprel="stylesheet"&nbsphref="https://cdn.jsdelivr.net/npm/pyramid.ui@<span id="result3"></span>/dist/pyramid.min.css"&gt;</small>
                                     </p>
@@ -265,6 +265,29 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col col-md-6 col-lg-6 mt-10 ">
+                            <div class="card is-white is-rounded  is-rounded">
+                                <h4 class="text-center is-rounded is-deep-purple">
+                                    <i class="icon ion-md-cloud-download text-center text-white"></i> CDN </h4>
+                                <div class="card-content">
+                                    <div class="text-center">
+                                        <p><strong>Javascript frameworks friendly version</strong></p>
+                                        <p>
+                                            <small style="word-break: break-all;" class="is-light">&lt;link&nbsprel="stylesheet"&nbsphref="https://cdn.jsdelivr.net/npm/pyramid.ui@<span id="result7"></span>/dist/js-framework-friendly/pyramid-js-friendly.min.css"&gt;</small>
+                                        </p>
+                                        <p>
+                                            <small style="word-break: break-all;" class="is-light">&lt;link&nbsprel="stylesheet"&nbsphref="https://cdn.jsdelivr.net/npm/pyramid.ui@<span id="result8"></span>/dist/js-framework-friendly/pyramid-js-friendly-nofallbacks.min.css"&gt;</small>
+                                        </p>
+                                        <p>
+                                            <small style="word-break: break-all;" class="is-light">&lt;link&nbsprel="stylesheet"&nbsphref="https://cdn.jsdelivr.net/npm/pyramid.ui@<span id="result9"></span>/dist/js-framework-friendly/pyramid-js-friendly-prefixed.min.css"&gt;</small>
+                                        </p>
+                                        <p>
+                                            <small style="word-break: break-all;" class="is-light">&lt;link&nbsprel="stylesheet"&nbsphref="https://cdn.jsdelivr.net/npm/pyramid.ui@<span id="result10"></span>/dist/js-framework-friendly/pyramid-js-friendly-prefixed-nofallbacks.min.css"&gt;</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
             <!--
@@ -347,6 +370,10 @@
             $('#result4').html(versions[0].name);
             $('#result5').html(versions[0].name);
             $('#result6').html(versions[0].name);
+            $('#result7').html(versions[0].name);
+            $('#result8').html(versions[0].name);
+            $('#result9').html(versions[0].name);
+            $('#result10').html(versions[0].name);
         });
         var size;
         $.get(url2).done(function (data) {

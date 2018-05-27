@@ -1915,14 +1915,9 @@ textarea.form-warning {
   padding: 8px 0 8px 10px;
   padding: 0.5rem 0 0.5rem 0.625rem; }
   .flex-mobile-nav li {
-    overflow-x: auto;
     padding-right: 9px;
     padding-right: 0.5625rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: inline-block;
     text-decoration: none;
     list-style: none; }
     .flex-mobile-nav li a {
@@ -1971,6 +1966,7 @@ textarea.form-warning {
 
 @media (min-width: 768px) {
   .flex-navbar {
+    overflow-y: visible;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
        -moz-box-pack: start;
@@ -1999,11 +1995,7 @@ textarea.form-warning {
   .desktop-nav li {
     display: inline-block; }
   .flex-desktop-nav li {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex; }
+    display: inline-block; }
   .is-vertical.dropdown {
     display: none;
     position: absolute; } }
@@ -2061,11 +2053,9 @@ textarea.form-warning {
       -ms-flex-direction: row;
           flex-direction: row;
   white-space: nowrap;
-  overflow-x: auto;
   margin: 0;
   padding: 10px 0 13px; }
   .flex-desktop-nav li {
-    overflow-x: auto;
     padding-right: 9px;
     padding-right: 0.5625rem;
     text-decoration: none;
@@ -2375,6 +2365,18 @@ a.label {
 .dropdown-right {
   left: auto;
   right: 0; }
+
+@media (max-width: 576px) {
+  .dropdown {
+    position: static; } }
+
+@media (min-width: 576px) {
+  .dropdown {
+    position: static; } }
+
+@media (min-width: 768px) {
+  .dropdown {
+    position: absolute; } }
 
 .flex-modal {
   bottom: 0;

@@ -21,7 +21,7 @@
 
     }
     
-    
+
     .dropdown{
         &.is-active{
             display: block;
@@ -48,4 +48,23 @@
 .dropdown-right{
     left: auto;
     right: 0;
+}
+
+@include breakpoint(xs){
+    .dropdown{
+        position: static;
+    }
+}
+
+@include breakpoint(sm){
+    .dropdown{
+        position: static;
+    }
+}
+
+
+@include breakpoint(md){
+    .dropdown{
+        position: absolute;
+    }
 }
