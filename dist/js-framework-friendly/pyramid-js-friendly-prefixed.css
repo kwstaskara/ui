@@ -2353,7 +2353,7 @@ a.label {
 .dropdown {
   margin: 0;
   list-style: none;
-  display: none;
+  display: block;
   position: absolute;
   padding: 6px;
   z-index: 10;
@@ -2381,7 +2381,11 @@ a.label {
   left: 0;
   right: 0;
   top: 0;
-  display: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
      -moz-box-align: center;
@@ -2401,7 +2405,7 @@ a.label {
   left: 0;
   right: 0;
   top: 0;
-  display: none;
+  display: block;
   position: fixed;
   z-index: 100;
   overflow: hidden;

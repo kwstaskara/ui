@@ -28,7 +28,7 @@
         }
         margin: 0;
         list-style: none;
-        display: none;
+        @include state(dropdown);
         position:absolute;
         padding:6px;
         z-index: 10;

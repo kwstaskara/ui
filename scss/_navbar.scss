@@ -1,10 +1,258 @@
+.navbar-logo{
+    float:left;
+    align-self: center;
+    padding-left: 8px;
+    vertical-align: middle;
+    img{
+        vertical-align: middle;
+    }
+}
+.navbar{
+    width: 100%
+}
+.desktop-nav{
+
+    margin: 0;
+    padding: 10px 0 13px;
+
+ li{
+     padding-right: 9px;
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    a{
+        text-decoration: none;
+    }
+}
+}
+
+
+
+.flex-mobile-nav{
+    &.is-vertical{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
 .mobile-nav{
+    &.is-vertical{
+        li{
+            
+            display:block;
+        }
+    }
+}
+
+.mobile-nav{
+    display:none;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 0;
+    @include rem(padding, 8px 0 8px 10px);
+    
+    overflow-y: auto;
+
+
+ li{
+    overflow-y: auto;
+    overflow-x: auto;
+    @include rem(margin-left 8px);
+    @include rem(padding-right, 9px);
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    a{
+        text-decoration: none;
+    }
+}
+}
+
+
+.flex-mobile-nav{
+    flex-basis: 100%;
+    display:none;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 0;
+    @include rem(padding, 8px 0 8px 10px);
+    li{
+        overflow-x: auto;
+        @include rem(margin-left 8px);
+        @include rem(padding-right, 9px);
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        a{
+            text-decoration: none;
+        }
+    }
+    
+}
+
+@include breakpoint(xs){
+    .navbar{
+        overflow-y: auto;
+        max-height:100%;
+    }
+    .flex-navbar {
+       
+        justify-content: space-between;
+    }
+    .is-vertical.dropdown{
+        display: block;
+        position: relative;
+        text-align: left;
+    }
+}
+
+
+@include breakpoint(sm){
+    .flex-navbar {
+       
+        justify-content: space-between;
+    }
+    .navbar{
+        overflow-y: auto;
+        max-height:100%;
+    }
+    .navit {
+        display: inline-block!important;
+        vertical-align: middle;
+    }
+    .mobile-nav{
+        display:none;
+}
+.flex-mobile-nav{
+    display:none;
+}
+.desktop-nav li {
     display: none;
+}
+.flex-desktop-nav li {
+    display: none;
+}
+
+.is-vertical.dropdown{
+    display: block;
+    position: relative;
+    text-align: left;
+
+}
+
+}
+
+@include breakpoint(md){
+    .flex-navbar  {
+       
+        justify-content: flex-start;
+    }
+    .flex-navbar.space-around  {
+       
+        justify-content: space-around;
+    }
+
+    .flex-navbar.space-between  {
+        justify-content: space-between;
+    }
+    .navbar{
+        overflow-y: visible;
+   
+    }
+    .flex-mobile-nav{
+        display:none!important;
+    }
+    .navit {
+        display: none!important;
+     
+    }
+    .mobile-nav{
+        display:none!important;
+}
+.mobile-nav{
+    display:none!important;
+}
+.desktop-nav li {
+    display: inline-block;
+}
+.flex-desktop-nav li {
+    display: flex;
+}
+.is-vertical.dropdown{
+    display: none;
+    position: absolute;
+
+
+}
+}
+
+
+@include breakpoint(lg){
+
+    .mobile-nav{
+        display:none!important;
+    }
+}
+
+@include breakpoint(xs){
+    .navit {
+        display: inline-block!important;
+        vertical-align: middle;
+    }
+    .desktop-nav li {
+        display: none;
+    }
+    .flex-desktop-nav li {
+        display: none;
+    }
+
+}
+
+.toggle-nav{
+    display: block;
+}
+
+.toggle-flex-nav{
+    display: flex;
+}
+
+
+.flex-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-desktop-nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 0;
+    padding: 10px 0 13px;
+    li{
+        
+        overflow-x: auto;
+        @include rem(margin-left 8px);
+        @include rem(padding-right, 9px);
+
+
+        text-decoration: none;
+        list-style: none;
+        a{
+            text-decoration: none;
+        
+}
+    }
+}
+
+/*.mobile-nav{
+    @include state(mobile-nav);
 }
 
 
 .navbar-mobile{
-    display: none;
+    @include state(navbar-mobile);
 }
 
 .desktop-nav{
@@ -16,7 +264,7 @@
     align-self: center
 }
 
-@include breakpoint(xs){
+@media (max-width: 768px){
     .nav{
         overflow-y: auto;
         max-height:100%;
@@ -34,11 +282,11 @@
     
 
     .navbar-desktop{
-        display:none;
+        @include state(navbar-desktop);
     }
 
     .desktop-nav{
-        display: none;
+        @include state(desktop-nav);
     }
     .flex-nav{
 flex-direction: column;
@@ -124,8 +372,7 @@ flex-direction: column;
           }
         li{
             display:inline-block;
-            *display:inline; /*IE7*/
-            *zoom:1; /*IE7*/
+            *display:inline; 
             @include rem(padding-top, 17px);
         }
         .navbar-logo{
@@ -155,3 +402,4 @@ flex-direction: column;
     display: block!important;
     animation: fadeIn 1s;
 }
+*/

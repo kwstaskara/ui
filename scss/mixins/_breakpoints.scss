@@ -3,21 +3,24 @@
 
   @if $type == string {
     @if $min == xs {
-      @media (max-width: 767px) { @content; }       // Mobile Devices
+      @media (max-width: 576px) { @content; }       
     }
 
     @else if $min == sm {
-      @media (min-width: 768px) { @content; }       // Tablet Devices
+      @media (min-width: 576px) { @content; }      
     }
 
     @else if $min == md {
-      @media (min-width: 992px) { @content; }       // Desktops
+      @media (min-width: 768px) { @content; }       
     }
 
     @else if $min == lg {
-      @media (min-width: 1200px) { @content; }      // Widescreen Desktops
+      @media (min-width: 992px) { @content; }     
     }
 
+    @else if $min == xl {
+      @media (min-width: 1200px) { @content; }     
+    }
     // Otherwise pass a warning to the compiler as to the appropriate options
     @else {
       @warn "The breakpoint mixin supports the following attributes: xs, sm, md, lg";

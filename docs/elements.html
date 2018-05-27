@@ -33,110 +33,197 @@
     <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-    <nav class="nav is-deep-purple is-fixed">
+<nav class="is-deep-purple navbar is-fixed col-sm-12 col-xs-12">
         <div class="container-1">
-
-                <ul class="text-right navbar-mobile">
-                    <a href="index">  <h4 class="navbar-logo float-left text-white nav-item">Redpyramids <img style="vertical-align: middle" src="media/redpyramidsui.png" width="50px" height="40px"></h4></a>
-                    <li> <a class="nav-item text-white mtn-10 nav-open3 ><i class="icon ion-md-menu h3"></i></a>  </li>
-                  
-
-            </ul>
-            <a href="index"><h4 class="navbar-logo float-left text-white nav-item  hide-xs" style="margin-top: 2px;">Redpyramids <img style="vertical-align: middle" src="media/redpyramidsui.png" width="50px" height="40px"></h4></a>
-            <ul class="text-right text-left-xs navbar-desktop is-vertical   pyramid-nav">
+                <a href="index">  <h6 class="navbar-logo  text-white nav-item">Redpyramids
+                        <img style="vertical-align: middle;" src="https://ui.redpyramids.com/media/redpyramidsui.png" width="50px" height="40px">
+                    </h6></a>
+    <ul class="desktop-nav text-right ">
                 <li>
-                    <a href="https://ui.redpyramids.com/" class="nav-item text-white mr-20 ">Home</a>
-                </li>
-                <li>
-                    <a href="docs" class="nav-item text-white mr-20">Install</a>
+                    <a href="docs" class="nav-item text-white mr-20 ">
+                        Install</a>
                 </li>
                 <li class="has-dropdown">
-                    <a href="elements" class="nav-item text-white mr-20 ">Elements</a>
-                    <ul class="nav is-vertical is-deep-purple has-shadows is-rounded dropdown ">
-                        <li>
-                            <a href="elements#Typography" class="text-white"> Typography</a>
-                        </li>
-                        <li>
-                            <a href="elements#Colors" class="text-white"> Colors</a>
-                        </li>
-                        <li>
-                            <a href="elements#Forms" class="text-white"> Forms</a>
-                        </li>
-                        <li>
-                            <a href="elements#Tables" class="text-white"> Tables</a>
-                        </li>
-                        <li>
-                            <a href="elements#Media" class="text-white"> Media</a>
-                        </li>
-                    </ul>
-                </li>
+                        <a href="elements" class="nav-item text-white mr-20 ">
+                             Elements</a>
+                             <ul class="dropdown is-vertical is-deep-purple">
+                                    <li>
+                                            <a href="elements#Typography" class="text-white"> Typography</a>
+                                        </li>
+                                        <li>
+                                            <a href="elements#Colors" class="text-white"> Colors</a>
+                                        </li>
+                                        <li>
+                                            <a href="elements#Forms" class="text-white"> Forms</a>
+                                        </li>
+                                        <li>
+                                            <a href="elements#Tables" class="text-white"> Tables</a>
+                                        </li>
+                                        <li>
+                                            <a href="elements#Media" class="text-white"> Media</a>
+                                        </li>
+                                    </ul>
+                    </li>
+                    <li class="has-dropdown">
+                            <a href="layout" class="nav-item text-white mr-20 ">
+                                Layout</a>
+                                <ul class=" is-vertical is-deep-purple has-lines is-rounded dropdown">
+                                        <li>
+                                                <a href="layout#Grid" class="text-white"> Grid</a>
+                                            </li>
+                                            <li>
+                                                <a href="layout#Responsive" class="text-white mr-20"> Responsive</a>
+                                            </li>
+                                            <li>
+                                                    <a href="layout#Containers" class="text-white"> Containers</a>
+                                                </li>
+                                            <li>
+                                                <a href="layout#Utilities" class="text-white"> Utilities</a>
+                                            </li>
+                                            <li>
+                                                <a href="layout#Controllers" class="text-white"> Controllers</a>
+                                            </li>
+                                    </ul>
+                        </li>   
+                        <li class="has-dropdown">
+                                <a href="items" class="nav-item text-white mr-20 ">
+                                    Items</a>
+                                    <ul class="dropdown dropdown-right is-vertical is-rounded  is-deep-purple has-shadows">
+                       
+                                            <li>
+                                                    <a href="items#Accordions" class="text-white"> Accordions</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Buttons" class="text-white"> Buttons</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Breadcrumbs" class="text-white"> Breadcrumbs</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Cards" class="text-white"> Cards</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Dropdowns" class="text-white"> Dropdowns</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Labels" class="text-white"> Labels</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Menus" class="text-white"> Menus</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Modals" class="text-white"> Modals</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Navbars" class="text-white"> Navbars</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Pagination" class="text-white"> Pagination</a>
+                                                </li>
+                                        
+                                        </ul>
+                            </li>
+                    
+                
 
-                <li class="has-dropdown">
-                    <a href="layout" class="nav-item text-white mr-20">Layout</a>
+                <li class="navit">
+                        <a class="text-white">  <i class="icon ion-md-menu h5 mb-10"></i></a>
+                    </li>
+    </ul>
+    </div>
+    <ul class="mobile-nav is-vertical text-left">
+            <li>
+                    <a href="docs" class="nav-item text-white mr-20">
+                         Home</a>
 
-                    <ul class="nav is-vertical is-deep-purple has-shadows has-lines is-rounded dropdown">
-                        <li>
-                            <a href="layout#Grid" class="text-white"> Grid</a>
-                        </li>
-                        <li>
-                            <a href="layout#Responsive" class="text-white"> Responsive</a>
-                        </li>
-                        <li>
-                            <a href="layout#Containers" class="text-white"> Containers</a>
-                        </li>
-                        <li>
-                            <a href="layout#Utilities" class="text-white"> Utilities</a>
-                        </li>
-                        <li>
-                            <a href="layout#Controllers" class="text-white"> Controllers</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="has-dropdown">
-                    <a href="items" class="nav-item text-white mr-20">Items</a>
-                    <ul class="nav is-vertical dropdown dropdown-right is-rounded is-deep-purple has-shadows">
-
-                        <li>
-                            <a href="items#Accordions" class="text-white"> Accordions</a>
-                        </li>
-                        <li>
-                            <a href="items#Buttons" class="text-white"> Buttons</a>
-                        </li>
-                        <li>
-                            <a href="items#Breadcrumbs" class="text-white"> Breadcrumbs</a>
-                        </li>
-                        <li>
-                            <a href="items#Cards" class="text-white"> Cards</a>
-                        </li>
-                        <li>
-                            <a href="items#Dropdowns" class="text-white"> Dropdowns</a>
-                        </li>
-                        <li>
-                            <a href="items#Labels" class="text-white"> Labels</a>
-                        </li>
-                        <li>
-                            <a href="items#Menus" class="text-white"> Menus</a>
-                        </li>
-                        <li>
-                            <a href="items#Modals" class="text-white"> Modals</a>
-                        </li>
-                        <li>
-                            <a href="items#Navbars" class="text-white"> Navbars</a>
-                        </li>
-                        <li>
-                            <a href="items#Pagination" class="text-white"> Pagination</a>
-                        </li>
-
-                    </ul>
                 </li>
                 <li>
-                    <a href="https://github.com/kwstaskara/pyramid" class="nav-item text-white ">
-                        <i class="ion-social-github"></i> Github</a>
+                    <a href="docs" class="nav-item text-white mr-20 ">
+                        Install</a>
                 </li>
-            </ul>
-        </div>
-
+                <li class="has-dropdown">
+                        <a href="elements " class="nav-item text-white mr-20 ">
+                             Elements</a>
+                             <ul class="dropdown is-vertical is-deep-purple">
+                                    <li>
+                                            <a href="elements#Typography" class="text-white"> Typography</a>
+                                        </li>
+                                        <li>
+                                            <a href="elements#Colors" class="text-white"> Colors</a>
+                                        </li>
+                                        <li>
+                                            <a href="elements#Forms" class="text-white"> Forms</a>
+                                        </li>
+                                        <li>
+                                            <a href="elements#Tables" class="text-white"> Tables</a>
+                                        </li>
+                                        <li>
+                                            <a href="elements#Media" class="text-white"> Media</a>
+                                        </li>
+                                    </ul>
+                    </li>
+                    <li class="has-dropdown">
+                            <a href="layout" class="nav-item text-white mr-20 ">
+                                Layout</a>
+                                <ul class=" is-vertical is-deep-purple has-lines is-rounded dropdown">
+                                        <li>
+                                                <a href="layout#Grid" class="text-white"> Grid</a>
+                                            </li>
+                                            <li>
+                                                <a href="layout#Responsive" class="text-white mr-20"> Responsive</a>
+                                            </li>
+                                            <li>
+                                                    <a href="layout#Containers" class="text-white"> Containers</a>
+                                                </li>
+                                            <li>
+                                                <a href="layout#Utilities" class="text-white"> Utilities</a>
+                                            </li>
+                                            <li>
+                                                <a href="layout#Controllers" class="text-white"> Controllers</a>
+                                            </li>
+                                    </ul>
+                        </li>   
+                        <li class="has-dropdown">
+                                <a href="items " class="nav-item text-white mr-20 ">
+                                    Items</a>
+                                    <ul class="dropdown dropdown-right is-vertical is-rounded  is-deep-purple has-shadows">
+                       
+                                            <li>
+                                                    <a href="items#Accordions" class="text-white"> Accordions</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Buttons" class="text-white"> Buttons</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Breadcrumbs" class="text-white"> Breadcrumbs</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Cards" class="text-white"> Cards</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Dropdowns" class="text-white"> Dropdowns</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Labels" class="text-white"> Labels</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Menus" class="text-white"> Menus</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Modals" class="text-white"> Modals</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Navbars" class="text-white"> Navbars</a>
+                                                </li>
+                                                <li>
+                                                    <a href="items#Pagination" class="text-white"> Pagination</a>
+                                                </li>
+                                        
+                                        </ul>
+                            </li>
+        </ul>
     </nav>
+
 
 
     <section id="header" class="container-2 pt-30">
@@ -505,6 +592,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
         crossorigin="anonymous"></script>
     <script>
+         $(function () {
+            $(".navit").click(function () {
+                $(".mobile-nav").toggleClass("toggle-nav");
+            });
+        });
         $(function () {
             $(".nav-open3").click(function () { //use a class, since your ID gets mangled
                 $(".pyramid-nav").toggleClass("toggle-nav"); //add the class to the clicked element
