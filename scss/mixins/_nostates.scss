@@ -12,6 +12,9 @@ $no-states-mode-on: false !default;
     @else if $component == dropdown{
         display: none;
     }
+    @else if $component == off-canvas-overlay{
+        display: none;
+    }
  } 
  @else if $no-states-mode-on == true{
     @if $component == flex-modal{
@@ -23,5 +26,9 @@ $no-states-mode-on: false !default;
     @else if $component == dropdown{
         display: block;
     }
+    @else if $component == off-canvas-overlay{
+        display: block;
+    }
+
 }
 }

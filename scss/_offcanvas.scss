@@ -1,0 +1,63 @@
+.off-canvas{
+  
+    .off-canvas-overlay{
+        border-radius: 0;
+        bottom: 0;
+        @include state(off-canvas-overlay);
+        height: 100%;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        background-color: rgba(10, 10, 10, 0.70);
+    }
+    height: 100%;
+    position: relative;
+    width: 100%;
+    .off-canvas-content{
+       
+        &.from-right{
+            right: -350px;
+            transform: translateX(100%); 
+        }
+        &.from-left{
+            left: -350px;
+            transform: translateX(-100%); 
+        }
+
+        bottom: 0;
+        overflow-y: auto;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: auto;
+        
+        transition: transform .25s ease;
+        will-change: transform;
+      //  transform: translateX(-100%); 
+      //  transition: transform .25s ease;
+    
+    }
+    .off-canvas-content,
+    .from-left,
+    .from-right{
+        &.is-active ~ .off-canvas-overlay {
+            display: block;
+        }
+        &.is-active{
+            transform: translateX(0);           
+            &.from-left{
+                left: 0;
+            }
+            &.from-right{
+                right: 0;
+            }
+        }
+       
+       
+    }
+
+}
+
+

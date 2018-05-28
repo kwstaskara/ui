@@ -101,6 +101,9 @@
                                                         <li>
                                                             <a href="items#Pagination" class="text-white"> Pagination</a>
                                                         </li>
+                                                        <li>
+                                                            <a href="items#Sidenav" class="text-white"> Sidenav</a>
+                                                        </li>
                                                 
                                                 </ul>
                                     </li>
@@ -198,6 +201,9 @@
                                                         </li>
                                                         <li>
                                                             <a href="items#Pagination" class="text-white"> Pagination</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="items#Sidenav" class="text-white"> Sidenav</a>
                                                         </li>
                                                 
                                                 </ul>
@@ -1155,6 +1161,80 @@
                 </code>
                 </pre>
     </section>
+    <section id="Sidenav">
+        <h2 class="pt-20">Sidenav <span class="label is-fancy">Beta</span>    </h2>   
+        <hr  />
+        <div class="off-canvas">
+
+            <div class="off-canvas-content from-left is-gradient-blue">
+                    <h6 class="navbar-logo  text-white nav-item">Redpyramids
+                            <img style="vertical-align: middle;" src="https://ui.redpyramids.com/media/redpyramidsui.png" width="50px" height="40px">
+                            <a class="btn is-link text-white close-sidenav">X</a>
+                        </h6>
+                        <ul class="menu is-rounded">
+                                <div class="text-center h5">
+                                <li> <a href="" class="nav-item text-white" >Google </a > </li>
+                                <li> <a href="" class="nav-item text-white" >Github </a > </li>
+                                <li> <a href="" class="nav-item text-white" >Youtube </a > </li>
+                                <li> <a href="" class="nav-item text-white" >Twitter </a > </li>
+                                <li> <a href="" class="nav-item text-white" >Facebook </a > </li>
+                                </div>
+                                </ul>
+            </div>
+            <div class="off-canvas-overlay"></div>
+            </div>
+            <p>To toggle sidenav you need to implement your js. Add is-active class to off-canvas-content class</p>
+            <button class="btn is-deep-blue open-canvas">Open sidebar left</button>
+            <button class="btn is-deep-blue open-canvas2">Open sidebar right</button>
+            <p><strong>Left-sidebar</strong></p>
+            <pre class="is-light pl-10">
+                    <small>Html </small>
+                   <code>
+                        &lt;<span class="text-primary">div</span><span class="text-warning"> class</span>="<span class="text-fancy">off-canvas</span>"&gt;
+                        &lt;<span class="text-primary">div</span><span class="text-warning"> class</span>="<span class="text-fancy">off-canvas-content from-left is-gradient-blue</span>"&gt;
+                        &lt;<span class="text-primary">h6</span> <span class="text-warning">class</span>="<span class="text-fancy">navbar-logo</span>"&gt;Redpyramids
+                                          &lt;<span class="text-primary">img src='' width='50px' height='40px'</span>&gt;
+                                          &lt;/<span class="text-primary">h6</span>&gt;
+                                          &lt;<span class="text-primary">ul</span> <span class="text-warning">class</span>="<span class="text-fancy">menu is-flat is-rounded</span>"&gt;
+                                          &lt;<span class="text-primary">li</span>&gt;&lt;<span class="text-primary">h5<span class="text-warning"> class</span>="<span class="text-fancy">border-bottom text-center</span>"</span>&gt;Menu&lt;/<span class="text-primary">h5</span>&gt;&lt;/<span class="text-primary">li</span>&gt;
+                                          &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">text-center h5</span>"&gt;
+                                          &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Google &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                                          &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Github &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                                          &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Youtube &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                                          &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Twitter &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                                          &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Facebook &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                                          &lt;/<span class="text-primary">div</span>&gt;
+                                           &lt;/<span class="text-primary">ul</span>&gt;
+                                           &lt;/<span class="text-primary">div</span>&gt;
+                                           &lt;<span class="text-primary">div</span><span class="text-warning"> class</span>="<span class="text-fancy">off-canvas-overlay</span>"&gt;&lt;/<span class="text-primary">div</span>&gt;
+                                           &lt;/<span class="text-primary">div</span>&gt;
+                    </code>
+                    </pre>
+                    <p><strong>Right-sidebar</strong></p>
+                    <pre class="is-light pl-10">
+                            <small>Html </small>
+                           <code>
+                                &lt;<span class="text-primary">div</span><span class="text-warning"> class</span>="<span class="text-fancy">off-canvas</span>"&gt;
+                                &lt;<span class="text-primary">div</span><span class="text-warning"> class</span>="<span class="text-fancy">off-canvas-content from-right is-gradient-blue</span>"&gt;
+                                &lt;<span class="text-primary">h6</span> <span class="text-warning">class</span>="<span class="text-fancy">navbar-logo</span>"&gt;Redpyramids
+                                                  &lt;<span class="text-primary">img src='' width='50px' height='40px'</span>&gt;
+                                                  &lt;/<span class="text-primary">h6</span>&gt;
+                                                  &lt;<span class="text-primary">ul</span> <span class="text-warning">class</span>="<span class="text-fancy">menu is-flat is-rounded</span>"&gt;
+                                                  &lt;<span class="text-primary">li</span>&gt;&lt;<span class="text-primary">h5<span class="text-warning"> class</span>="<span class="text-fancy">border-bottom text-center</span>"</span>&gt;Menu&lt;/<span class="text-primary">h5</span>&gt;&lt;/<span class="text-primary">li</span>&gt;
+                                                  &lt;<span class="text-primary">div</span> <span class="text-warning">class</span>="<span class="text-fancy">text-center h5</span>"&gt;
+                                                  &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Google &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                                                  &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Github &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                                                  &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Youtube &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                                                  &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Twitter &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                                                  &lt;<span class="text-primary">li</span>&gt;  &lt;<span class="text-primary">a</span> href="" <span class="text-warning">class</span>="<span class="text-fancy">nav-item text-white</span>" &gt;Facebook &lt;/a &gt; &lt;/<span class="text-primary">li</span>&gt;
+                                                  &lt;/<span class="text-primary">div</span>&gt;
+                                                   &lt;/<span class="text-primary">ul</span>&gt;
+                                                   &lt;/<span class="text-primary">div</span>&gt;
+                                                   &lt;<span class="text-primary">div</span><span class="text-warning"> class</span>="<span class="text-fancy">off-canvas-overlay</span>"&gt;&lt;/<span class="text-primary">div</span>&gt;
+                                                   &lt;/<span class="text-primary">div</span>&gt;
+                            </code>
+                            </pre>
+    </section>
 </section>
 
 <div class="is-light">
@@ -1192,6 +1272,21 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
         crossorigin="anonymous"></script>
     <script>
+         $(function () {
+            $(".open-canvas").click(function () {
+                $(".off-canvas-content").removeClass("from-right").addClass("from-left").addClass("is-active");
+            });
+        });
+         $(function () {
+            $(".open-canvas2").click(function () {
+                $(".off-canvas-content").removeClass("from-left").addClass("from-right").addClass("is-active");
+            });
+        });
+        $(function () {
+            $(".close-sidenav").click(function () {
+                $(".off-canvas-content").removeClass("is-active");
+            });
+        });
         $(function () { //run when the DOM is ready
             $(".open-modal").click(function () { //use a class, since your ID gets mangled
                 $(".flex-modal").addClass("is-active"); //add the class to the clicked element
