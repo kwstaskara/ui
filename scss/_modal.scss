@@ -1,5 +1,4 @@
-
-.flex-modal{
+.flex-modal {
     bottom: 0;
     left: 0;
     right: 0;
@@ -12,7 +11,7 @@
     overflow: hidden;
 }
 
-.modal{
+.modal {
     bottom: 0;
     left: 0;
     right: 0;
@@ -28,19 +27,17 @@
     @include rem(margin-bottom, -26px);
 }
 
-
 .flex-modal:target,
-.flex-modal.is-active{
+.flex-modal.is-active {
     display: flex;
 }
 
 .modal:target,
-.modal.is-active{
+.modal.is-active {
     display: block;
-
 }
 
-.modal-overlay{
+.modal-overlay {
     bottom: 0;
     left: 0;
     position: absolute;
@@ -49,35 +46,35 @@
     background-color: rgba(10, 10, 10, 0.70);
 }
 
-.flex-modal{
-& .modal-content{
-    position: relative;
-    display: flex;
-    display: block;
-    overflow: auto;
-    @include rem(padding, 9.6px 12.8px 16px);
-  text-align: left;
-  max-height: 80%;
-}
+.flex-modal {
+    & .modal-content {
+        position: relative;
+        display: flex;
+        display: block;
+        overflow: auto;
+        @include rem(padding, 9.6px 12.8px 16px);
+        text-align: left;
+        max-height: 80%;
+    }
 }
 
-.modal{
- & .modal-content{
-    -webkit-filter: blur(0);
-    @include rem(padding, 9.6px 12.8px 16px);
-    overflow: auto;
-    margin: auto;
-    position: absolute;
-    height: 90%;
-    top: 0; 
-    left: 0; 
-    bottom: 0; 
-    right: 0;
-    top: 50%;
-    left: 50%;
-    right: 50%;
-max-height: 352px;
-    transform: translateX(-50%) translateY(-50%);
-    margin-top:5px;
- }   
+.modal {
+    & .modal-content {
+        -webkit-filter: blur(0);
+        @include rem(padding, 9.6px 12.8px 16px);
+        overflow: auto;
+        margin: auto;
+        position: absolute;
+        height: 90%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 50%;
+        left: 50%;
+        right: 50%;
+        max-height: 352px;
+        transform: translateX(-50%) translateY(-50%);
+        margin-top: 5px;
+    }
 }

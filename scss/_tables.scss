@@ -1,12 +1,10 @@
-
 .table {
 	max-width: 100%;
 	width: 100%;
-  	margin-bottom: 1rem;
+	margin-bottom: 1rem;
 	border-spacing: 0;
-
-	& th{
-		@include rem(border-bottom, 1.5px solid #DDDFD8 );
+	& th {
+		@include rem(border-bottom, 1.5px solid #DDDFD8);
 		padding: 1.2rem 1.5rem;
 		text-align: left;
 	}
@@ -14,7 +12,6 @@
 		@include rem(border-bottom, 1.4px solid #DDDFD8);
 		padding: 1.2rem 1.5rem;
 		text-align: left;
-
 		&:first-child {
 			padding-left: 0;
 		}
@@ -22,20 +19,19 @@
 			padding-right: 0;
 		}
 	}
-	 &.is-responsive {
-    display: block;
-	 _overflow: auto;
-    overflow-x: auto;
-    white-space: nowrap;
-		 	&::-webkit-scrollbar {
-		-webkit-appearance: none;
-		@include rem(width, 14px);
-		@include rem(height, 14px);
+	&.is-responsive {
+		display: block;
+		_overflow: auto;
+		overflow-x: auto;
+		white-space: nowrap;
+		&::-webkit-scrollbar {
+			-webkit-appearance: none;
+			@include rem(width, 14px);
+			@include rem(height, 14px);
+		}
+		&::-webkit-scrollbar-thumb {
+			@include rem(border, 3px solid #fff);
+			background-color: grey;
+		}
 	}
-	&::-webkit-scrollbar-thumb {
-		@include rem(border, 3px solid #fff);
-		background-color: grey;
-	}
-
-  }
 }

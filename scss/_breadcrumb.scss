@@ -1,35 +1,34 @@
 .breadcrumb {
-    list-style: none;
-    @include rem(padding, 4px 7px);
-
-  }
-
-.flex-breadcrumb {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    @include rem(padding, 4px 7px);
+  list-style: none;
+  @include rem(padding, 4px 7px);
 }
 
-.flex-breadcrumb .breadcrumb-item{
-  + .breadcrumb-item::before{
+.flex-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  @include rem(padding, 4px 7px);
+}
+
+.flex-breadcrumb .breadcrumb-item {
+  +.breadcrumb-item::before {
     @include rem(padding-right, 7px);
     @include rem(padding-left, 7px);
   }
 }
 
-.breadcrumb .breadcrumb-item{
-  + .breadcrumb-item::before{
+.breadcrumb .breadcrumb-item {
+  +.breadcrumb-item::before {
     @include rem(padding-right, 7px);
   }
 }
 
- .breadcrumb-item  {
+.breadcrumb-item {
   display: inline-block;
   @include rem(padding, 2px 1px);
-  + .breadcrumb-item::before{
-  color: $grey-color;
-  display: inline-block;
+  +.breadcrumb-item::before {
+    color: $grey-color;
+    display: inline-block;
     content: "/";
   }
   & .is-active {

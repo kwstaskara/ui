@@ -1,86 +1,82 @@
 @media (min-width: 30em) {
-  .row { 
+  .row {
     width: 100%;
     display: table;
     table-layout: fixed;
-    &.has-gutters{
-     @include rem(border-spacing, 10px 0);
+    &.has-gutters {
+      @include rem(border-spacing, 10px 0);
+    }
   }
-  }
-  .col { 
+  .col {
     display: table-cell;
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
-
   }
-  .flex-row {  
+  .flex-row {
     display: flex;
     flex-direction: row;
-
- }
- .flex-col { 
-   flex: 1; 
-
- }
+  }
+  .flex-col {
+    flex: 1;
+  }
 }
 
-
- .has-gutters{
-    .flex-col{
-   @include rem(border-left, 5px solid transparent);
-   @include rem(border-right, 5px solid transparent);
-   background-clip: padding-box;
-    }
- }
-
-.min-height-100{
-    @include rem(min-height,100px);
+.has-gutters {
+  .flex-col {
+    @include rem(border-left, 5px solid transparent);
+    @include rem(border-right, 5px solid transparent);
+    background-clip: padding-box;
+  }
 }
 
-.min-height-200{
-    @include rem(min-height,200px);
+.min-height-100 {
+  @include rem(min-height, 100px);
 }
 
-.min-height-250{
-  @include rem(min-height,250pz);
+.min-height-200 {
+  @include rem(min-height, 200px);
 }
 
-.min-height-300{
-  @include rem(min-height,300px);
+.min-height-250 {
+  @include rem(min-height, 250pz);
 }
+
+.min-height-300 {
+  @include rem(min-height, 300px);
+}
+
 .row {
-  &.row-reversed{
+  &.row-reversed {
     direction: rtl;
-}
+  }
 }
 
-.flex-row{
-  &.row-reversed{
+.flex-row {
+  &.row-reversed {
     flex-direction: row-reverse;
   }
 }
 
-.is-collapsible{
-  &.has-gutters{
-    .col{
+.is-collapsible {
+  &.has-gutters {
+    .col {
       @include rem(padding, 0 6px 0 6px);
     }
   }
 }
-.row{
-&.is-collapsible {
-  .col{
-    display: inline-block;
-    vertical-align: top;
 
+.row {
+  &.is-collapsible {
+    .col {
+      display: inline-block;
+      vertical-align: top;
+    }
   }
 }
-}
 
-
-.flex-row{
-  &.is-collapsible{
-      flex-wrap: wrap;
+.flex-row {
+  &.is-collapsible {
+    flex-wrap: wrap;
   }
 }

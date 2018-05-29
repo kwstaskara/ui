@@ -7,6 +7,7 @@
     @include rem(font-size, 12px);
     -webkit-backface-visibility: hidden;
 }
+
 a.label {
     display: inline-block;
     line-height: 1;
@@ -14,10 +15,8 @@ a.label {
     @include rem(padding, 3px 4px 3px);
     @include rem(font-size, 11.7px);
     &:hover,
-    &:focus{
+    &:focus {
         text-decoration: none;
         @include Opacity(0.83);
-       
-       
     }
 }

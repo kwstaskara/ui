@@ -1,13 +1,12 @@
 @include breakpoint(xs) {
     .text-left-xs {
-        text-align: left!important;
+        text-align: left !important;
     }
     .hide-xs {
-        display: none!important;
- 
+        display: none !important;
     }
-    .hide-image-xs{
-        background-image: none!important;
+    .hide-image-xs {
+        background-image: none !important;
     }
     .container {
         overflow: hidden;
@@ -66,10 +65,10 @@
 
 @include breakpoint(sm) {
     .hide-sm {
-        display: none!important;
+        display: none !important;
     }
-    .hide-image-sm{
-        background-image: none!important;
+    .hide-image-sm {
+        background-image: none !important;
     }
     .col-sm-12 {
         flex-basis: 100%;
@@ -123,10 +122,10 @@
 
 @include breakpoint(md) {
     .hide-md {
-        display: none!important;
+        display: none !important;
     }
-    .hide-image-md{
-        background-image: none!important;
+    .hide-image-md {
+        background-image: none !important;
     }
     .col-md-12 {
         flex-basis: 100%;
@@ -180,10 +179,10 @@
 
 @include breakpoint(lg) {
     .hide-lg {
-        display: none!important;
+        display: none !important;
     }
-    .hide-image-lg{
-        background-image: none!important;
+    .hide-image-lg {
+        background-image: none !important;
     }
     .col-lg-12 {
         flex-basis: 100%;
@@ -387,42 +386,39 @@
     @include rem(margin-bottom, -30px);
 }
 
-
-.mln-10{
+.mln-10 {
     @include rem(margin-left, -10px);
 }
-.mln-20{
+
+.mln-20 {
     @include rem(margin-left, -20px);
 }
 
-.mln-30{
+.mln-30 {
     @include rem(margin-left, -30px);
 }
 
-.mrn-10{
+.mrn-10 {
     @include rem(margin-right, -10px);
 }
-.mrn-20{
+
+.mrn-20 {
     @include rem(margin-right, -20px);
 }
 
-.mrn-30{
+.mrn-30 {
     @include rem(margin-right, -30px);
 }
 
-
-
-
-
-.is-marginless{
+.is-marginless {
     margin: 0;
 }
 
-.border-left{
+.border-left {
     @include rem(border-left, 1px solid $muted-grey);
 }
 
-.border-right{
+.border-right {
     @include rem(border-right, 1px solid $muted-grey);
 }
 
@@ -472,11 +468,11 @@
 }
 
 .flex-start {
-    align-items: flex-start!important;
+    align-items: flex-start !important;
 }
 
 .flex-end {
-    align-items: flex-end!important;
+    align-items: flex-end !important;
 }
 
 .flex-start {
@@ -494,23 +490,23 @@
 
 @include breakpoint(xs) {
     .flex-center {
-        justify-content: center!important;
-        align-items: center!important;
+        justify-content: center !important;
+        align-items: center !important;
     }
     .flex-start {
-        align-items: flex-start!important;
+        align-items: flex-start !important;
     }
 }
 
 .is-vertical {
     &.flex-center {
-        align-items: center!important;
+        align-items: center !important;
     }
     &.flex-start {
-        align-items: flex-start!important;
+        align-items: flex-start !important;
     }
     &.flex-end {
-        align-items: flex-end!important;
+        align-items: flex-end !important;
     }
 }
 
@@ -527,11 +523,11 @@
 }
 
 .float-left {
-    float: left!important;
+    float: left !important;
 }
 
 .float-right {
-    float: right!important;
+    float: right !important;
 }
 
 .is-fixed {
@@ -544,7 +540,6 @@
     z-index: 1;
     bottom: 0;
 }
-
 
 .absol-right {
     position: absolute;
@@ -604,7 +599,6 @@
 
 .is-centered {
     margin: 0 auto;
-
 }
 
 .fixed-centered {
@@ -622,7 +616,7 @@
 }
 
 .is-circled {
-    @include rem(border-radius, 50px!important);
+    @include rem(border-radius, 50px !important);
 }
 
 .border-top {
@@ -632,5 +626,3 @@
 .border-bottom {
     @include rem(border-bottom, 1px solid $grey-color);
 }
-
-

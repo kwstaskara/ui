@@ -1,7 +1,5 @@
 // Variables
 $version: "0.1.0";
-
-
 //colors
 $light-color: #f7f7f7 !default;
 $dark-color: #272a2d !default;
@@ -21,10 +19,21 @@ $deep-blue-color: #133999 !default;
 $pink-color: #ff708e !default;
 $muted-grey: #bcbcbc !default;
 $brown-color: #BF955A !default;
-$ios-color:  rgba(220, 220, 220, 0.85) !default;
+$ios-color : rgba(220, 220, 220, 0.85) !default;
 $deep-purple-color: #220833 !default;
 //fonts
-$core-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$core-font: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+Oxygen,
+Ubuntu,
+Cantarell,
+"Open Sans",
+"Helvetica Neue",
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol" !default;
 $core-font-size: 1rem !default;
 //shapes
 $rounded: 0.25rem !default;

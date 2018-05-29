@@ -3,12 +3,14 @@
 *::after {
   box-sizing: border-box;
 }
+
 html {
   font-family: sans-serif;
   box-sizing: border-box;
   line-height: 1.6;
   -webkit-tap-highlight-color: transparent;
 }
+
 body {
   margin: 0;
   font-family: $core-font;
@@ -19,6 +21,7 @@ body {
   text-rendering: optimizeLegibility;
   @include rem(letter-spacing, 0.16px);
 }
+
 // responsive media
 img,
 embed,
@@ -30,9 +33,9 @@ video {
   max-width: 100%;
 }
 
-.no-responsive{
-  img{
-    max-width:initial;
+.no-responsive {
+  img {
+    max-width: initial;
   }
 }
 
@@ -47,9 +50,7 @@ a {
     text-decoration: underline;
     cursor: pointer;
   }
-
 }
-
 
 @media print {
   *,
@@ -58,5 +59,4 @@ a {
     text-shadow: none !important;
     box-shadow: none !important;
   }
-
 }

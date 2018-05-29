@@ -19,41 +19,45 @@ h6 {
   font-weight: 500;
 }
 
-
-
 h1,
 .h1 {
-@include rem(font-size, 40px!important);
-}
-h2,
-.h2 {
-@include rem(font-size, 36px!important);
-}
-h3,
-.h3 {
-@include rem(font-size, 28px!important);
-}
-h4,
-.h4 {
-@include rem(font-size, 24px!important);
-}
-h5,
-.h5 {
-@include rem(font-size, 18px!important);
-}
-h6,
-.h6 {
-@include rem(font-size, 16px!important);
+  @include rem(font-size, 40px !important);
 }
 
-mark{
+h2,
+.h2 {
+  @include rem(font-size, 36px !important);
+}
+
+h3,
+.h3 {
+  @include rem(font-size, 28px !important);
+}
+
+h4,
+.h4 {
+  @include rem(font-size, 24px !important);
+}
+
+h5,
+.h5 {
+  @include rem(font-size, 18px !important);
+}
+
+h6,
+.h6 {
+  @include rem(font-size, 16px !important);
+}
+
+mark {
   background-color: $marked-color;
 }
 
 pre {
-    white-space: pre-line;
-    word-wrap: break-word;
+  white-space: pre-line;
+  word-wrap: break-word;
 }
+
 /*
 html { font-size: calc(1em + 1vw); } 
 

@@ -1,201 +1,179 @@
-.navbar-logo{
-    float:left;
+.navbar-logo {
+    float: left;
     align-self: center;
     padding-left: 8px;
     vertical-align: middle;
-    img{
+    img {
         vertical-align: middle;
     }
 }
-.navbar{
+
+.navbar {
     width: 100%
 }
-.desktop-nav{
 
+.desktop-nav {
     margin: 0;
     padding: 10px 0 13px;
-
- li{
-     padding-right: 9px;
-    display: inline-block;
-    text-decoration: none;
-    list-style: none;
-    a{
+    li {
+        padding-right: 9px;
+        display: inline-block;
         text-decoration: none;
-    }
-}
-}
-
-
-
-.flex-mobile-nav{
-    &.is-vertical{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-.mobile-nav{
-    &.is-vertical{
-        li{
-            
-            display:block;
+        list-style: none;
+        a {
+            text-decoration: none;
         }
     }
 }
 
-.mobile-nav{
-    display:none;
-    white-space: nowrap;
-    overflow-x: auto;
-    margin: 0;
-    @include rem(padding, 8px 0 8px 10px);
-    
-    overflow-y: auto;
-
-
- li{
-    overflow-y: auto;
-    overflow-x: auto;
-    @include rem(margin-left 8px);
-    @include rem(padding-right, 9px);
-    display: inline-block;
-    text-decoration: none;
-    list-style: none;
-    a{
-        text-decoration: none;
+.flex-mobile-nav {
+    &.is-vertical {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
+
+.mobile-nav {
+    &.is-vertical {
+        li {
+            display: block;
+        }
+    }
 }
 
-
-.flex-mobile-nav{
-    flex-basis: 100%;
-    display:none;
+.mobile-nav {
+    display: none;
     white-space: nowrap;
     overflow-x: auto;
     margin: 0;
     @include rem(padding, 8px 0 8px 10px);
-    li{
-
+    overflow-y: auto;
+    li {
+        overflow-y: auto;
+        overflow-x: auto;
         @include rem(margin-left 8px);
         @include rem(padding-right, 9px);
         display: inline-block;
         text-decoration: none;
         list-style: none;
-        a{
+        a {
             text-decoration: none;
         }
     }
-    
 }
 
-@include breakpoint(xs){
-    .navbar{
+.flex-mobile-nav {
+    flex-basis: 100%;
+    display: none;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 0;
+    @include rem(padding, 8px 0 8px 10px);
+    li {
+        @include rem(margin-left 8px);
+        @include rem(padding-right, 9px);
+        display: inline-block;
+        text-decoration: none;
+        list-style: none;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+@include breakpoint(xs) {
+    .navbar {
         overflow-y: auto;
-        max-height:100%;
+        max-height: 100%;
     }
     .flex-navbar {
-       
         justify-content: space-between;
     }
-    .is-vertical.dropdown{
+    .is-vertical.dropdown {
         display: block;
         position: relative;
         text-align: left;
     }
 }
 
-
-@include breakpoint(sm){
+@include breakpoint(sm) {
     .flex-navbar {
-       
         justify-content: space-between;
     }
-    .navbar{
+    .navbar {
         overflow-y: auto;
-        max-height:100%;
+        max-height: 100%;
     }
     .navit {
-        display: inline-block!important;
+        display: inline-block !important;
         vertical-align: middle;
     }
-    .mobile-nav{
-        display:none;
-}
-.flex-mobile-nav{
-    display:none;
-}
-.desktop-nav li {
-    display: none;
-}
-.flex-desktop-nav li {
-    display: none;
-}
-
-.is-vertical.dropdown{
-    display: block;
-    position: relative;
-    text-align: left;
-
-}
-
+    .mobile-nav {
+        display: none;
+    }
+    .flex-mobile-nav {
+        display: none;
+    }
+    .desktop-nav li {
+        display: none;
+    }
+    .flex-desktop-nav li {
+        display: none;
+    }
+    .is-vertical.dropdown {
+        display: block;
+        position: relative;
+        text-align: left;
+    }
 }
 
-@include breakpoint(md){
-    .flex-navbar  {
+@include breakpoint(md) {
+    .flex-navbar {
         overflow-y: visible;
         justify-content: flex-start;
     }
-    .flex-navbar.space-around  {
-       
+    .flex-navbar.space-around {
         justify-content: space-around;
     }
-
-    .flex-navbar.space-between  {
+    .flex-navbar.space-between {
         justify-content: space-between;
     }
-    .navbar{
+    .navbar {
         overflow-y: visible;
-   
     }
-    .flex-mobile-nav{
-        display:none!important;
+    .flex-mobile-nav {
+        display: none !important;
     }
     .navit {
-        display: none!important;
-     
+        display: none !important;
     }
-    .mobile-nav{
-        display:none!important;
-}
-.mobile-nav{
-    display:none!important;
-}
-.desktop-nav li {
-    display: inline-block;
-}
-.flex-desktop-nav li {
-    display: inline-block;
-}
-.is-vertical.dropdown{
-    display: none;
-    position: absolute;
-
-
-}
-}
-
-
-@include breakpoint(lg){
-
-    .mobile-nav{
-        display:none!important;
+    .mobile-nav {
+        display: none !important;
+    }
+    .mobile-nav {
+        display: none !important;
+    }
+    .desktop-nav li {
+        display: inline-block;
+    }
+    .flex-desktop-nav li {
+        display: inline-block;
+    }
+    .is-vertical.dropdown {
+        display: none;
+        position: absolute;
     }
 }
 
-@include breakpoint(xs){
+@include breakpoint(lg) {
+    .mobile-nav {
+        display: none !important;
+    }
+}
+
+@include breakpoint(xs) {
     .navit {
-        display: inline-block!important;
+        display: inline-block !important;
         vertical-align: middle;
     }
     .desktop-nav li {
@@ -204,17 +182,15 @@
     .flex-desktop-nav li {
         display: none;
     }
-
 }
 
-.toggle-nav{
+.toggle-nav {
     display: block;
 }
 
-.toggle-flex-nav{
+.toggle-flex-nav {
     display: flex;
 }
-
 
 .flex-navbar {
     display: flex;
@@ -222,25 +198,21 @@
     width: 100%;
 }
 
-.flex-desktop-nav{
+.flex-desktop-nav {
     display: flex;
     align-items: center;
     flex-direction: row;
     white-space: nowrap;
     margin: 0;
     padding: 10px 0 13px;
-    li{
-
+    li {
         @include rem(margin-left 8px);
         @include rem(padding-right, 9px);
-
-
         text-decoration: none;
         list-style: none;
-        a{
+        a {
             text-decoration: none;
-        
-}
+        }
     }
 }
 

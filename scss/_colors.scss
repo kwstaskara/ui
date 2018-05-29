@@ -1,189 +1,213 @@
-.is-primary{
+.is-primary {
   background-color: $primary-color;
-  color:white;
+  color: white;
 }
 
-.is-secondary{
+.is-secondary {
   background-color: $secondary-color;
-  color:white;
+  color: white;
 }
-.is-success{
+
+.is-success {
   background-color: $success-color;
-  color:white;
+  color: white;
 }
-.is-dark{
+
+.is-dark {
   background-color: $dark-color;
-  color:white;
+  color: white;
 }
-.is-flat{
+
+.is-flat {
   background-color: $flat-color;
-  color:white;
+  color: white;
 }
-.is-error{
+
+.is-error {
   background-color: $error-color;
-  color:white;
+  color: white;
 }
-.is-warning{
+
+.is-warning {
   background-color: $warning-color;
-  color:black;
+  color: black;
 }
-.is-material{
+
+.is-material {
   background-color: $material-color;
   color: white;
 }
-.is-grey{
+
+.is-grey {
   background-color: $grey-color;
   color: white;
 }
-.is-fancy{
+
+.is-fancy {
   background-color: $fancy-color;
   color: white;
 }
-.is-light{
+
+.is-light {
   background-color: $light-color;
   color: $dark-color;
 }
-.is-deep-blue{
+
+.is-deep-blue {
   background-color: $deep-blue-color;
   color: white;
 }
-.is-pink{
+
+.is-pink {
   background-color: $pink-color;
   color: white;
 }
-.is-brown{
+
+.is-brown {
   background-color: $brown-color;
-  color:white;
+  color: white;
 }
 
-.is-ios{
+.is-ios {
   background-color: $ios-color;
   color: $dark-color;
 }
 
-.is-white{
+.is-white {
   background-color: white;
-
 }
 
-.is-slateblue{
+.is-slateblue {
   background-color: slateblue;
   color: white;
 }
 
-.is-seagreen{
+.is-seagreen {
   background-color: seagreen;
   color: white;
 }
 
-.is-crimson{
+.is-crimson {
   background-color: crimson;
   color: white;
 }
 
-.is-white-shadowed{
+.is-white-shadowed {
   background-color: white;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.is-black{
+.is-black {
   background-color: black;
-  color:white;
+  color: white;
 }
 
-.is-deep-purple{
+.is-deep-purple {
   background-color: $deep-purple-color;
-  color:white;
+  color: white;
 }
 
-.is-link{
-background-color: transparent;
+.is-link {
+  background-color: transparent;
   color: $secondary-color;
- &:focus, &:active{
-    box-shadow: none!important;
+  &:focus,
+  &:active {
+    box-shadow: none !important;
   }
 }
 
-.is-transparent{
+.is-transparent {
   background-color: transparent;
 }
-.text-white{
-  color: white!important;
+
+.text-white {
+  color: white !important;
 }
-.text-black{
-  color: black!important;
+
+.text-black {
+  color: black !important;
 }
-.text-muted{
+
+.text-muted {
   color: $muted-color;
 }
-.text-primary{
-  color:$primary-color;
+
+.text-primary {
+  color: $primary-color;
 }
-.text-success{
+
+.text-success {
   color: $success-color;
 }
+
 .text-error {
   color: $error-color;
 }
-.text-grey{
+
+.text-grey {
   color: $grey-color;
 }
-.text-dark{
+
+.text-dark {
   color: $dark-color;
 }
-.text-warning{
+
+.text-warning {
   color: $warning-color;
 }
+
 .text-fancy {
   color: $fancy-color;
 }
 
-.text-brown{
+.text-brown {
   color: $brown-color;
 }
 
 //Everyone likes gradients
-.is-gradient-green{
-  background:linear-gradient(135deg, #81fbb8 0%,#28c76f 100%);
+.is-gradient-green {
+  background: linear-gradient(135deg, #81fbb8 0%, #28c76f 100%);
   color: white;
 }
 
-
-.is-gradient-orange{
+.is-gradient-orange {
   background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
   color: white;
-
 }
 
-.is-gradient-rose{
-  background: #5f2c82; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #5f2c82, #49a09d); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #5f2c82, #49a09d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.is-gradient-rose {
+  background: #5f2c82;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5f2c82, #49a09d);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5f2c82, #49a09d);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.is-gradient-blue{
-
+.is-gradient-blue {
   background: -webkit-linear-gradient(-23deg, rgb(16, 35, 120), rgb(74, 0, 115));
   background: linear-gradient(-23deg, rgb(16, 35, 120), rgb(74, 0, 115));
-  color:white;
-  
+  color: white;
 }
 
-.is-gradient-purple{
-  background: #B993D6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+.is-gradient-purple {
+  background: #B993D6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8CA6DB, #B993D6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.is-gradient-candy{
-  background: #D3959B;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #BFE6BA, #D3959B);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #BFE6BA, #D3959B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+.is-gradient-candy {
+  background: #D3959B;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #BFE6BA, #D3959B);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #BFE6BA, #D3959B);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-
-.has-shadows{
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+.has-shadows {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }

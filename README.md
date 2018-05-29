@@ -16,12 +16,14 @@
 
 ## Features
 - Responsive
-- Multiple ui items and mobile friendly
+- Multiple ui components and mobile friendly
 - Great browser support using postcss autoprefixer
-- Minimized ready for development with cssnano
+- Minimized ready for development with CSSO
 - Normalized with normalizer.css
-- Completely free to use
 - SCSS compiled using gulp
+- Completely free to use
+- Multiple Flavors
+- Javascript frameworks friendly flavors
 - Additional css files or custom theming is not necessary.
 - Javascript independent.(Some items require your js like modals)
 - Pixel fallback by default.(You can disable this feature in rem.scss)
@@ -75,4 +77,5 @@ Built with Normalizer
 - [Modals](https://ui.redpyramids.com/items#Modals)
 - [Menus](https://ui.redpyramids.com/items#Menus)
 - [Navbars](https://ui.redpyramids.com/items#Navbars)
-
+- [Sidenav](https://ui.redpyramids.com/items#Sidenav)
+- [Pagination](https://ui.redpyramids.com/items#Pagination)

@@ -3,7 +3,6 @@
           margin-bottom: 1px;
           color: #fff;
           overflow: hidden;
-
           & input {
             position: absolute;
             opacity: 0;
@@ -17,7 +16,6 @@
             line-height: 3;
             cursor: pointer;
           }
-
           & .accordion-content {
             max-height: 0;
             overflow: hidden;
@@ -25,12 +23,11 @@
             -o-transition: max-height .35s;
             transition: max-height .35s;
           }
-
           & .accordion-content p {
             margin: 1em;
           }
           /* :checked */
-          & input:checked ~ .accordion-content {
+          & input:checked~.accordion-content {
             max-height: 10em;
           }
           /* Icon */
@@ -47,16 +44,16 @@
             -o-transition: all .35s;
             transition: all .35s;
           }
-          & input[type=checkbox] + label::after {
+          & input[type=checkbox]+label::after {
             content: "<";
           }
-          & input[type=radio] + label::after {
+          & input[type=radio]+label::after {
             content: "\25BC";
           }
-          & input[type=checkbox]:checked + label::after {
+          & input[type=checkbox]:checked+label::after {
             transform: rotate(270deg);
           }
-          & input[type=radio]:checked + label::after {
+          & input[type=radio]:checked+label::after {
             transform: rotateX(160deg);
           }
         }

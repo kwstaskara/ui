@@ -1,28 +1,29 @@
-.pagination{
+.pagination {
     @include rem(padding, 4px);
-  & li{
-    display:inline-block;
-    *display:inline; /*IE7*/
-    *zoom:1; /*IE7*/
-    list-style: none;  
-  
-   }
+    & li {
+        display: inline-block;
+        *display: inline;
+        /*IE7*/
+        *zoom: 1;
+        /*IE7*/
+        list-style: none;
+    }
 }
 
-.flex-pagination{
+.flex-pagination {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     @include rem(padding, 4px);
 }
 
-.page-item{
+.page-item {
     @include rem(padding, 5px);
-    & :hover{
+    & :hover {
         text-decoration: none;
         @include Opacity(0.90);
     }
-    & a{
+    & a {
         padding: 8px;
         padding-left: 10px;
         padding-right: 10px;

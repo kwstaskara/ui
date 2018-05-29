@@ -1,6 +1,6 @@
 {
   "name": "pyramid.ui",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "css front-end framework",
   "main": "",
   "dependencies": {
@@ -11,6 +11,7 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-clean-css": "^3.9.4",
+    "gulp-csscomb": "^3.0.8",
     "gulp-csso": "^3.0.1",
     "gulp-header": "^2.0.5",
     "gulp-imagemin": "^4.1.0",
