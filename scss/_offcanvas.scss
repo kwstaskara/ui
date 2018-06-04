@@ -1,16 +1,4 @@
 .off-canvas {
-    .off-canvas-overlay {
-        border-radius: 0;
-        bottom: 0;
-        @include state(off-canvas-overlay);
-        height: 100%;
-        left: 0;
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 100%;
-        background-color: rgba(10, 10, 10, 0.70);
-    }
     height: 100%;
     position: relative;
     width: 100%;
@@ -48,5 +36,17 @@
                 right: 0;
             }
         }
+    }
+    .off-canvas-overlay {
+        border-radius: 0;
+        bottom: 0;
+        @include state(off-canvas-overlay);
+        height: 100%;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        background-color: rgba(10, 10, 10, 0.70);
     }
 }

@@ -919,6 +919,10 @@ textarea.form-warning:focus {
   right: 13px;
   right: 0.8125rem; }
 
+.has-icon-right .form-input {
+  padding-right: 48px;
+  padding-right: 3rem; }
+
 .has-icon-left .form-icon {
   left: 13px;
   left: 0.8125rem; }
@@ -2557,11 +2561,11 @@ a.label:hover, a.label:focus {
 
 @media (max-width: 576px) {
   .dropdown {
-    position: static; } }
+    position: absolute; } }
 
 @media (min-width: 576px) {
   .dropdown {
-    position: static; } }
+    position: absolute; } }
 
 @media (min-width: 768px) {
   .dropdown {
@@ -2726,19 +2730,6 @@ a.label:hover, a.label:focus {
   position: relative;
   width: 100%; }
 
-.off-canvas .off-canvas-overlay {
-  -webkit-border-radius: 0;
-          border-radius: 0;
-  bottom: 0;
-  display: block;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  background-color: rgba(10, 10, 10, 0.7); }
-
 .off-canvas .off-canvas-content {
   bottom: 0;
   overflow-y: auto;
@@ -2790,3 +2781,16 @@ a.label:hover, a.label:focus {
 .off-canvas .from-left.is-active.from-right,
 .off-canvas .from-right.is-active.from-right {
   right: 0; }
+
+.off-canvas .off-canvas-overlay {
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  bottom: 0;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(10, 10, 10, 0.7); }

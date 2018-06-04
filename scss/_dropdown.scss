@@ -46,13 +46,13 @@
 
 @include breakpoint(xs) {
     .dropdown {
-        position: static;
+        position: absolute;
     }
 }
 
 @include breakpoint(sm) {
     .dropdown {
-        position: static;
+        position: absolute;
     }
 }
 

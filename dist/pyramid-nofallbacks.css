@@ -1173,6 +1173,11 @@ textarea.form-warning:focus
     right: .8125rem;
 }
 
+.has-icon-right .form-input
+{
+    padding-right: 3rem;
+}
+
 .has-icon-left .form-icon
 {
     left: .8125rem;
@@ -3058,7 +3063,7 @@ a.label:focus
 {
     .dropdown
     {
-        position: static;
+        position: absolute;
     }
 }
 
@@ -3066,7 +3071,7 @@ a.label:focus
 {
     .dropdown
     {
-        position: static;
+        position: absolute;
     }
 }
 
@@ -3246,22 +3251,6 @@ a.label:focus
     width: 100%; 
     height: 100%;
 }
-.off-canvas .off-canvas-overlay
-{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    display: none;
-
-    width: 100%;
-    height: 100%;
-
-    border-radius: 0;
-    background-color: rgba(10, 10, 10, .7);
-}
 .off-canvas .off-canvas-content
 {
     position: fixed;
@@ -3312,4 +3301,20 @@ a.label:focus
 .off-canvas .from-right.is-active.from-right
 {
     right: 0;
+}
+.off-canvas .off-canvas-overlay
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 0;
+    background-color: rgba(10, 10, 10, .7);
 }

@@ -82,9 +82,14 @@ textarea {
     }
 }
 
-.has-icon-right .form-icon {
-    @include rem(right, 13px);
-}
+.has-icon-right{
+    .form-icon {
+        @include rem(right, 13px);
+    }
+    .form-input {
+        @include rem(padding-right, 48px);
+    }
+} 
 
 .has-icon-left {
     .form-icon {
