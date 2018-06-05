@@ -1072,7 +1072,7 @@ textarea.form-warning:focus {
   padding: 0 0.375rem 0 0.375rem; }
 
 .row.is-collapsible .col {
-  display: inline-block;
+  float: left;
   vertical-align: top; }
 
 .flex-row.is-collapsible {

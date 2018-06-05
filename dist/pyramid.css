@@ -1485,7 +1485,7 @@ textarea.form-warning:focus
 
 .row.is-collapsible .col
 {
-    display: inline-block;
+    float: left;
 
     vertical-align: top;
 }
