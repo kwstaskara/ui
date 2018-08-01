@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://ui.redpyramids.com/">
-    <img src="https://ui.redpyramids.com/media/redpyramidsui.png" alt="" width=200 height=200>
+    <img src="https://ui.redpyramids.com/media/redpyramidsui.svg" alt="" width=200 height=200>
   </a>
 </p>
   <h3 align="center">Pyramid Ui</h3>
