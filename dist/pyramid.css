@@ -528,7 +528,7 @@ template
 .is-success
 {
     color: white; 
-    background-color: #01c26e;
+    background-color: #16c98d;
 }
 
 .is-dark
@@ -546,13 +546,13 @@ template
 .is-error
 {
     color: white; 
-    background-color: #ff3a38;
+    background-color: #fa5e5b;
 }
 
 .is-warning
 {
     color: black; 
-    background-color: #ffc83f;
+    background-color: #feef6d;
 }
 
 .is-material
@@ -682,12 +682,12 @@ template
 
 .text-success
 {
-    color: #01c26e;
+    color: #16c98d;
 }
 
 .text-error
 {
-    color: #ff3a38;
+    color: #fa5e5b;
 }
 
 .text-grey
@@ -702,7 +702,7 @@ template
 
 .text-warning
 {
-    color: #ffc83f;
+    color: #feef6d;
 }
 
 .text-fancy
@@ -844,6 +844,14 @@ a.active
         box-shadow: none !important; 
         text-shadow: none !important;
     }
+}
+
+.is-disabled
+{
+    cursor: default;
+    pointer-events: none; 
+
+    opacity: .5;
 }
 
 h1,
@@ -993,6 +1001,25 @@ html { font-size: calc(1em + 1vw); }
     background-color: grey;
 }
 
+a.btn
+{
+    padding-top: 6px;
+    padding-top: .375rem;
+    padding-bottom: 7px;
+    padding-bottom: .4375rem;
+}
+a.btn.is-large
+{
+    font-size: 20px;
+    font-size: 1.25rem; 
+    line-height: 1.5;
+
+    padding-top: 8px;
+    padding-top: .5rem;
+    padding-bottom: 10px;
+    padding-bottom: .625rem;
+}
+
 .btn
 {
     font-size: 1rem;
@@ -1064,8 +1091,10 @@ html { font-size: calc(1em + 1vw); }
     font-size: 1.25rem; 
     line-height: 1.5;
 
-    padding: 8px 16px;
-    padding: .5rem 1rem;
+    padding-top: 8px;
+    padding-top: .5rem;
+    padding-bottom: 8px;
+    padding-bottom: .5rem;
 }
 
 .form-input
@@ -1142,34 +1171,34 @@ input[type='radio']
 input.form-error,
 textarea.form-error
 {
-    border-color: #ff3a38 !important;
+    border-color: #fa5e5b !important;
 }
 input.form-error:focus,
 textarea.form-error:focus
 {
-    outline-color: #ff3a38;
+    outline-color: #fa5e5b;
 }
 
 input.form-success,
 textarea.form-success
 {
-    border-color: #01c26e !important;
+    border-color: #16c98d !important;
 }
 input.form-success:focus,
 textarea.form-success:focus
 {
-    outline-color: #01c26e;
+    outline-color: #16c98d;
 }
 
 input.form-warning,
 textarea.form-warning
 {
-    border-color: #ffc83f !important;
+    border-color: #feef6d !important;
 }
 input.form-warning:focus,
 textarea.form-warning:focus
 {
-    outline-color: #ffc83f;
+    outline-color: #feef6d;
 }
 
 .has-icon-left,
@@ -1184,7 +1213,7 @@ textarea.form-warning:focus
     font-size: 1.5625rem; 
 
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     top: 50%;
 
     transform: translateY(-50%);
@@ -1341,8 +1370,8 @@ textarea.form-warning:focus
 .form-radio input:checked ~ .checkmark.is-success,
 .form-switch input:checked ~ .checkmark.is-success
 {
-    border-color: #01c26e; 
-    background-color: #01c26e;
+    border-color: #16c98d; 
+    background-color: #16c98d;
 }
 
 .form-checkbox input:checked ~ .checkmark.is-dark,
@@ -2475,6 +2504,40 @@ textarea.form-warning:focus
     transform: rotateX(160deg);
 }
 
+.is-loading
+{
+    position: relative;
+    top: 4px;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    animation: spin .6s infinite linear; 
+
+    border: 3px rgba(79, 11, 167, .25) solid;
+    border-top: 2.5px #230085 solid;
+    border-radius: 50%;
+}
+.is-loading.is-small
+{
+    width: 15px;
+    height: 15px;
+}
+
+@keyframes spin
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(359deg);
+    }
+}
+
 @keyframes fadeIn
 {
     from
@@ -3003,8 +3066,14 @@ flex-direction: column;
 
     display: inline-block;
 
-    padding: 3px 6px;
-    padding: .1875rem .375rem;
+    padding-top: 1.3px;
+    padding-right: 6px;
+    padding-bottom: 2.5px;
+    padding-left: 6px;
+
+    text-align: center;
+    vertical-align: middle; 
+    white-space: nowrap;
 
     border-radius: 2px;
     border-radius: .125rem;
@@ -3396,7 +3465,7 @@ a.label:focus
 .off-canvas .off-canvas-content
 {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     bottom: 0;
 
@@ -3444,14 +3513,22 @@ a.label:focus
 {
     right: 0;
 }
+.off-canvas .off-canvas-content.is-active.off-canvas-overlay,
+.off-canvas .from-left.is-active.off-canvas-overlay,
+.off-canvas .from-right.is-active.off-canvas-overlay
+{
+    display: block;
+}
 .off-canvas .off-canvas-overlay
 {
     position: fixed;
+    z-index: 1; 
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
 
+    display: none;
     display: none;
 
     width: 100%;

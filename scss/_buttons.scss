@@ -1,3 +1,16 @@
+a {
+  &.btn{
+    @include rem(padding-top, 6px);
+    @include rem(padding-bottom, 7px);
+    &.is-large {
+      @include rem(padding-bottom, 10px);
+      @include rem(padding-top, 8px );
+      line-height: 1.5;
+      @include rem(font-size, 20px);
+    }
+
+  }
+}
 .btn {
   @include btn-appearence();
   display: inline-block;
@@ -11,6 +24,7 @@
   line-height: 1.5;
   border: none;
   outline: none;
+  
   &:focus,
   &:hover {
     text-decoration: none;
@@ -32,8 +46,10 @@
     @include rem(font-size, 13px);
   }
   &.is-large {
-    @include rem(padding, 8px 16px);
+    @include rem(padding-bottom, 8px);
+    @include rem(padding-top, 8px );
     line-height: 1.5;
     @include rem(font-size, 20px);
   }
+
 }

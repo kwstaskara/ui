@@ -15,7 +15,7 @@
         overflow-y: auto;
         position: fixed;
         top: 0;
-        z-index: 1;
+        z-index: 2;
         width: auto;
         transition: transform .25s ease;
         will-change: transform; //  transform: translateX(-100%); 
@@ -35,6 +35,9 @@
             &.from-right {
                 right: 0;
             }
+            &.off-canvas-overlay{
+                display: block;
+            }
         }
     }
     .off-canvas-overlay {
@@ -48,5 +51,7 @@
         top: 0;
         width: 100%;
         background-color: rgba(10, 10, 10, 0.70);
+        display: none;
+        z-index: 1;
     }
 }

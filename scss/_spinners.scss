@@ -1,0 +1,26 @@
+
+.is-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top:4px;
+    border: 3px rgba(79, 11, 167, 0.25) solid;
+    border-top: 2.5px rgb(35, 0, 133) solid;
+    border-radius: 50%;
+    animation: spin .6s infinite linear;
+    &.is-small {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  
