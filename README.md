@@ -1,14 +1,10 @@
-<p align="center">
-  <a href="https://ui.redpyramids.com/">
-    <img src="https://ui.redpyramids.com/media/redpyramidsui.svg" alt="" width=200 height=200>
-  </a>
-</p>
-  <h3 align="center">Pyramid Ui</h3>
+
+<h3 align="center">Ui</h3>
 
  <p align="center">
-   Pyramid Ui is a web front-end framework based in multiple css features.
+    Ui is a web front-end framework based in multiple css features.
 <br>
- <a href="https://ui.redpyramids.com/docs">Documentation</a>
+
     
 </p>
 
