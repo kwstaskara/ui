@@ -26,13 +26,13 @@
 
 
 
-We created pyramid ui because we wanted a framework that gives you choices about theming and browser support by default.
+i created this ui kit because i wanted a framework that gives you choices about theming and browser support by default.
 
 
 ## Principles
-Pyramid ui provides ui items that do not contain default colors,allowing users to pick the colors that want for theming.
+Provides ui items that do not contain default colors,allowing users to pick the colors that want for theming.
 
-Pyramid ui contains multiple css features. Developers can choose between table,flexbox and css grid layout(coming soon css grid).
+Contains multiple css features. Developers can choose between table,flexbox and css grid layout(coming soon css grid).
 Built with Normalizer 
 
 ### Using from CDN
